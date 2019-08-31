@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Verlag-Book';
+	src:url('../../fonts/Verlag-Book/Verlag-Book.otf') format("opentype");
+	src:url('../../fonts/Verlag-Book/Verlag-Book.eot?d7yf1v');
+	src:url('../../fonts/Verlag-Book/Verlag-Book.eot?#iefixd7yf1v') format('embedded-opentype'),
+		url('../../fonts/Verlag-Book/Verlag-Book.woff?d7yf1v') format('woff'),
+		url('../../fonts/Verlag-Book/Verlag-Book.ttf?d7yf1v') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Verlag-Book';
+	src:url('../../fonts/Verlag-Book/Verlag-Bold.otf') format("opentype");
+	src:url('../../fonts/Verlag-Book/Verlag-Bold.eot?d7yf1v');
+	src:url('../../fonts/Verlag-Book/Verlag-Bold.eot?#iefixd7yf1v') format('embedded-opentype'),
+		url('../../fonts/Verlag-Book/Verlag-Bold.woff?d7yf1v') format('woff'),
+		url('../../fonts/Verlag-Book/Verlag-Bold.ttf?d7yf1v') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Slim-Joe';
+	src:url('../../fonts/Slim-Joe/Slim-Joe.eot?d7yf1v');
+	src:url('../../fonts/Slim-Joe/Slim-Joe.eot?#iefixd7yf1v') format('embedded-opentype'),
+		url('../../fonts/Slim-Joe/Slim-Joe.woff?d7yf1v') format('woff'),
+		url('../../fonts/Slim-Joe/Slim-Joe.ttf?d7yf1v') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

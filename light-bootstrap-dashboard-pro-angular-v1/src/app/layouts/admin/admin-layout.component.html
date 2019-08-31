@@ -1,0 +1,15 @@
+
+<div class="wrapper">
+    <div class="sidebar" data-color="red" data-image="">
+        <sidebar-cmp></sidebar-cmp>
+        <div class="sidebar-background" style="background-image: url(assets/img/full-screen-image-3.jpg)"></div>
+    </div>
+    <div class="main-panel">
+        <navbar-cmp></navbar-cmp>
+        <router-outlet></router-outlet>
+        <div *ngIf="!isMap()">
+          <footer-cmp></footer-cmp>
+        </div>
+    </div>
+</div>
+<fixedplugin-cmp></fixedplugin-cmp>

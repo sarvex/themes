@@ -1,0 +1,61 @@
+.section-numbers{
+
+    .card{
+        text-align: center;
+    }
+    h3{
+        line-height: 1;
+    }
+    .number{
+        font-size: 40px;
+        font-family: $sans-serif-font;
+        font-weight: 400;
+    }
+    .description{
+        margin-bottom: 80px;
+    }
+    .icon{
+        color: #999999;
+    }
+}
+
+.section-numbers-2, .section-numbers-3{
+    @extend .section-numbers;
+    overflow: hidden;
+    color: #FFFFFF !important;
+
+    .filter:after{
+        opacity: .8;
+    }
+    .static-image,
+    .parallax{
+        position: absolute;
+        z-index: 1;
+        height: 650px;
+    }
+
+    .container{
+        position: relative;
+        z-index: 2;
+        padding: 30px 0 60px;
+    }
+    .number, p{
+        color: #FFFFFF;
+    }
+
+    .separator{
+        color: #fff;
+
+        &.line-separator:before, &.line-separator:after{
+            border-color: white;
+        }
+    }
+    .text-area{
+        background-color: transparent;
+    }
+
+    .card h5{
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1em;
+    }
+}

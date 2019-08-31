@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  [class*="pr-"] {
+    padding-right: 15px !important;
+  }
+  [class*="pl-"] {
+    padding-left: 15px !important;
+  }
+
+  [class*="px-"] {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

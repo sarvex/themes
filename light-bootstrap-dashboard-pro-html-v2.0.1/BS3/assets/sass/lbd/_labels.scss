@@ -1,0 +1,54 @@
+/*           Labels              */
+.label{
+    padding: 0.2em 0.6em 0.2em;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    color: #999999;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.label-primary{
+    border-color: $color-blue;
+    color: $color-blue;
+}
+.label-info{
+    border-color: $color-azure;
+    color: $color-azure;
+}
+.label-success{
+    border-color: $color-green;
+    color: $color-green;
+}
+.label-warning{
+    border-color: $color-orange;
+    color: $color-orange;
+}
+.label-danger{
+    border-color: $color-red;
+    color: $color-red;
+}
+.label.label-fill{
+    color: #FFFFFF;
+}
+.label-primary.label-fill{
+   background-color: $color-blue;
+}
+.label-info.label-fill{
+    background-color: $color-azure;
+}
+.label-success.label-fill{
+   background-color: $color-green;
+}
+.label-warning.label-fill{
+   background-color: $color-orange;
+}
+.label-danger.label-fill{
+   background-color: $color-red;
+}
+.label-default.label-fill{
+   background-color: #999999;
+}

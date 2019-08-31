@@ -1,0 +1,202 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-rose card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">assignment</i>
+                    </div>
+                    <h4 class="card-title">Simple Table</h4>
+                  </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                    <thead>
+                                        <tr>
+                                          <th class="text-center">{{ tableData1.headerRow[0] }}</th>
+                                          <th>{{ tableData1.headerRow[1] }}</th>
+                                          <th>{{ tableData1.headerRow[2] }}</th>
+                                          <th>{{ tableData1.headerRow[3] }}</th>
+                                          <th class="text-right">{{ tableData1.headerRow[4] }}</th>
+                                          <th class="text-right">{{ tableData1.headerRow[5] }}</th>
+                                        </tr>
+                                    </thead>
+                                  <tbody>
+                                      <tr *ngFor="let row of tableData1.dataRows">
+                                          <td class="text-center">{{row[0]}}</td>
+                                          <td>{{row[1]}}</td>
+                                          <td>{{row[2]}}</td>
+                                          <td>{{row[3]}}</td>
+                                          <td class="text-right">&euro; {{row[4]}}</td>
+                                          <td class="td-actions text-right">
+                                              <button mat-raised-button type="button" class="btn btn-info {{row[5]}}">
+                                                  <i class="material-icons">person</i>
+                                              </button>
+                                              <button mat-raised-button type="button" class="btn btn-success {{row[5]}}">
+                                                  <i class="material-icons">edit</i>
+                                              </button>
+                                              <button mat-raised-button type="button" class="btn btn-danger {{row[5]}}">
+                                                  <i class="material-icons">close</i>
+                                              </button>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-rose card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">assignment</i>
+                    </div>
+                    <h4 class="card-title">Striped Table</h4>
+                  </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                          <th class="text-center">{{ tableData2.headerRow[0] }}</th>
+                                          <th>{{ tableData2.headerRow[1] }}</th>
+                                          <th>{{ tableData2.headerRow[2] }}</th>
+                                          <th>{{ tableData2.headerRow[3] }}</th>
+                                          <th>{{ tableData2.headerRow[4] }}</th>
+                                          <th class="text-right">{{ tableData2.headerRow[5] }}</th>
+                                          <th class="text-right">{{ tableData2.headerRow[6] }}</th>
+                                        </tr>
+                                    </thead>
+                                  <tbody>
+                                    <tr *ngFor="let row of tableData2.dataRows">
+                                      <td class="text-center">{{row.id}}</td>
+                                      <td>
+                                        <div [ngSwitch]="row.ischecked">
+                                            <div *ngSwitchCase="true">
+                                              <div class="form-check">
+                                                <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                                  <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                  </span>
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <div *ngSwitchDefault>
+                                              <div class="form-check">
+                                                <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" value="">
+                                                  <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                  </span>
+                                                </label>
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>{{row.product_name}}</td>
+                                      <td>{{row.type}}</td>
+                                      <td>{{row.quantity}}</td>
+                                      <td class="text-right">€{{ row.price }}</td>
+                                      <td class="text-right">
+                                          &euro; {{row.amount}}
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5"></td>
+                                        <td class="td-total">
+                                            Total
+                                        </td>
+                                        <td class="td-price">
+                                            <small>&euro;</small>12,999
+                                        </td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-rose card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">assignment</i>
+                    </div>
+                    <h4 class="card-title">Shopping Cart Table</h4>
+                  </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-shopping">
+                                    <thead>
+                                        <tr>
+                                          <th class="text-center">{{ tableData3.headerRow[0] }}</th>
+                                          <th>{{ tableData3.headerRow[1] }}</th>
+                                          <th class="th-description">{{ tableData3.headerRow[2] }}</th>
+                                          <th class="th-description">{{ tableData3.headerRow[3] }}</th>
+                                          <th class="text-right">{{ tableData3.headerRow[4] }}</th>
+                                          <th class="text-right">{{ tableData3.headerRow[5] }}</th>
+                                          <th class="text-right">{{ tableData3.headerRow[6] }}</th>
+                                          <th></th>
+                                        </tr>
+                                    </thead>
+                                  <tbody>
+                                      <tr *ngFor="let row of tableData3.dataRows">
+                                          <td>
+                                              <div class="img-container">
+                                                  <img src="./assets/img/{{row[0]}}.jpg" alt="...">
+                                              </div>
+                                          </td>
+                                          <td class="td-name">
+                                              <a href="{{row[1]}}">{{row[2]}}</a>
+                                              <br />
+                                              <small>{{row[3]}}</small>
+                                          </td>
+                                          <td>{{row[4]}}</td>
+                                          <td>
+                                              {{row[5]}}
+                                          </td>
+                                          <td class="td-number text-right"><small>&euro;</small> {{row[6]}}</td>
+                                          <td class="td-number">
+                                              {{row[7]}}
+                                              <div class="btn-group btn-group-sm">
+                                                  <button mat-raised-button class="btn btn-round btn-info btn-xs"> <i class="material-icons">remove</i> </button>
+                                                  <button mat-raised-button class="btn btn-round btn-info btn-xs"> <i class="material-icons">add</i> </button>
+                                              </div>
+                                          </td>
+                                          <td class="td-number">
+                                              <small>&euro;</small>{{row[8]}}
+                                          </td>
+                                          <td class="td-actions">
+                                              <button mat-button type="button"  matTooltip="Remove item" [matTooltipPosition]="'left'" class="btn btn-link">
+                                                  <i class="material-icons">close</i>
+                                              </button>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td colspan="5"></td>
+                                          <td class="td-total">
+                                              Total
+                                          </td>
+                                          <td colspan="1" class="td-price">
+                                              <small>&euro;</small>{{getTotal()}}
+                                          </td>
+                                          <td></td>
+                                      </tr>
+                                      <tr>
+                                          <td colspan="6"></td>
+                                          <td colspan="2" class="text-right">
+                                              <button mat-raised-button type="button" class="btn btn-info btn-round">Complete Purchase <i class="material-icons">keyboard_arrow_right</i></button>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

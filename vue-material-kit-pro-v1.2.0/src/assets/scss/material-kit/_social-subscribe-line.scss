@@ -1,0 +1,76 @@
+.social-line{
+    padding: .9375rem 0;
+}
+
+.social-line-big-icons{
+    .md-layout-item{
+      border-right: 1px solid $gray-lighter;
+
+      &:last-child{
+          border: 0;
+      }
+    }
+
+    .md-button {
+      width: 100%;
+      margin: 0;
+    }
+
+    [class*="md"] .md-ripple .md-button-content{
+
+        width: 100% !important;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        justify-content: center;
+
+        i {
+          font-size: 24px !important;
+        }
+    }
+}
+
+.subscribe-line{
+    padding: 1.875rem;
+
+    .md-card{
+      margin-top: 30px;
+    }
+    &.subscribe-line-image{
+        position: relative;
+        background-position: top center;
+        background-size: cover;
+
+        .title{
+            color: $white-color !important;
+        }
+        &:after{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: block;
+            left: 0;
+            top: 0;
+            content: "";
+            background-color: rgba(0,0,0,.4);
+        }
+
+        .container{
+            z-index: 10;
+            position: relative;
+        }
+    }
+}
+
+.social-line-white,
+.subscribe-line-white{
+    background-color: $white-color;
+}
+.social-line-black,
+.subscribe-line-black{
+    @include radial-gradient(#232323,#585858);
+
+    .md-layout-item {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+}

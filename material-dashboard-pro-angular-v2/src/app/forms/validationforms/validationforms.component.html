@@ -1,0 +1,310 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <form [formGroup]="register">
+                      <div class="card-header card-header-rose card-header-icon">
+                        <div class="card-icon">
+                          <i class="material-icons">mail_outline</i>
+                        </div>
+                        <h4 class="card-title">Register Form</h4>
+                      </div>
+                        <div class="card-body">
+                          <mat-form-field class="example-full-width" [ngClass]="{'has-success':validEmailRegister===true}">
+                             <input
+                             type="email"
+                             matInput
+                             placeholder="Email Address *"
+                             [errorStateMatcher]="matcher"
+                             formControlName="email"
+                             (ngModelChange)="emailValidationRegister($event)">
+                             <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                               Please enter a valid email address
+                             </mat-error>
+                             <mat-error *ngIf="emailFormControl.hasError('required')">
+                               Email is <strong>required</strong>
+                             </mat-error>
+                           </mat-form-field>
+                            <mat-form-field class="example-full-width has-label" [ngClass]="{'has-success':validPasswordRegister===true}">
+                              <input type="password"
+                              matInput
+                              id="password"
+                              placeholder="Password *"
+                              (ngModelChange)="passwordValidationRegister($event)"
+                              formControlName="password">
+                              <app-field-error-display [displayError]="isFieldValid(register, 'password')" errorMsg="Enter a valid password.">
+                              </app-field-error-display>
+                            </mat-form-field>
+
+                            <mat-form-field class="example-full-width has-label" [ngClass]="{'has-success':validConfirmPasswordRegister===true}" [ngClass]="displayFieldCss(register, 'password')">
+                              <input type="password"
+                              matInput
+                              id="confirmPassword"
+                              placeholder="Confirm Password *"
+                              (ngModelChange)="confirmPasswordValidationRegister($event)"
+                              formControlName="confirmPassword">
+                              <app-field-error-display
+                               [displayError]="isFieldValid(register, 'confirmPassword')" errorMsg="These passwords don't match. Try again!">
+                              </app-field-error-display>
+                            </mat-form-field>
+                            <div class="category form-category">* Required fields</div>
+
+                          </div>
+                            <div class="card-footer text-right">
+                              <div class="form-check mr-auto">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value=""> Subscribe to newsletter
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                              <button mat-raised-button type="submit" class="btn btn-rose" (click)="onRegister()">Register</button>
+                            </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <form [formGroup]="login">
+                      <div class="card-header card-header-rose card-header-icon">
+                        <div class="card-icon">
+                          <i class="material-icons">contacts</i>
+                        </div>
+                        <h4 class="card-title">Login Form</h4>
+                      </div>
+                        <div class="card-body">
+                          <mat-form-field class="example-full-width" [ngClass]="{'has-success':validEmailLogin===true}">
+                             <input
+                             type="email"
+                             matInput
+                             placeholder="Email Address *"
+                             [errorStateMatcher]="matcher"
+                             (ngModelChange)="emailValidationLogin($event)"
+                             formControlName="email">
+                             <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                               Please enter a valid email address
+                             </mat-error>
+                             <mat-error *ngIf="emailFormControl.hasError('required')">
+                               Email is <strong>required</strong>
+                             </mat-error>
+                           </mat-form-field>
+                            <mat-form-field class="example-full-width" [ngClass]="{'has-success':validPasswordLogin===true}" [ngClass]="displayFieldCss(login, 'password')">
+                              <input type="password"
+                              matInput
+                              placeholder="Password *"
+                              (ngModelChange)="passwordValidationLogin($event)"
+                              formControlName="password">
+                              <app-field-error-display [displayError]="isFieldValid(login, 'password')" errorMsg="Enter a valid password.">
+                              </app-field-error-display>
+                            </mat-form-field>
+                            <div class="category form-category">* Required fields</div>
+                          </div>
+                            <div class="card-footer text-right">
+                                <div class="form-group">
+                                    <button mat-raised-button type="submit" class="btn btn-rose btn-fill btn-wd" (click)="onLogin()">Login</button>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <form [formGroup]="type" class="form-horizontal">
+                      <div class="card-header card-header-rose card-header-text">
+                        <div class="card-text">
+                          <h4 class="card-title">Type Validation</h4>
+                        </div>
+                      </div>
+                        <div class="card-body">
+                            <div class="row">
+                              <label class="col-sm-2 col-form-label">Required Text</label>
+                                <div class="col-sm-7">
+                                  <mat-form-field class="example-full-width has-label" [ngClass]="{'has-success':validTextType===true}" [ngClass]="displayFieldCss(type, 'text')">
+                                    <input type="text"
+                                    matInput
+                                    id="text"
+                                    (ngModelChange)="textValidationType($event)"
+                                    formControlName="text">
+                                    <app-field-error-display [displayError]="isFieldValid(type, 'text')" errorMsg="Required text">
+                                    </app-field-error-display>
+                                  </mat-form-field>
+                                </div>
+                                <label class="col-sm-3 label-on-right">
+                                    <code>required</code>
+                                </label>
+                            </div>
+                            <div class="row">
+
+                                <label class="col-sm-2 col-form-label">Email</label>
+
+                                <div class="col-sm-7">
+                                  <mat-form-field class="example-full-width" [ngClass]="{'has-success':validEmailType===true}">
+                                     <input
+                                     type="email"
+                                     matInput
+                                     [errorStateMatcher]="matcher"
+                                     (ngModelChange)="emailValidationType($event)"
+                                     formControlName="email">
+                                     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                                       Please enter a valid email address
+                                     </mat-error>
+                                     <mat-error *ngIf="emailFormControl.hasError('required')">
+                                       Email is <strong>required</strong>
+                                     </mat-error>
+                                   </mat-form-field>
+                                </div>
+                                <label class="col-sm-3 label-on-right">
+                                    <code>email="true"</code>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Number</label>
+                                <div class="col-sm-7">
+                                  <mat-form-field class="example-full-width has-label" [ngClass]="{'has-success':validNumberType===true}" [ngClass]="displayFieldCss(type, 'number')">
+                                    <input type="number" name="number" number="true"
+                                    matInput
+                                    (ngModelChange)="numberValidationType($event)"
+                                    formControlName="number">
+                                    <app-field-error-display [displayError]="isFieldValid(type, 'number')" errorMsg="Add a number!">
+                                    </app-field-error-display>
+                                  </mat-form-field>
+                                </div>
+                                <label class="col-sm-3 label-on-right">
+                                    <code>number="true"</code>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Url</label>
+                                <div class="col-sm-7">
+                                  <mat-form-field class="example-full-width has-label" [ngClass]="{'has-success':validUrlType===true}" [ngClass]="displayFieldCss(type, 'url')">
+                                    <input type="text" id="url" pattern="https?://.+" name="url" formControlName="url"
+                                    matInput
+                                    (ngModelChange)="urlValidationType($event)">
+                                    <app-field-error-display [displayError]="isFieldValid(type, 'url')" errorMsg="Must be a valid URL!">
+                                    </app-field-error-display>
+                                  </mat-form-field>
+                                </div>
+
+                                <label class="col-sm-3 label-on-right">
+                                    <code>url="true"</code>
+                                </label>
+                            </div>
+                            <div class="row">
+
+                                <label class="col-sm-2 col-form-label">Equal to</label>
+                                <div class="col-sm-3">
+                                  <mat-form-field class="example-full-width" [ngClass]="{'has-success':validSourceType===true}" [ngClass]="displayFieldCss(type, 'password')">
+                                    <input type="text"
+                                    matInput
+                                    placeholder="#idSource"
+                                      name="idSource"
+                                      (ngModelChange)="sourceValidationType($event)"
+                                    formControlName="password">
+                                    <app-field-error-display [displayError]="isFieldValid(type, 'password')" errorMsg="IdSource is required">
+                                    </app-field-error-display>
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-sm-3">
+                                  <mat-form-field class="example-full-width" [ngClass]="{'has-success':validDestinationType===true}" [ngClass]="displayFieldCss(type, 'confirmPassword')">
+                                    <input type="text"
+                                    matInput
+                                    name="idDestination"
+                                    placeholder="#idDestination"
+                                    (ngModelChange)="confirmDestinationValidationType($event)"
+                                    formControlName="confirmPassword">
+                                    <app-field-error-display [displayError]="isFieldValid(type, 'confirmPassword')" errorMsg=" IdSource mismatch!">
+                                    </app-field-error-display>
+                                  </mat-form-field>
+                                </div>
+                                <label class="col-sm-4 label-on-right">
+                                    <code>equalTo="#idSource"</code>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button mat-raised-button type="submit" class="btn btn-rose btn-fill" (click)="onType()">Validate Inputs</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="col-md-12">
+                <div class="card">
+                    <form id="RangeValidation" class="form-horizontal" action="" method="">
+
+                        <div class="card-header card-header-text" data-background-color="rose">
+                            <h4 class="card-title">Range Validation</h4>
+                        </div>
+                        <div class="card-content">
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Min Length</label>
+                                <div class="col-sm-7">
+                                    <div class="form-group has-label">
+                                        <label class="bmd-label-floating"></label>
+                                        <input class="form-control" type="text" name="min_length" minLength="5" />
+                                    </div>
+                                </div>
+                                <label class="col-sm-3 label-on-right">
+                                    <code>minLength="5"</code>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Max Length</label>
+                                <div class="col-sm-7">
+                                    <div class="form-group has-label">
+                                        <label class="bmd-label-floating"></label>
+                                        <input class="form-control" type="text" name="max_length" maxLength="5" />
+                                    </div>
+                                </div>
+                                <label class="col-sm-3 label-on-right">
+                                    <code>maxLength="5"</code>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Range</label>
+                                <div class="col-sm-7">
+                                    <div class="form-group has-label">
+                                        <label class="bmd-label-floating"></label>
+                                        <input class="form-control" type="text" name="range" range="[6,10]" />
+                                    </div>
+                                </div>
+                                <label class="col-sm-3 label-on-right">
+                                    <code>range="[6,10]"</code>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Min Value</label>
+                                <div class="col-sm-7">
+                                    <div class="form-group has-label">
+                                        <label class="bmd-label-floating"></label>
+                                        <input class="form-control" type="text" name="min" min="6" />
+                                    </div>
+                                </div>
+                                <label class="col-sm-3 label-on-right">
+                                    <code>min="6"</code>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">Max Value</label>
+                                <div class="col-sm-7">
+                                    <div class="form-group has-label">
+                                        <label class="bmd-label-floating"></label>
+                                        <input class="form-control" type="text" name="max" max="6" />
+                                    </div>
+                                </div>
+                                <label class="col-sm-3 label-on-right">
+                                    <code>max="6"</code>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button mat-raised-button type="submit" class="btn btn-rose btn-fill">Validate Inputs</button>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+        <!-- </div> -->
+    </div>
+</div>

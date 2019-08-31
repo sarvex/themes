@@ -1,0 +1,294 @@
+.card-wizard {
+  min-height: 410px;
+  box-shadow: $box-shadow;
+  opacity: 0;
+  @include transition($general-transition-time, $transition-linear);
+
+  .description {
+    margin-bottom: 0;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+
+  .tab-content {
+    min-height: 355px;
+    padding: 20px 0;
+    .tab-pane {
+      display: block;
+    }
+  }
+
+  aw-wizard {
+    aw-wizard-navigation-bar {
+      position: relative;
+      margin-top: -59px;
+      padding: 15px 15px 0;
+      background-color: $brand-danger;
+      .steps-indicator {
+        li {
+          transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+          background-color: transparent !important;
+          width: auto;
+          background-color: transparent;
+          box-shadow: none;
+          border-radius: 30px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          margin: 0 !important;
+          text-align: center !important;
+          padding: 11px 23px;
+          min-width: 100px;
+          font-weight: 400 !important;
+          line-height: 18px !important;
+          border: 0;
+          @include transition($general-transition-time, $transition-ease)
+            text-transform: uppercase !important;
+          font-size: 12px !important;
+          text-align: center;
+          &:after,
+          &:before {
+            display: none;
+          }
+          a {
+            color: $white-color !important;
+            display: flex;
+            width: auto;
+            border-radius: 30px;
+
+            text-align: center !important;
+            padding: 11px 23px;
+            min-width: 100px;
+            font-weight: 400 !important;
+            line-height: 18px !important;
+
+            @include transition($general-transition-time, $transition-ease)
+              text-transform: uppercase !important;
+            font-size: 12px !important;
+
+            i {
+              display: inline-block;
+              font-size: 19px;
+              line-height: initial;
+              margin-right: 6px;
+              padding: 0;
+              vertical-align: bottom;
+            }
+          }
+          &.current a,
+          &.editing a {
+            // background-color: $white-color !important;
+            color:transparent!important;
+            box-shadow: none;
+          }
+          .moving-tab {
+            display: block;
+            top: -1px;
+          }
+        }
+      }
+    }
+    aw-wizard-navigation-bar.horizontal ul.steps-indicator li div{
+      position: absolute;
+    width: 100%;
+    }
+    aw-wizard-navigation-bar.horizontal ul.steps-indicator{
+      padding: 0px 0 79px 0 !important;
+    }
+    aw-wizard-navigation-bar.horizontal ul.steps-indicator li{
+          padding: 0 0 0;
+    }
+  }
+
+  .picture-container {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .picture {
+    width: 106px;
+    height: 106px;
+    background-color: #999999;
+    border: 1px solid $light-gray;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 5px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+
+    &:hover {
+      border-color: #2ca8ff;
+    }
+  }
+
+  &[data-color="primary"] {
+    .card-header{
+      background-color: $brand-primary;
+    }
+    aw-wizard {
+      aw-wizard-navigation-bar {
+        background-color: $brand-primary;
+        @include set-wizard-color($brand-primary);
+      }
+    }
+  }
+  &[data-color="white"] {
+    .picture {
+      &:hover {
+        border-color: $brand-danger;
+      }
+    }
+
+    .choice {
+      &:hover,
+      &.active {
+        .icon {
+          border-color: $brand-danger;
+          color: $brand-danger;
+        }
+      }
+    }
+    .card-header{
+      background-color: $white-color;
+    }
+    .moving-tab{
+      color: $brand-danger !important;
+      background-color: $white-color;
+      z-index: 1;
+    }
+    aw-wizard {
+      aw-wizard-navigation-bar {
+        background-color: $white-color;
+        @include set-wizard-color($white-color);
+        &.horizontal ul.steps-indicator li div:not(.moving-tab) a{
+          color: $light-black !important;
+          // background-color: $brand-danger;
+        }
+      }
+    }
+  }
+
+  &[data-color="green"] {
+    .card-header{
+      background-color: $brand-success;
+    }
+    aw-wizard {
+      aw-wizard-navigation-bar {
+        background-color: $brand-success;
+        @include set-wizard-color($brand-success);
+      }
+    }
+  }
+
+  &[data-color="blue"] {
+    .card-header{
+      background-color: $brand-info;
+    }
+    aw-wizard {
+      aw-wizard-navigation-bar {
+        background-color: $brand-info;
+        @include set-wizard-color($brand-info);
+      }
+    }
+  }
+
+  &[data-color="orange"] {
+    .card-header{
+      background-color: $brand-warning;
+    }
+    aw-wizard {
+      aw-wizard-navigation-bar {
+        background-color: $brand-warning;
+        @include set-wizard-color($brand-warning);
+      }
+    }
+  }
+
+  &[data-color="red"] {
+    .card-header{
+      background-color: $brand-danger;
+    }
+    aw-wizard {
+      aw-wizard-navigation-bar {
+        background-color: $brand-danger;
+        @include set-wizard-color($brand-danger);
+      }
+    }
+  }
+
+  .picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .picture-src {
+    width: 100%;
+  }
+
+  .info-text {
+    text-align: center;
+    font-weight: 300;
+    margin: 10px 0 30px;
+  }
+
+  .choice {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+
+    &[disabled] {
+      pointer-events: none;
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .icon {
+      text-align: center;
+      vertical-align: middle;
+      height: 116px;
+      width: 116px;
+      border-radius: 50%;
+      color: $default-color;
+      margin: 0 auto 20px;
+      border: 1px solid $light-gray;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+    }
+
+    i {
+      font-size: 30px;
+      line-height: 116px;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover,
+    &.active {
+      .icon {
+        border-color: #2ca8ff;
+      }
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      position: absolute;
+      left: -10000px;
+      z-index: -1;
+    }
+  }
+
+  .card-title + .description {
+    font-size: $font-size-base + 3;
+  }
+
+}

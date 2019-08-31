@@ -1,0 +1,10 @@
+@mixin label-style(){
+    padding: 0.4em 0.9em;
+    border-radius: 10px;
+    color: $white-color;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1;
+    text-transform: uppercase;
+    display: inline-block;
+}

@@ -1,0 +1,54 @@
+/*           Labels              */
+.label {
+  padding: 0.2em 0.6em 0.2em;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  color: #999999;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+.label-primary {
+  border-color: #3472f7;
+  color: #3472f7;
+}
+.label-info {
+  border-color: #2ca8ff;
+  color: #2ca8ff;
+}
+.label-success {
+  border-color: #05ae0e;
+  color: #05ae0e;
+}
+.label-warning {
+  border-color: #ff9500;
+  color: #ff9500;
+}
+.label-danger {
+  border-color: #ff3b30;
+  color: #ff3b30;
+}
+.label.label-fill {
+  color: #ffffff;
+}
+.label-primary.label-fill {
+  background-color: #3472f7;
+}
+.label-info.label-fill {
+  background-color: #2ca8ff;
+}
+.label-success.label-fill {
+  background-color: #05ae0e;
+}
+.label-warning.label-fill {
+  background-color: #ff9500;
+}
+.label-danger.label-fill {
+  background-color: #ff3b30;
+}
+.label-default.label-fill {
+  background-color: #999999;
+}

@@ -1,0 +1,86 @@
+<div class="container tim-container">
+    <div id="description-areas">
+        <div class="title">
+            <h3>Description Areas</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 col-sm-12">
+                <h4><small>Horizontal Tabs</small></h4>
+
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ngb-tabset [justify]="'center'">
+                            <ngb-tab title="Home">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane active" id="home" role="tabpanel"><p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p></div>
+                                    <div class="tab-pane" id="profile" role="tabpanel"><p>Here is your profile.</p></div>
+                                    <div class="tab-pane" id="messages" role="tabpanel"><p>Here are your messages.</p></div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Profile">
+                                <ng-template ngbTabContent>
+                                    <p>Here is your profile.</p>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Messages">
+                                <ng-template ngbTabContent>
+                                    <p>Here are your messages.</p>
+                                </ng-template>
+                            </ngb-tab>
+                        </ngb-tabset>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+                <h4><small>Vertical Tabs</small></h4>
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ngb-tabset [justify]="'center'" [orientation]="'vertical'" class="vertical-tabs">
+                            <ngb-tab title="Info">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane active" id="info">
+                                         <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+                                         <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+                                    </div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Description">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane" id="description">
+                                        <p>The first thing you notice when you hold the phone is how great it feels in your hand. The cover glass curves down around the sides to meet the anodized aluminum enclosure in a remarkable, simplified design. </p>
+                                        <p>There are no distinct edges. No gaps. Just a smooth, seamless bond of metal and glass that feels like one continuous surface.</p>
+                                    </div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Concept">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane" id="concept">
+                                        <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+                                        <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display. </p>
+                                    </div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Support">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane" id="support">
+                                        <p>From the seamless transition of glass and metal to the streamlined profile, every detail was carefully considered to enhance your experience. So while its display is larger, the phone feels just right.</p>
+                                        <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+                                    </div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Extra">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane" id="extra">
+                                        <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+                                        <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display. </p>
+                                    </div>
+                                </ng-template>
+                            </ngb-tab>
+                        </ngb-tabset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

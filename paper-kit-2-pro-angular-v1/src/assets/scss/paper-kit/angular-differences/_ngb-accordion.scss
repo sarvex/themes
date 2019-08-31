@@ -1,0 +1,36 @@
+ngb-accordion{
+    .card{
+        margin-bottom: 0 !important;
+        border-radius: 0 !important;
+        .card-header{
+            padding: 0 !important;
+            background-color: $white-color !important;
+            &:first-child{
+                border-radius: 0 !important;
+            }
+            a{
+                &:hover,
+                &:focus{
+                    color: $danger-color;
+                }
+            }
+            button{
+              text-align: inherit;
+              text-transform: none;
+              width: 100%;
+            }
+        }
+        .collapse{
+            display: none;
+            position: relative;
+            overflow: hidden;
+            &.show{
+                display: block;
+                // @include transition(300ms, linear);
+            }
+        }
+    }
+    .card:not(.card-plain):hover{
+        transform: none!important;
+    }
+}

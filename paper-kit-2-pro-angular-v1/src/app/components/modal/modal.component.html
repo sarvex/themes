@@ -1,0 +1,160 @@
+<button class="btn btn-round" (click)="open(classic, '')">Classic modal</button>
+<ng-template #classic let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h5 class="modal-title text-center">Modal title</h5>
+        <button type="button" class="close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+    </div>
+    <div class="modal-footer">
+        <div class="left-side">
+            <button type="button" class="btn btn-default btn-link" (click)="c('Close click')">Never mind</button>
+        </div>
+        <div class="divider"></div>
+        <div class="right-side">
+            <button type="button" class="btn btn-danger btn-link" (click)="c('Close click')">Delete</button>
+        </div>
+    </div>
+</ng-template>
+
+
+
+<button type="button" class="btn btn-round" (click)="open(Notice, '')">
+    Notice modal
+</button>
+<ng-template #Notice let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h5 class="modal-title">How Do You Become an Affiliate?</h5>
+        <button type="button" class="close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="instruction">
+            <div class="row">
+                <div class="col-md-8">
+                    <p> <strong>1. Register</strong> - the first step is to create an account at <a href="https://www.creative-tim.com/">Creative Tim</a>. You can choose a social network or go for the classic version, whatever works best for you.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="picture">
+                        <img src="assets/img/sections/angelo-pantazis.jpg" alt="Thumbnail Image"  class="img-rounded img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="instruction">
+            <div class="row">
+                <div class="col-md-8">
+                    <p> <strong>2. Apply</strong> - the first step is to create an account at <a href="https://www.creative-tim.com/">Creative Tim</a>. You can choose a social network or go for the classic version, whatever works best for you.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="picture">
+                        <img src="assets/img/sections/rawpixel-coms.jpg" alt="Thumbnail Image"  class="img-rounded img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>If you have more questions, don't hesitate to contact us or send us a tweet @creativetim. We're here to help!</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-link" (click)="c('Close click')">Okay</button>
+    </div>
+</ng-template>
+
+
+<button type="button" class="btn btn-danger btn-round" (click)="open(small, 'sm')">
+    Small alert modal
+</button>
+<ng-template #small let-c="close" let-d="dismiss">
+    <div class="no-title modal-header no-border-header">
+            <!-- <h4 class="modal-title">Modal title</h4> -->
+        <button type="button" class="close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body text-center">
+        <h5>Are you sure you want to do this? </h5>
+    </div>
+    <div class="modal-footer">
+        <div class="left-side">
+            <button type="button" class="btn btn-default btn-link" (click)="c('Close click')">Never mind</button>
+        </div>
+        <div class="divider"></div>
+        <div class="right-side">
+            <button type="button" class="btn btn-danger btn-link">Yes</button>
+        </div>
+    </div>
+</ng-template>
+
+
+
+<button type="button" class="btn btn-danger btn-round" (click)="open(small1, 'sm')">
+    Small notice modal
+</button>
+<ng-template #small1 let-c="close" let-d="dismiss">
+    <div class="modal-header no-border-header no-title">
+        <div></div>
+        <button type="button" class="close" (click)="d('Cross click')">&times;</button>
+    </div>
+    <div class="modal-body text-center">
+        <p>If you want to do this, you need to allow it in <strong>Settings</strong>. </p>
+        <a href="javascript:void(0)" class="btn btn-link btn-danger">Learn more</a>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-link"  (click)="c('Close click')">Okay</button>
+    </div>
+</ng-template>
+
+
+
+<button type="button" class="btn btn-primary btn-round" (click)="open(Login)">
+    Login modal
+</button>
+<ng-template #Login let-c="close" let-d="dismiss">
+    <div class="modal-header modal-register no-border-header text-center">
+        <button type="button" class="close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h6 class="text-muted">Welcome</h6>
+        <h3 class="modal-title text-center">Paper Kit</h3>
+        <p>Log in to your account</p>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" value="" placeholder="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" value="" placeholder="Password" class="form-control" />
+        </div>
+        <button class="btn btn-block btn-round">Log in</button>
+    </div>
+    <div class="modal-register modal-footer no-border-footer">
+        <span class="text-muted text-center">Looking <a>create an account</a> ?</span>
+    </div>
+</ng-template>
+
+
+
+<button type="button" class="btn btn-primary btn-round" (click)="open(Register, '')">
+    Register modal
+</button>
+<ng-template #Register let-c="close" let-d="dismiss">
+    <div class="modal-header modal-register no-border-header text-center">
+        <button type="button" class="close" (click)="d('Cross click')">&times;</button>
+        <h6 class="text-muted">Welcome</h6>
+        <h3 class="modal-title">Paper Kit</h3>
+        <p>Create your account free and secure</p>
+    </div>
+    <div class="modal-body">
+        <button class="btn btn-block btn-round"> Sign Up with Email</button>
+        <button class="btn btn-block btn-round">Connect with Facebook</button>
+        <button class="btn btn-block btn-round">Connect with Twitter</button>
+        <button type="button" class="btn btn-info btn-round btn-block btn-simple"> Sign In with Email </button>
+    </div>
+    <div class="modal-footer no-border-footer"><br><br><br></div>
+</ng-template>

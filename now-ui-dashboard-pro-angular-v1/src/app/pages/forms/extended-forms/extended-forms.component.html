@@ -1,0 +1,289 @@
+<div class="panel-header panel-header-sm"></div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card ">
+        <div class="card-header ">
+          <h4 class="card-title">Date Picker Primary</h4>
+        </div>
+        <div class="card-body ">
+          <div class="datepicker-container">
+            <div class="form-group">
+              <input
+                class="form-control datetimepicker"
+                placeholder="yyyy-mm-dd"
+                name="dp"
+                [(ngModel)]="model"
+                ngbDatepicker
+                #d="ngbDatepicker"
+                (click)="d.toggle()"
+                data-color="orange"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card ">
+        <div class="card-header ">
+          <h4 class="card-title">Date Picker Default</h4>
+        </div>
+        <div class="card-body ">
+          <div class="datepicker-container">
+            <div class="form-group">
+              <input
+                class="form-control datetimepicker"
+                placeholder="yyyy-mm-dd"
+                name="dp1"
+                [(ngModel)]="model1"
+                ngbDatepicker
+                #d1="ngbDatepicker"
+                (click)="d1.toggle()"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card ">
+        <div class="card-header "><h4 class="card-title">With Footer</h4></div>
+        <div class="card-body ">
+          <div class="datepicker-container">
+            <div class="form-group">
+              <input
+                class="form-control datetimepicker"
+                placeholder="yyyy-mm-dd"
+                name="dp2"
+                [(ngModel)]="model2"
+                ngbDatepicker
+                [footerTemplate]="footerTemplate"
+                #d2="ngbDatepicker"
+                (click)="d2.toggle()"
+                data-color="white"
+              />
+            </div>
+          </div>
+          <ng-template #footerTemplate>
+            <hr class="my-0" />
+            <button
+              class="btn btn-primary btn-sm m-2 float-left"
+              (click)="model2 = today; d2.close()"
+            >
+              Today
+            </button>
+            <button
+              class="btn btn-secondary btn-sm m-2 float-right"
+              (click)="d2.close()"
+            >
+              Close
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="card-title">Toggle Buttons</h4>
+              <div class="row">
+                <div class="col-md-4">
+                  <p class="category">Default</p>
+                  <bSwitch [switch-on-color]="'primary'" [(ngModel)]="state">
+                  </bSwitch>
+                  <bSwitch [switch-on-color]="'primary'"> </bSwitch>
+                </div>
+                <div class="col-md-4">
+                  <p class="category">Plain</p>
+                  <bSwitch
+                    [switch-on-color]="'primary'"
+                    [(ngModel)]="state1"
+                    [switch-off-text]="' '"
+                    [switch-on-text]="' '"
+                  >
+                  </bSwitch>
+                  <bSwitch
+                    [switch-on-color]="'primary'"
+                    [switch-off-text]="' '"
+                    [switch-on-text]="' '"
+                  >
+                  </bSwitch>
+                </div>
+                <div class="col-md-4">
+                  <p class="category">With Icons</p>
+                  <bSwitch
+                    [switch-on-color]="'primary'"
+                    [(ngModel)]="state2"
+                    switch-on-text="<i class='now-ui-icons ui-1_check'></i>"
+                    switch-off-text="<i class='now-ui-icons ui-1_simple-remove'></i>"
+                  >
+                  </bSwitch>
+                  <bSwitch
+                    [switch-on-color]="'primary'"
+                    switch-on-text="<i class='now-ui-icons ui-1_check'></i>"
+                    switch-off-text="<i class='now-ui-icons ui-1_simple-remove'></i>"
+                  >
+                  </bSwitch>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class="card-title">Customisable Select</h4>
+              <div class="row">
+                <div class="col-lg-5 col-md-8 col-sm-5 mb-3">
+                  <angular2-multiselect
+                    [data]="dropdownList1"
+                    [(ngModel)]="selectedItems1"
+                    [settings]="dropdownSettings1"
+                    (onSelect)="onItemSelect($event)"
+                    (onDeSelect)="OnItemDeSelect($event)"
+                    (onSelectAll)="onSelectAll($event)"
+                    (onDeSelectAll)="onDeSelectAll($event)"
+                  >
+                  </angular2-multiselect>
+                </div>
+                <div class="col-lg-5 col-md-8 col-sm-5">
+                  <angular2-multiselect
+                    [data]="dropdownList"
+                    [(ngModel)]="selectedItems"
+                    [settings]="dropdownSettings"
+                    (onSelect)="onItemSelect($event)"
+                    (onDeSelect)="OnItemDeSelect($event)"
+                    (onSelectAll)="onSelectAll($event)"
+                    (onDeSelectAll)="onDeSelectAll($event)"
+                  >
+                  </angular2-multiselect>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="card-title">Tags</h4>
+              <tag-input
+                [(ngModel)]="tagItems"
+                theme="regular-theme"
+              ></tag-input>
+            </div>
+            <div class="col-md-6">
+              <h4 class="card-title">Dropdown & Dropup</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-3">
+                  <div class="" ngbDropdown>
+                    <button
+                      class=" btn btn-primary btn-round btn-block"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      ngbDropdownToggle
+                    >
+                      Dropdown
+                    </button>
+                    <div
+                      class=""
+                      aria-labelledby="dropdownMenuButton"
+                      ngbDropdownMenu
+                    >
+                      <h6 class="dropdown-header">Dropdown header</h6>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-3">
+                  <div class="" placement="top-left" ngbDropdown>
+                    <button
+                      type="button"
+                      class="dropdown-toggle btn btn-primary btn-round btn-block"
+                      data-toggle="dropdown"
+                      ngbDropdownToggle
+                    >
+                      Dropup
+                    </button>
+                    <div class="" ngbDropdownMenu>
+                      <h6 class="dropdown-header">Dropdown header</h6>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="card-title">Progress Bars</h4>
+              <div class="progress-container">
+                <span class="progress-badge">Default</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 25%;"
+                  >
+                    <span class="progress-value">25%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-container progress-primary">
+                <span class="progress-badge">Primary</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-warning"
+                    role="progressbar"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 60%;"
+                  >
+                    <span class="progress-value">60%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class="card-title">Sliders</h4>
+              <div id="sliderRegular" class="slider"></div>
+              <br />
+              <div id="sliderDouble" class="slider slider-primary"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="card-title">Regular Image</h4>
+                  <app-image-upload></app-image-upload>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="card-title">Avatar</h4>
+                  <app-image-upload [isRound]="true"></app-image-upload>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h4 class="card-title">Single File</h4>
+              <app-file-input></app-file-input>
+
+              <h4 class="card-title">Multiple File</h4>
+              <app-file-input [multiple]="true"></app-file-input>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+    </div>
+  </div>
+</div>

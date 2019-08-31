@@ -1,0 +1,289 @@
+<div class="section section-navigation">
+    <div class="container tim-container">
+        <div class="title">
+            <h3>Navigation Areas</h3>
+        </div>
+    </div>
+    <div id="navbar-full">
+        <div class="navigation-example">
+    <!--        default navbar with search form -->
+            <nav class="navbar navbar-expand-md bg-primary">
+                <div class="container">
+                    <a class="navbar-brand" href="javascript:void(0)">Brand</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline ml-auto">
+                            <input class="form-control mr-sm-2 no-border" type="text" placeholder="Search">
+                            <button type="submit" class="btn btn-primary btn-just-icon btn-round"><i class="nc-icon nc-zoom-split" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+    <!--        default navbar with profile photo -->
+            <nav class="navbar navbar-expand-md bg-info">
+                <div class="container">
+                    <a class="navbar-brand" href="javascript:void(0)">Navbar with icon</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    Discover
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    Wishlist
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="btn btn-just-icon btn-warning  ">
+                                    <i class="nc-icon nc-sound-wave"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-just-icon">
+                                    <i class="nc-icon nc-email-85"></i>
+                                </a>
+                                <span class="label label-danger notification-bubble">2</span>
+                            </li>
+                            <li class="nav-item">
+                                <div ngbDropdown class="no-caret image-dropdown">
+                                    <div class="nav-link" ngbDropdownToggle>
+                                        <div class="profile-photo-small">
+                                            <img src="assets/img/faces/joe-gardner-2.jpg" alt="Circle Image"  class="img-circle img-responsive img-no-padding">
+                                        </div>
+                                    </div>
+                                    <div ngbDropdownMenu class="dropdown-menu-right dropdown-info">
+                                        <a class="dropdown-item">Me</a>
+                                        <a class="dropdown-item">Settings</a>
+                                        <li class="divider"></li>
+                                        <a class="dropdown-item">Sign out</a>
+                                    </div>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--         default navbar with notifications     -->
+            <nav class="navbar navbar-expand-md bg-danger">
+                <div class="container">
+                    <a class="navbar-brand" href="javascript:void(0)">Navbar with notification</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    Discover
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    Wishlist
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <div ngbDropdown class="no-caret image-dropdown">
+                                    <div class="btn btn-just-icon btn-warning " ngbDropdownToggle>
+                                        <i class="nc-icon nc-sound-wave"></i>
+                                    </div>
+                                    <div ngbDropdownMenu class="dropdown-menu-right dropdown-notification">
+                                        <li class="no-notification">
+                                               You're all clear!
+                                        </li>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div ngbDropdown class="no-caret image-dropdown">
+                                    <div class="btn btn-just-icon btn-danger" ngbDropdownToggle>
+                                        <i class="nc-icon nc-email-85"></i>
+                                    </div>
+                                    <div ngbDropdownMenu class="dropdown-menu-right dropdown-wide dropdown-notification">
+                                        <li class="dropdown-header">
+                                            You have 7 unread notifications
+                                        </li>
+                                        <li>
+                                          <ul class="dropdown-notification-list scroll-area">
+                                            <a href="javascript:void(0)" class="notification-item">
+                                              <div class="notification-text">
+                                                <span class="badge badge-pill badge-success"><i class="nc-icon nc-chat-33"></i></span>
+                                                <span class="message">
+                                                  <b>Patrick</b> mentioned you in a comment.</span>
+                                                <br />
+                                                <span class="time">20min ago</span>
+                                                <button class="btn btn-just-icon read-notification btn-round">
+                                                  <i class="nc-icon nc-check-2"></i>
+                                                </button>
+                                              </div>
+                                            </a>
+                                            <a href="javascript:void(0)" class="notification-item">
+                                              <div class="notification-text">
+                                                <span class="badge badge-pill badge-info"><i class="nc-icon nc-alert-circle-i"></i></span>
+                                                <span class="message">Our privacy policy changed!</span>
+                                                <br />
+                                                <span class="time">1day ago</span>
+                                              </div>
+                                            </a>
+                                            <a href="javascript:void(0)" class="notification-item">
+                                              <div class="notification-text">
+                                                <span class="badge badge-pill badge-warning"><i class="nc-icon nc-ambulance"></i></span>
+                                                <span class="message">Please confirm your email address.</span>
+                                                <br />
+                                                <span class="time">2days ago</span>
+                                              </div>
+                                            </a>
+                                            <a href="javascript:void(0)" class="notification-item">
+                                              <div class="notification-text">
+                                                <span class="badge badge-pill badge-primary"><i class="nc-icon nc-paper"></i></span>
+                                                <span class="message">Have you thought about marketing?</span>
+                                                <br />
+                                                <span class="time">3days ago</span>
+                                              </div>
+                                            </a>
+                                          </ul>
+                                        </li>
+                                        <!--      end scroll area -->
+                                        <li class="dropdown-footer">
+                                          <ul class="dropdown-footer-menu">
+                                            <li>
+                                              <a href="javascript:void(0)">Mark all as read</a>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div ngbDropdown class="image-dropdown no-caret">
+                                    <div class="nav-link navbar-brand" ngbDropdownToggle>
+                                        <div class="profile-photo-small">
+                                            <img src="assets/img/faces/erik-lucatero-2.jpg" alt="Circle Image" class="img-circle img-responsive img-no-padding">
+                                        </div>
+                                    </div>
+                                    <div ngbDropdownMenu class="dropdown-menu-right dropdown-wide dropdown-notification dropdown-danger">
+                                        <div class="dropdown-header">Dropdown header</div>
+                                        <a class="dropdown-item">Action</a>
+                                        <a class="dropdown-item">Another action</a>
+                                        <a class="dropdown-item">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item">Separated link</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item">Another separated link</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="section section-navbars">
+    <div class="container" id="menu-dropdown">
+        <div class="title">
+            <h3>Menu</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md bg-warning">
+                    <div class="container">
+                        <a class="navbar-brand" href="javascript:void(0)">Yellow Menu</a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div ngbDropdown class="dropdown">
+                                        <div class="nav-link dropdown-toggle" ngbDropdownToggle>
+                                            Dropdown
+                                        </div>
+                                        <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-warning">
+                                            <div class="dropdown-header">Dropdown header</div>
+                                            <a class="dropdown-item">Action</a>
+                                            <a class="dropdown-item">Another action</a>
+                                            <a class="dropdown-item">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item">Separated link</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item">Another separated link</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md bg-success">
+                    <div class="container">
+                        <a class="navbar-brand" href="javascript:void(0)">Green Menu</a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu-icon" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <form class="form-inline">
+                                    <input class="form-control mr-sm-2 no-border" type="text" placeholder="Search">
+                                    <button type="submit" class="btn btn-primary btn-just-icon btn-round"><i class="nc-icon nc-zoom-split"></i></button>
+                                </form>
+                                <li class="nav-item active">
+                                    <a class="nav-link">Link <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Another Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

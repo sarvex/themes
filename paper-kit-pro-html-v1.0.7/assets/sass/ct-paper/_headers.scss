@@ -1,0 +1,85 @@
+.header-wrapper{
+    position: relative;
+    height: 650px;
+    .navbar{
+        border-radius: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+    }
+    .header{
+        background-color: $header-background;
+        background-position: center center;
+        background-size: cover;
+        height: 550px;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+
+        .filter::after{
+            background-color: rgba(0, 0, 0, 0.5);
+            content: "";
+            display: block;
+            height: 550px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .filter-primary::after{
+            background-color: rgba($filter-primary, 0.5);
+        }
+        .filter-info::after{
+            background-color: rgba($filter-info, 0.5);
+        }
+        .filter-success::after{
+            background-color: rgba($filter-success, 0.5);
+        }
+        .filter-warning::after{
+            background-color: rgba($filter-warning, 0.5);
+        }
+        .filter-danger::after{
+            background-color: rgba($filter-danger, 0.5);
+        }
+        .container{
+            color: $white-color;
+            position: relative;
+            top: 200px;
+            z-index: 3;
+
+        }
+        .upper-container{
+            top: 150px;
+        }
+    }
+    .header-video{
+        max-height: 550px;
+        overflow: hidden;
+
+        &.state-play{
+            .filter::after{
+                opacity: 0;
+            }
+            .video-text{
+                opacity: 0;
+            }
+
+            .btn{
+                opacity: 0;
+            }
+
+            &:hover{
+                .btn{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    video{
+        position: absolute;
+        width: 100%;
+    }
+}

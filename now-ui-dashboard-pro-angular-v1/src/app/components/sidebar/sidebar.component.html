@@ -1,0 +1,108 @@
+<div class="sidebar" data-color="red">
+  <div class="logo">
+    <a class="simple-text logo-mini">
+      <div class="logo-img">
+        <img src="./assets/img/angular2-logo-white.png" />
+      </div>
+    </a>
+    <a href="https://www.creative-tim.com" class="simple-text logo-normal">
+      Creative Tim
+    </a>
+    <div class="navbar-minimize">
+      <button
+        id="minimizeSidebar"
+        class="btn btn-simple btn-icon btn-neutral btn-round"
+        (click)="minimizeSidebar()"
+      >
+        <i
+          class="now-ui-icons text_align-center visible-on-sidebar-regular"
+        ></i>
+        <i
+          class="now-ui-icons design_bullet-list-67 visible-on-sidebar-mini"
+        ></i>
+      </button>
+    </div>
+  </div>
+  <div class="sidebar-wrapper">
+    <div class="user">
+      <div class="photo"><img src="../assets/img/james.jpg" /></div>
+      <div class="info">
+        <a
+          data-toggle="collapse"
+          href="#collapseExample"
+          (click)="isCollapsed = !isCollapsed; myFunc($event)"
+          [attr.aria-expanded]="!isCollapsed"
+          aria-controls="collapseExample"
+        >
+          <span> James Amos <b class="caret"></b> </span>
+        </a>
+        <div class="collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
+          <ul class="nav">
+            <li>
+              <a href="javascript:void(0)" >
+                <span class="sidebar-mini-icon">MP</span>
+                <span class="sidebar-normal">My Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span class="sidebar-mini-icon">EP</span>
+                <span class="sidebar-normal">Edit Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span class="sidebar-mini-icon">S</span>
+                <span class="sidebar-normal">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="nav">
+      <li routerLinkActive="active" *ngFor="let menuitem of menuItems">
+        <!--If is a single link-->
+        <a [routerLink]="[menuitem.path]" *ngIf="menuitem.type === 'link'">
+          <i class="now-ui-icons {{ menuitem.icontype }}"></i>
+          <p>{{ menuitem.title }}</p>
+        </a>
+        <!--If it have a submenu-->
+        <a
+          data-toggle="collapse"
+          href="#{{ menuitem.collapse }}"
+          *ngIf="menuitem.type === 'sub'"
+          (click)="
+            myFunc($event, menuitem);
+            menuitem.isCollapsing === undefined &&
+              (menuitem.isCollapsed = !menuitem.isCollapsed)
+          "
+          [attr.aria-expanded]="!menuitem.isCollapsed"
+        >
+          <i class="now-ui-icons {{ menuitem.icontype }}"></i>
+          <p>{{ menuitem.title }}<b class="caret"></b></p>
+        </a>
+
+        <!--Display the submenu items-->
+        <div
+          id="{{ menuitem.collapse }}"
+          class="collapse"
+          *ngIf="menuitem.type === 'sub'"
+          [ngbCollapse]="menuitem.isCollapsed"
+        >
+          <ul class="nav">
+            <li
+              routerLinkActive="active"
+              *ngFor="let childitem of menuitem.children"
+            >
+              <a [routerLink]="[menuitem.path, childitem.path]">
+                <span class="sidebar-mini-icon">{{ childitem.ab }}</span>
+                <span class="sidebar-normal">{{ childitem.title }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

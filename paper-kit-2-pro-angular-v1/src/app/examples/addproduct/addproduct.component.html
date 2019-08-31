@@ -1,0 +1,117 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="section">
+            <div class="container">
+                <h3>Add Product</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5">
+                            <h6>Product Image</h6>
+                            <app-image-upload></app-image-upload>
+                            <h6>Tags</h6>
+                            <tag-input [(ngModel)]='tagItems' theme='regular-theme' name="tagItems"></tag-input>
+
+                            <h6>Categories</h6>
+                            <tag-input [(ngModel)]='categories' name="categories" theme='regular-theme'></tag-input>
+
+                            <h6>Format <span class="icon-danger">*</span></h6>
+							<div class="form-check-radio">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                                    Digital
+                                    <span class="form-check-sign"></span>
+                                </label>
+                            </div>
+                            <div class="form-check-radio">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                                    Print
+                                    <span class="form-check-sign"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-7 col-sm-7">
+                            <div class="form-group">
+                                <h6>Name <span class="icon-danger">*</span></h6>
+                                <input type="text" class="form-control border-input" placeholder="enter the product name here...">
+                            </div>
+                            <div class="form-group">
+                                <h6>Tagline <span class="icon-danger">*</span></h6>
+                                <input type="text" class="form-control border-input" placeholder="enter the product tagline here...">
+                            </div>
+                            <div class="row price-row">
+                              <div class="col-md-6">
+                                <h6>Price
+                                  <span class="icon-danger">*</span>
+                                </h6>
+                                <div class="input-group border-input">
+                                  <input type="text" value="" placeholder="enter price" class="form-control border-input">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-euro"></i></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <h6>Discount</h6>
+                                <div class="input-group border-input">
+                                  <input type="text" value="" placeholder="enter discount" class="form-control border-input">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <h6>Description</h6>
+				                        <textarea class="form-control textarea-limited" placeholder="This is a textarea limited to 150 characters." rows="13" maxlength="150" ></textarea>
+                                <h5><small><span id="textarea-limited-message" class="pull-right">150 characters left</span></small></h5>
+                            </div>
+					                     <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                	Display on landing page
+                                    <span class="form-check-sign"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row buttons-row">
+                        <div class="col-md-4 col-sm-4">
+                            <button class="btn btn-outline-danger btn-block btn-round">Cancel</button>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <button class="btn btn-outline-primary btn-block btn-round">Save</button>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <button class="btn btn-primary btn-block btn-round">Save & Publish </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer footer-black">
+	<div class="container">
+		<div class="row">
+			<nav class="footer-nav">
+				<ul>
+					<li><a href="https://www.creative-tim.com">Creative Tim</a></li>
+					<li><a href="http://blog.creative-tim.com">Blog</a></li>
+					<li><a href="https://www.creative-tim.com/license">Licenses</a></li>
+				</ul>
+			</nav>
+			<div class="credits ml-auto">
+				<span class="copyright">
+					© {{data | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>

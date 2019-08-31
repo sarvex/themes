@@ -1,0 +1,105 @@
+@mixin navbar-color($color){
+    background-color: $color;
+}
+
+@mixin center-item(){
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+}
+
+@mixin navbar-toggle-animation() {
+  .bar1,
+  .bar2,
+  .bar3 {
+    outline: 1px solid transparent;
+  }
+  .bar1 {
+    top: 0px;
+    @include bar-animation($topbar-back);
+  }
+  .bar2 {
+    opacity: 1;
+  }
+  .bar3 {
+    bottom: 0px;
+    @include bar-animation($bottombar-back);
+  }
+  .toggled .bar1 {
+    top: 6px;
+    @include bar-animation($topbar-x);
+  }
+  .toggled .bar2 {
+    opacity: 0;
+  }
+  .toggled .bar3 {
+    bottom: 6px;
+    @include bar-animation($bottombar-x);
+  }
+
+  @include topbar-x-rotation();
+  @include topbar-back-rotation();
+  @include bottombar-x-rotation();
+  @include bottombar-back-rotation();
+
+  @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @-moz-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+}
+
+@mixin nav-mobile-menu() {
+  .nav-mobile-menu{
+      .notification{
+          float: left;
+          line-height: 30px;
+          margin-right: 8px;
+          font-weight: 600;
+      }
+
+      .open .dropdown-menu{
+          position: static;
+          float: none;
+          width: auto;
+          margin-top: 0;
+          background-color: transparent;
+          border: 0;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          -webkit-transform: none;
+          transform: none;
+
+          >li{
+              a{
+                  padding-left: 70px;
+                  margin: 0;
+
+                  &:hover,
+                  &:active,
+                  &:focus{
+                      background-color: transparent;
+                      border-radius: 0;
+                  }
+              }
+          }
+      }
+
+      .dropdown .dropdown-menu{
+          transition: none;
+      }
+
+      a{
+          transition: none;
+      }
+  }
+}

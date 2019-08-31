@@ -1,0 +1,182 @@
+
+.section-team-1{
+	padding-top: 0;
+
+	.container{
+    	  position: absolute;
+          width: 100%;
+          top: 0;
+	}
+
+	.text-area{
+    	background-color: transparent;
+    	max-width: 760px;
+        margin: 0 auto;
+	}
+	p{
+		color: #555;
+	}
+	.static-image img{
+    	width: 100%;
+	}
+}
+
+.section-team-2{
+	padding-top: 0;
+
+	.team-text{
+		position: relative;
+		padding: 0 0 75px;
+	}
+
+	.team{
+		display: block;
+		position: relative;
+
+		.member{
+			border-radius: 50%;
+			display: block;
+			text-align: center;
+
+			p{
+    			font-size: 1em;
+			}
+			.social-buttons{
+    			  display: inline-block;
+    			  padding: 15px 35px;
+			}
+			img{
+				background: none repeat scroll 0 0 transparent;
+				height: auto;
+				width: 120px;
+				margin: 0 auto;
+			}
+		}
+		.description{
+			padding: 10px 0;
+			text-align: center;
+		}
+	}
+
+}
+
+.section-team-3{
+
+	.team{
+		margin-bottom: 50px;
+
+		.member{
+			text-align: center;
+
+			.big-text{
+				margin-bottom: 20px;
+			}
+
+			img{
+				margin: 0 auto;
+			}
+
+			.first-name, .last-name{
+				min-width: 65%;
+				padding: 0 15px;
+				border-top: 1px solid #e3e3e3;
+				border-bottom: 1px solid #e3e3e3;
+				font-size: 18px;
+				padding-top: 9px;
+				vertical-align: middle;
+				margin-top: 35px;
+			}
+
+			.first-name{
+				float: right;
+			}
+
+			.last-name{
+				float: left;
+			}
+
+			.motto{
+				position: relative;
+				text-transform: none;
+				color: $gold-color;
+				max-width: 55%;
+				margin: 0 auto;
+
+				h3{
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}
+
+
+.section-team-4{
+	padding-top: 5em;
+
+	.team{
+		text-align: center;
+		padding: 10px 0;
+
+		.member{
+			padding: 0 10px;
+
+
+			img{
+				width: 120px;
+				height: 120px;
+				margin: 0 auto;
+			}
+
+			.description{
+				padding: 10px 0;
+
+				.details{
+					font-size: 14px;
+
+					i{
+					color: $dark-gray;
+				}
+				}
+			}
+		}
+	}
+}
+
+.img-circle{
+	&.img-profile{
+		width: 120px;
+		height: 120px;
+	}
+}
+
+.description{
+	margin-bottom: 20px;
+}
+
+.big-text{
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.small-text{
+	color: $dark-gray;
+	text-align: center;
+}
+
+.social-buttons{
+	margin-top: -20px;
+	border-top: 1px solid $medium-gray;
+	text-align: center;
+}
+
+.scroller{
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}

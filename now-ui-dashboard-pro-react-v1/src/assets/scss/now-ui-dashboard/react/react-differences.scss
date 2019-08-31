@@ -1,0 +1,23 @@
+// mixins
+@import "custom/vendor-prefixes";
+
+// custom scss
+@import "custom/alerts";
+@import "custom/buttons";
+@import "custom/example-pages";
+@import "custom/fileupload";
+@import "custom/modals";
+@import "custom/responsive";
+@import "custom/misc";
+@import "custom/sidebar-and-main-panel";
+
+// plugins scss
+@import "plugins/plugin-react-big-calendar";
+@import "plugins/plugin-react-bootstrap-sweetalert";
+@import "plugins/plugin-react-bootstrap-switch";
+@import "plugins/plugin-react-bootstrap-wizard";
+@import "plugins/plugin-react-datetime";
+@import "plugins/plugin-react-select";
+@import "plugins/plugin-react-simple-maps";
+@import "plugins/plugin-react-table";
+@import "plugins/plugin-react-tagsinput";

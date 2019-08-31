@@ -1,0 +1,39 @@
+.index-page{
+    .section-components h6.description{
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .page-header{
+        height: 90vh;
+        overflow: hidden;
+    }
+    .brand{
+        color: $white-color;
+        text-align: center;
+        position: relative;
+        z-index: 999;
+
+        h1{
+            font-size: 6rem;
+            font-weight: 600;
+            display: inline-block;
+            position: relative;
+            line-height: 1.15em;
+            text-shadow: 0px 15px 102.86px rgba(0, 0, 0, 0.7), 0px 15px 40.02px rgba(0, 0, 0, 0.21);
+        }
+        h3{
+          font-size: 1.313rem;
+          max-width: 500px;
+          margin: 10px auto 0;
+          text-shadow: 0px 15px 102.86px rgba(0, 0, 0, 0.9), 0px 15px 40.02px rgba(0, 0, 0, 0.51);
+        }
+    }
+
+    h4.description{
+        font-size: 1.5em;
+    }
+}
+.section{
+  padding: 70px 0;
+}

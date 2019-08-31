@@ -1,0 +1,62 @@
+.icon-primary{
+    color: $primary-color;
+}
+.icon-info{
+    color: $info-color;
+}
+.icon-success{
+    color: $success-color;
+}
+.icon-warning{
+    color: $warning-color;
+}
+.icon-danger{
+    color: $danger-color;
+}
+.icon-neutral{
+    color: $white-color;
+}
+.info{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+    .icon{
+        margin-top: 0;
+        font-size: $font-size-h2;
+        &.icon-sm{
+            font-size: $font-size-h4;
+        }
+    }
+    h4,
+    .h4{
+        margin-top: 20px;
+        margin-bottom: 5px;   
+    }
+}
+
+.info-horizontal{
+    text-align: left;
+    margin-top: 0;
+    .icon{
+        float: left;
+        margin-top: 15px;
+        margin-right: 20px;
+        .fa{
+            width: 48px;
+        }
+    }
+    .description{
+        overflow: hidden;
+    }
+    .btn{
+        margin-left: -19px;
+    }
+}
+.info{
+    .icon{
+        .fa{
+            width: 48px;
+        }
+    }
+}

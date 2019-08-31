@@ -1,0 +1,21 @@
+.label-style(){
+     padding: @padding-label-vertical @padding-label-horizontal;
+     border: 1px solid @default-color;
+     border-radius: @border-radius-small;
+     color: @default-color;
+     font-weight: @font-weight-semi;
+     font-size: @font-size-small;
+     text-transform: uppercase;
+     display: inline-block;
+     vertical-align: middle;
+}
+
+.label-color(@color){
+     border-color: @color;
+     color: @color;
+}
+.label-color-fill(@color){
+     border-color: @color;
+     color: @white-color;
+     background-color: @color;
+}

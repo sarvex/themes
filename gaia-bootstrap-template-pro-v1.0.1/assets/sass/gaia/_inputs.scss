@@ -1,0 +1,145 @@
+.form-control::-moz-placeholder{
+   @include placeholder($medium-gray,1);
+   -webkit-font-smoothing: antialiased;
+}
+.form-control:-moz-placeholder{
+   @include placeholder($medium-gray,1);
+   -webkit-font-smoothing: antialiased;
+}
+.form-control::-webkit-input-placeholder{
+   @include placeholder($medium-gray,1);
+   -webkit-font-smoothing: antialiased;
+}
+.form-control:-ms-input-placeholder{
+   @include placeholder($medium-gray,1);
+   -webkit-font-smoothing: antialiased;
+}
+
+.form-control {
+    background-color: $white-bg;
+    border: 1px solid $light-gray;
+    border-radius: $border-radius-base;
+    color: #444444;
+    @include input-size($padding-base-vertical, 10px, $height-base);
+    @include box-shadow(none);
+
+    &:focus{
+           background-color: $white-bg;
+           border: 1px solid $dark-gray;
+           @include box-shadow(none);
+           outline: 0 !important;
+    }
+
+    .has-success &,
+    .has-error &,
+    .has-success &:focus,
+    .has-error &:focus{
+        border-color: $light-gray;
+        @include box-shadow(none);
+    }
+
+    .has-success &{
+        color: $success-color;
+    }
+    .has-success &:focus{
+        border-color: $success-color;
+    }
+    .has-error &{
+        color: $danger-color;
+    }
+    .has-error &:focus{
+        border-color: $danger-color;
+    }
+
+    & + .form-control-feedback{
+        border-radius: $border-radius-large;
+        font-size: $font-size-base;
+        margin-top: -7px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        vertical-align: middle;
+    }
+
+    .open &{
+        border-radius: $border-radius-base $border-radius-base 0 0;
+        border-bottom-color: transparent;
+    }
+}
+
+.input-lg{
+    height: 55px;
+    padding: $padding-large-vertical $padding-large-horizontal;
+}
+
+.has-error{
+    .form-control-feedback{
+        color: $danger-color;
+    }
+}
+.has-success{
+    .form-control-feedback{
+        color: $success-color
+    }
+}
+
+
+.input-group-addon {
+    background-color: $white-color;
+    border: 1px solid $light-gray;
+    border-radius: $border-radius-base;
+
+    .has-success &,
+    .has-error &{
+        background-color: $white-color;
+        border: 1px solid $light-gray;
+    }
+    .has-error .form-control:focus + &{
+        border-color: $danger-color;
+        color: $danger-color;
+    }
+    .has-success .form-control:focus + &{
+        border-color: $success-color;
+        color: $success-color;
+    }
+    .form-control:focus + &,
+    .form-control:focus ~ &{
+        background-color: $white-color;
+        border-color: $dark-gray;
+    }
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-right: 0 none;
+}
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child) {
+    border-left: 0 none;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: $light-gray;
+    color: $default-color;
+    cursor: not-allowed;
+}
+
+.form-control-plain {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 8px 0;
+    font-size: 16px;
+    background-color: transparent;
+    border-color: $light-gray;
+    resize: vertical;
+
+    &:focus {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #777;
+    }
+}
+.form-control {
+    &:focus::-webkit-input-placeholder {
+        color: rgba(#777777,.3);
+    }
+}

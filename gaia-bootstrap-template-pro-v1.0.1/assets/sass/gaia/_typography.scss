@@ -1,0 +1,252 @@
+
+html{
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+
+    @media (min-width: $ct-med) {
+      font-size: 100%;
+    }
+    @media (min-width: $ct-xlarge) {
+      font-size: 110%;
+    }
+    @media (min-width: $ct-xxlarge) {
+      font-size: 115%;
+    }
+    @media (min-width: $ct-xxxlarge) {
+      font-size: 120%;
+    }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-feature-settings: normal; /* Internet Explorer fix */
+    }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.content-blog p{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: $serif-font;
+
+    a{
+        font-size: inherit;
+        font-family: $serif-font;
+    }
+}
+
+.content-blog{
+    padding: 30px 0;
+    p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+h1, .h1{
+    font-size: 3em;
+    line-height: 1.213483146em;
+    font-weight: bold;
+}
+
+h2, .h2 {
+    font-size: 2.4em;
+    line-height: 1.25;
+    margin: 0.4em 0;
+    font-weight: bold;
+}
+
+h3, .h3{
+    font-size: 1.61em;
+    line-height: 1.05em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h4, .h4{
+    font-size: 1.3em;
+    line-height: 1.714285714em;
+}
+
+h5{
+  font-size: 1.2em;
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 400;
+  margin: 0 0 .75em;
+}
+
+p,
+label,
+.btn,
+.form-control,
+.title h5,
+.navbar,
+.brand,
+.btn-simple,
+a,
+.td-name,
+td,
+small,
+.media h5,
+.subtitle{
+    font-family: $sans-serif-font;
+}
+
+a{
+    color: $dark-gray;
+    opacity: .7;
+    font-size: 14px;
+
+    &:hover{
+        color: $dark-gray;
+        opacity: 1;
+    }
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+
+    p{
+        color: $dark-gray;
+    }
+}
+
+.title-modern{
+    font-family: $sans-serif-font;
+    font-weight: 200;
+}
+
+.text-gray{
+    color: $dark-gray;
+}
+.text-primary{
+    color: $primary-color !important;
+}
+.text-info{
+    color: $info-color !important;
+}
+.text-success{
+    color: $success-color !important;
+}
+.text-warning{
+    color: $warning-color !important;
+}
+.text-danger{
+    color: $danger-color !important;
+}
+.text-gold,
+.title-gold {
+    color: $gold-color;
+}
+
+.quotes{
+  position: relative;
+  margin: 0 auto;
+
+  &:before, &:after{
+    position: absolute;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: $dark-gray;
+    line-height: 0;
+  }
+
+  &:before{
+    content: "\201C";
+    left: 0;
+    top: 5px;
+
+  }
+
+  &:after{
+    content: "\201D";
+    right: 0;
+    bottom: -10px;
+  }
+}
+
+.separator{
+    color: $primary-color;
+    margin: 0 auto 20px;
+    max-width: 240px;
+
+    text-align: center;
+    position: relative;
+
+    &:before,
+    &:after{
+      display: block;
+      width: 40%;
+      content: " ";
+      margin-top: 10px;
+      border: 1px solid $primary-color;
+    }
+
+    &:before{
+     float: left;
+
+    }
+
+    &:after{
+      float: right;
+
+    }
+}
+
+.separator-info{
+    color: $info-color;
+
+    &:before,
+    &:after{
+        border-color: $info-color;
+    }
+}
+.separator-success{
+    color: $success-color;
+
+    &:before,
+    &:after{
+        border-color: $success-color;
+    }
+}
+.separator-warning{
+    color: $warning-color;
+
+    &:before,
+    &:after{
+        border-color: $warning-color;
+    }
+}
+.separator-danger{
+    color: $danger-color;
+
+    &:before,
+    &:after{
+        border-color: $danger-color;
+    }
+}
+
+p.description{
+    font-size: 16px;
+    color: $dark-gray;
+}

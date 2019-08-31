@@ -1,0 +1,192 @@
+<div class="section">
+    <div class="container">
+      <h3 class="title">Content Areas</h3>
+
+      <div class="title">
+          <h3>
+              <small>Tables</small>
+          </h3>
+      </div>
+        <div class="row">
+          <div class="col-md-12">
+              <h4>
+                  <small>Simple Table</small>
+              </h4>
+          </div>
+            <div class="col-md-8 ml-auto mr-auto">
+                <h6>Simple With Actions</h6>
+                <div class="card card-plain">
+                    <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                  <th class="text-center">{{ tableData1.headerRow[0] }}</th>
+                                  <th>{{ tableData1.headerRow[1] }}</th>
+                                  <th>{{ tableData1.headerRow[2] }}</th>
+                                  <th class="text-center">{{ tableData1.headerRow[3] }}</th>
+                                  <th class="text-right">{{ tableData1.headerRow[4] }}</th>
+                                  <th class="text-right">{{ tableData1.headerRow[5] }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let row of tableData1.dataRows">
+                                    <td class="text-center">{{row[0]}}</td>
+                                    <td>{{row[1]}}</td>
+                                    <td>{{row[2]}}</td>
+                                    <td class="text-center">{{row[3]}}</td>
+                                    <td class="text-right">&euro; {{row[4]}}</td>
+                                    <td class="td-actions text-right">
+                                      <button type="button" ngbTooltip="View Profile" class="btn btn-info btn-icon btn-sm {{row[5]}}">
+                                          <i class="now-ui-icons users_single-02"></i>
+                                      </button>
+                                      <button type="button" ngbTooltip="Edit Profile" class="btn btn-success btn-icon btn-sm {{row[5]}}">
+                                          <i class="now-ui-icons ui-2_settings-90"></i>
+                                      </button>
+                                      <button type="button" ngbTooltip="Remove" class="btn btn-danger btn-icon btn-sm {{row[5]}}">
+                                          <i class="now-ui-icons ui-1_simple-remove"></i>
+                                      </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+                <h6>Striped With Checkboxes</h6>
+                <div class="card card-plain">
+                    <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">{{ tableData2.headerRow[0] }}</th>
+                                    <th></th>
+                                    <th>{{ tableData2.headerRow[1] }}</th>
+                                    <th>{{ tableData2.headerRow[2] }}</th>
+                                    <th>{{ tableData2.headerRow[3] }}</th>
+                                    <th class="text-right">{{ tableData2.headerRow[4] }}</th>
+                                    <th class="text-right">{{ tableData2.headerRow[5] }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let row of tableData2.dataRows">
+                                    <td class="text-center">{{row.id}}</td>
+                                    <td>
+                                        <div [ngSwitch]="row.check">
+                                            <div *ngSwitchCase="true">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" checked>
+                                                        <span class="form-check-sign"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div *ngSwitchDefault>
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" >
+                                                        <span class="form-check-sign"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>{{row.product_name}}</td>
+                                    <td>{{row.type}}</td>
+                                    <td>{{row.qty}}</td>
+                                    <td class="text-right">&euro; {{row.price}}</td>
+                                    <td class="text-right">&euro; {{row.amount}}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5"></td>
+                                    <td class="td-total">
+                                        Total
+                                    </td>
+                                    <td class="td-price">
+                                        {{getTotal1() | currency:'EUR':'symbol':'1.2-2'}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <h4>
+                  <small>Shopping Cart Table</small>
+              </h4>
+          </div>
+            <div class="col-md-12">
+              <div class="card card-plain">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-shopping">
+                            <thead>
+                                <tr>
+                                    <th class="text-center"></th>
+                                    <th>{{ tableData3.headerRow[2] }}</th>
+                                    <th>{{ tableData3.headerRow[3] }}</th>
+                                    <th>{{ tableData3.headerRow[4] }}</th>
+                                    <th class="text-right">{{ tableData3.headerRow[5] }}</th>
+                                    <th class="text-right">{{ tableData3.headerRow[6] }}</th>
+                                    <th class="text-right">{{ tableData3.headerRow[7] }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let row of tableData3.dataRows">
+                                    <td>
+                                        <div class="img-container">
+                                            <img src="assets/img/{{row[0]}}" alt="...">
+                                        </div>
+                                    </td>
+                                    <td class="td-name">
+                                        <a>{{row[1]}}</a>
+                                        <br />
+                                        <small>{{row[2]}}</small>
+                                    </td>
+                                    <td>{{row[3]}}</td>
+                                    <td>{{row[4]}}</td>
+                                    <td class="td-number"><small>€</small>{{row[5]}}</td>
+                                    <td class="td-number">
+                                        {{row[6]}}
+                                        <div class="btn-group">
+                                            <button class="btn btn-info btn-sm"> <i class="now-ui-icons ui-1_simple-delete"></i> </button>
+                                            <button class="btn btn-info btn-sm"> <i class="now-ui-icons ui-1_simple-add"></i> </button>
+                                        </div>
+                                    </td>
+                                    <td class="td-number">
+                                        <small>€</small>{{row[7]}}
+                                    </td>
+                                    <td class="td-actions">
+                                        <button type="button" placement="top" ngbTooltip="Remove item" class="btn btn-neutral">
+                                            <i class="now-ui-icons ui-1_simple-remove"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                    </td>
+                                    <td class="td-total">
+                                        Total
+                                    </td>
+                                    <td class="td-price">
+                                        {{getTotal2() | currency:'EUR':'symbol':'1.2-2'}}
+                                    </td>
+                                    <td colspan="3" class="text-right">
+                                      <button type="button" class="btn btn-info btn-round " (click)="showElements()">Complete Purchase <i class="now-ui-icons arrows-1_minimal-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

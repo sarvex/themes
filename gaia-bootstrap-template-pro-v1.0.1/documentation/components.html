@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Components | Gaia - Bootstrap Template</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/gaia.css" rel="stylesheet"/>
+    <link href="assets/documentation.css" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Cambo|Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+	<style>
+		pre.prettyprint{
+		    background-color: #eee;
+		    border: 0px;
+		    margin-bottom: 40px;
+		    margin-top: 30px;
+		    padding: 10px 20px;
+		    text-align: left;
+		}
+		.atv, .str{
+		    color: #c5a47e;
+		}
+		.tag, .pln, .kwd{
+		    color: #888888;
+		}
+		.atn{
+		    color: #e78b90;
+		}
+		.pln{
+		    color: #333;
+		}
+		.com{
+		    color: #999;
+		}
+		.space-top{
+		    margin-top: 50px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="../home.html" class="navbar-brand">
+                    Gaia
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    <li>
+                        <a href="../examples/home.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="../examples/blog-post.html">Blog post</a>
+                            </li>
+                            <li>
+                                <a href="../examples/blog-posts.html">Blog Posts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="../examples/about-us.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="../examples/contact-us.html">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="../examples/portfolio.html">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="../examples/signin.html">Signin</a>
+                            </li>
+                            <li>
+                                <a href="../examples/signup.html">Signup</a>
+                            </li>
+                            <li>
+                                <a href="../examples/components.html">All components</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../examples/pricing.html">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="section section-header section-header-small">
+        <div class="parallax filter filter-color-black">
+            <div class="image" style="background-image: url('../assets/img/header-1.jpeg')"></div>
+
+            <div class="container">
+                <div class="content">
+                    <p><span>by </span>Creative Tim</p>
+                    <h2>Components</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="fixed-section">
+                        <ul>
+                            <li><a href="#buttons-row">Buttons</a></li>
+                            <li><a href="#text-row">Text</a></li>
+                            <li><a href="#links-row">Links</a></li>
+                            <li><a href="#labels-row">Labels</a></li>
+                            <li><a href="#dropdown-row">Dropdown</a></li>
+                            <li><a href="#filters-row">Header Filters</a></li>
+                            <li><a href="#typography-row">Typography</a></li>
+                            <li><a href="#icons">Font Icons</a></li>
+                            <li><a href="#sections-row">Sections</a></li>
+                            <li><a href="#cards">Cards</a></li>
+                            <li><a href="#navbars">Navbars</a></li>
+                            <li><a href="#info-row">Info Area</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-offset-1">
+                    <div class="tim-row" id="buttons-row">
+                        <div class="tim-title">
+                            <h2>Buttons </h2>
+                            <h3><small> Pick your colour </small></h3>
+                        </div>
+                        <p>We have worked over the original Bootstrap classes and added 2 more variations for black and white.</p>
+                        <button href="#fakelink" class="btn">Default</button>
+                        <button href="#fakelink" class="btn btn-primary">Primary</button>
+                        <button href="#fakelink" class="btn btn-info">Info</button>
+                        <button href="#fakelink" class="btn btn-success">Success</button>
+                        <button href="#fakelink" class="btn btn-warning">Warning</button>
+                        <button href="#fakelink" class="btn btn-danger">Danger</button>
+                        <button href="#fakelink" class="btn btn-black">Black</button>
+
+                        <br /><br />
+
+                        <button href="#fakelink" class="btn btn-fill">Default</button>
+                        <button href="#fakelink" class="btn btn-fill btn-primary">Primary</button>
+                        <button href="#fakelink" class="btn btn-fill btn-info">Info</button>
+                        <button href="#fakelink" class="btn btn-fill btn-success">Success</button>
+                        <button href="#fakelink" class="btn btn-fill btn-warning">Warning</button>
+                        <button href="#fakelink" class="btn btn-fill btn-danger">Danger</button>
+                        <button href="#fakelink" class="btn btn-fill btn-black">Black</button>
+                        <button href="#fakelink" class="btn btn-fill btn-white">White</button>
+
+                        <pre class="prettyprint">
+
+&lt;button class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button class=&quot;btn btn-black&quot;&gt;Black&lt;/button&gt;
+&lt;button class=&quot;btn btn-white&quot;&gt;White&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-fill btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;btn btn-fill btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn btn-fill btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button class=&quot;btn btn-fill btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button class=&quot;btn btn-fill btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button class=&quot;btn btn-fill btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button class=&quot;btn btn-fill btn-black&quot;&gt;Black&lt;/button&gt;
+&lt;button class=&quot;btn btn-fill btn-white&quot;&gt;White&lt;/button&gt;
+    			        </pre>
+
+                        <br /><br />
+                        <div class="tim-title">
+                            <h3><small>Pick your style</small></h3>
+                        </div>
+
+                        <button href="#fakelink" class="btn">Default Button</button>
+                        <button href="#fakelink" class="btn btn-fill">Filled Button</button>
+                        <button href="#fakelink" class="btn btn-round">Round Button</button>
+                        <button href="#fakelink" class="btn btn-simple">Simple Button</button>
+                        <pre class="prettyprint">
+
+&lt;button href=&quot;#fakelink&quot; class=&quot;btn &quot;&gt;Default Button&lt;/button&gt;
+&lt;button href=&quot;#fakelink&quot; class=&quot;btn btn-fill&quot;&gt;Filled Button&lt;/button&gt;
+&lt;button href=&quot;#fakelink&quot; class=&quot;btn btn-round&quot;&gt;Round Button&lt;/button&gt;
+&lt;button href=&quot;#fakelink&quot; class=&quot;btn btn-simple&quot;&gt;Simple Button&lt;/button&gt;
+                        </pre>
+
+
+                        <div class="tim-title">
+                            <h3><small>Pick your size</small></h3>
+                        </div>
+
+                        <button href="#fakelink" class="btn btn-fill btn-xs">Download</button>
+                        <button href="#fakelink" class="btn btn-fill btn-sm">Download</button>
+                        <button href="#fakelink" class="btn btn-fill">Download</button>
+                        <button href="#fakelink" class="btn btn-fill btn-lg">Download</button>
+                        <pre class="prettyprint">
+
+&lt;button href=&quot;#fakelink&quot; class=&quot;btn btn-fill btn-xs&quot;&gt;Download&lt;/button&gt;
+&lt;button href=&quot;#fakelink&quot; class=&quot;btn btn-fill btn-sm&quot;&gt;Download&lt;/button&gt;
+&lt;button href=&quot;#fakelink&quot; class=&quot;btn btn-fill&quot;&gt;Download&lt;/button&gt;
+&lt;button href=&quot;#fakelink&quot; class=&quot;btn btn-fill btn-lg&quot;&gt;Download&lt;/button&gt;
+                        </pre>
+                    </div>
+
+                    <div class="tim-row" id="text-row">
+                        <div class="tim-title">
+                            <h2>Text</h2>
+                        </div>
+                        <p>If you want for text inside your pages to match the colour of the buttons, we have alsi created text classes.</p>
+                        <p class="text-gray"><b>Gray:</b> In Greek mythology, Gaia was the personification of the Earth and one of the primordial deities.</p>
+                        <p class="text-primary"><b>Primary:</b> In Greek mythology, Gaia was the personification of the Earth and one of the primordial deities.</p>
+                        <p class="text-info"><b>Info:</b> In Greek mythology, Gaia was the personification of the Earth and one of the primordial deities.</p>
+                        <p class="text-success"><b>Success:</b> In Greek mythology, Gaia was the personification of the Earth and one of the primordial deities.</p>
+                        <p class="text-warning"><b>Warning:</b> In Greek mythology, Gaia was the personification of the Earth and one of the primordial deities.</p>
+                        <p class="text-danger"><b>Danger:</b> In Greek mythology, Gaia was the personification of the Earth and one of the primordial deities.</p>
+                        <pre class="prettyprint">
+
+&lt;p class=&quot;text-gray&quot;&gt;&lt;b&gt;Gray:&lt;/b&gt; In Greek mythology...&lt;/p&gt;
+&lt;p class=&quot;text-primary&quot;&gt;&lt;b&gt;Primary:&lt;/b&gt; In Greek mythology...&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;&lt;b&gt;Info:&lt;/b&gt; In Greek mythology...&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;&lt;b&gt;Success:&lt;/b&gt; In Greek mythology...&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;&lt;b&gt;Warning:&lt;/b&gt; In Greek mythology...&lt;/p&gt;
+&lt;p class=&quot;text-danger&quot;&gt;&lt;b&gt;Danger:&lt;/b&gt; In Greek mythology...&lt;/p&gt;
+                        </pre>
+                    </div>
+
+                    <div class="tim-row" id="links-row">
+                        <div class="tim-title">
+                            <h2>Links</h2>
+                        </div>
+                        <p> All colour classes available for buttons can also be applied for simple links. </p>
+                        <a href="#fakelink" class="btn btn-simple">Default</a>
+                        <a href="#fakelink" class="btn btn-simple btn-primary">Primary</a>
+                        <a href="#fakelink" class="btn btn-simple btn-info">Info</a>
+                        <a href="#fakelink" class="btn btn-simple btn-success">Success</a>
+                        <a href="#fakelink" class="btn btn-simple btn-warning">Warning</a>
+                        <a href="#fakelink" class="btn btn-simple btn-danger">Danger</a>
+                        <a href="#fakelink" class="btn btn-simple btn-black">Black</a>
+                        <a href="#fakelink" class="btn btn-simple btn-white">White</a>
+
+                        <pre class="prettyprint">
+
+&lt;a href=&quot;#fakelink&quot; class=&quot;btn btn-simple&quot;&gt;Default&lt;/a&gt;
+&lt;a href=&quot;#fakelink&quot; class=&quot;btn btn-simple btn-primary&quot;&gt;Primary&lt;/a&gt;
+&lt;a href=&quot;#fakelink&quot; class=&quot;btn btn-simple btn-info&quot;&gt;Info&lt;/a&gt;
+&lt;a href=&quot;#fakelink&quot; class=&quot;btn btn-simple btn-success&quot;&gt;Success&lt;/a&gt;
+&lt;a href=&quot;#fakelink&quot; class=&quot;btn btn-simple btn-warning&quot;&gt;Warning&lt;/a&gt;
+&lt;a href=&quot;#fakelink&quot; class=&quot;btn btn-simple btn-danger&quot;&gt;Danger&lt;/a&gt;
+&lt;a href=&quot;#fakelink&quot; class=&quot;btn btn-simple btn-black&quot;&gt;Black&lt;/a&gt;
+&lt;a href=&quot;#fakelink&quot; class=&quot;btn btn-simple btn-white&quot;&gt;White&lt;/a&gt;
+                        </pre>
+                    </div>
+
+                    <div class="tim-row" id="labels-row">
+                        <div class="tim-title">
+                            <h2>Labels</h2>
+                        </div>
+                        <p>You can choose the colors that comes with the same options as the buttons.</p>
+                        <span class="label label-default">Default</span>
+                        <span class="label label-primary">Primary</span>
+                        <span class="label label-info">Info</span>
+                        <span class="label label-success">Success</span>
+                        <span class="label label-warning">Warning</span>
+                        <span class="label label-danger">Danger</span>
+
+                        <pre class="prettyprint">
+
+&lt;span class=&quot;label label-default&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;Danger&lt;/span&gt;
+
+                        </pre>
+                    </div>
+
+                    <div class="tim-row" id="dropdown-row">
+                        <div class="tim-title">
+                            <h2>Dropdown</h2>
+                        </div>
+                        <p>We have restyled the dropdown and added a more subtle animation. You can see a live example below. You can also add colors to the dropdown-menu adding the classes <code>dropdown-[info/success/warning/danger]</code>.</p>
+                        <div class="row">
+        	                <div class="col-md-3">
+                                <div class="dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
+            	                    	Regular Color
+            	                    	<b class="caret"></b>
+            	                	</a>
+            	                	<ul class="dropdown-menu">
+            	                    	<li><a href="#">Action</a></li>
+            	                    	<li><a href="#">Another action</a></li>
+            	                    	<li><a href="#">Something else here</a></li>
+            	                    	<li><a href="#">Separated link</a></li>
+            	                	</ul>
+                                </div>
+        	                </div>
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
+            	                    	Danger Color
+            	                    	<b class="caret"></b>
+            	                	</a>
+            	                	<ul class="dropdown-menu dropdown-danger">
+            	                    	<li><a href="#">Action</a></li>
+            	                    	<li><a href="#">Another action</a></li>
+            	                    	<li><a href="#">Something else here</a></li>
+            	                    	<li><a href="#">Separated link</a></li>
+            	                	</ul>
+                                </div>
+        	                </div>
+                        </div>
+                        <pre class="prettyprint">
+
+&lt;div class=&quot;dropdown&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+    	Regular
+    	&lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;
+	&lt;/a&gt;
+	&lt;ul class=&quot;dropdown-menu&quot;&gt;
+    	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+    	Danger Color
+    	&lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;
+	&lt;/a&gt;
+	&lt;ul class=&quot;dropdown-menu dropdown-danger&quot;&gt;
+    	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+
+                    <div class="tim-row" id="filters-row">
+                        <div class="tim-title">
+                            <h2>Header Filters</h2>
+                        </div>
+                        <p>When you are creating the headers for the pages, you have multiple filter options. Since the majority of headers also need a title, it is best to add a filter over the image you are using. You have the option to use filters that are full colour or have gradient colours. The basic, black class is 'filter'. If you want to add full colour you can choose from one of the following classes 'filter-color-[black/gold/green/blue/purple]'. If you want to add filters with gradient colours, you can choose from the following classes <code>filter-gradient-[black/gold/green/blue/purple]</code>.</p>
+                        <br /><br />
+                    </div>
+
+                    <div class="tim-row" id="typography-row">
+                        <div class="tim-title">
+                            <h2>Typography</h2>
+                        </div>
+                        <h1><span class="name">H1</span> Gaia was the great mother of all.</h1>
+                        <h2><span class="name">H2</span> Gaia was the great mother of all. </h2>
+                        <h3><span class="name">H3</span> Gaia was the great mother of all: the primal Greek Mother Goddess.</h3>
+                        <h4><span class="name">H4</span> Gaia was the great mother of all: the primal Greek Mother Goddess.</h4>
+                        <h5><span class="name">H5</span> Gaia was the great mother of all: the primal Greek Mother Goddess.</h5>
+                        <h6><span class="name">H6</span> Gaia was the great mother of all: the primal Greek Mother Goddess.</h6>
+                        <p><span class="name">p</span> Gaia was the great mother of all: the primal Greek Mother Goddess.</p>
+                        <br /><br />
+                    </div>
+
+                    <div class="tim-row" id="icons">
+                        <div class="tim-title">
+                            <h2>Font Icons</h2>
+                        </div>
+                        <p>There are 202 Stroke Icons Handcrafted by our friends from <a href="http://themes-pixeden.com/font-demos/7-stroke/index.html" target="_blank">Pixeden</a>. <a href="http://themes-pixeden.com/font-demos/7-stroke/index.html" target="_blank">View all icons here</a>.</p>
+
+                        <i class="pe-7s-car" style="font-size: 40px"></i>
+                            <pre class="prettyprint">
+&lt;i class=&quot;pe-7s-car&quot;&gt;&lt;/i&gt;</pre>
+                    </div>
+
+                    <div class="tim-row" id="cards">
+                        <div class="tim-title">
+                            <h2>Cards</h2>
+                        </div>
+                        <p> The general class for a card is called <code>card</code>. All cards have also a plain version, without the background and shadow, and you can reach it by using the <code>card-plain</code> class. </p>
+
+                        <br />
+                        <div class="tim-title">
+                            <h3>Blog Cards</h3>
+                            <p>
+                                The blog cards are defined by the <code>card-blog</code> class. They have an image as header and a content for extra informations like Date, Title, Category. If you do not want your card to be differentiated from the background, you can use the <code>card-plain</code> class.
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card card-blog">
+                                    <a href="#gaia" class="header">
+                                        <img src="../assets/img/header-6.jpeg" class="image-header">
+                                    </a>
+                                    <div class="content">
+                                        <h6 class="card-date">Feb 17</h6>
+                                        <a href="#gaia" class="card-title">
+                                            <h3>Nature &amp; The Catch of the Day</h3>
+                                        </a>
+                                        <div class="line-divider line-danger"></div>
+                                        <h6 class="card-category">Nature</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <pre class="prettyprint">
+
+&lt;div class=&quot;card card-blog&quot;&gt;
+     &lt;a href=&quot;#gaia&quot; class=&quot;header&quot;&gt;
+         &lt;img src=&quot;../assets/img/header-6.jpeg&quot; class=&quot;image-header&quot;&gt;
+     &lt;/a&gt;
+     &lt;div class=&quot;content&quot;&gt;
+         &lt;h6 class=&quot;card-date&quot;&gt;Feb 17&lt;/h6&gt;
+         &lt;a href=&quot;#gaia&quot; class=&quot;card-title&quot;&gt;
+             &lt;h3&gt;Nature &amp;amp; The Catch of the Day&lt;/h3&gt;
+         &lt;/a&gt;
+         &lt;div class=&quot;line-divider line-danger&quot;&gt;&lt;/div&gt;
+         &lt;h6 class=&quot;card-category&quot;&gt;Nature&lt;/h6&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+
+                        </pre>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card card-blog card-plain">
+                                    <a href="#gaia" class="header">
+                                        <img src="../assets/img/header-6.jpeg" class="image-header">
+                                    </a>
+                                    <div class="content">
+                                        <h6 class="card-date">Feb 17</h6>
+                                        <a href="#gaia" class="card-title">
+                                            <h3>Nature &amp; The Catch of the Day</h3>
+                                        </a>
+                                        <div class="line-divider line-danger"></div>
+                                        <h6 class="card-category">Nature</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <pre class="prettyprint">
+
+&lt;div class=&quot;card card-blog card-plain&quot;&gt;
+     &lt;a href=&quot;#gaia&quot; class=&quot;header&quot;&gt;
+         &lt;img src=&quot;../assets/img/header-6.jpeg&quot; class=&quot;image-header&quot;&gt;
+     &lt;/a&gt;
+     &lt;div class=&quot;content&quot;&gt;
+         &lt;h6 class=&quot;card-date&quot;&gt;Feb 17&lt;/h6&gt;
+         &lt;a href=&quot;#gaia&quot; class=&quot;card-title&quot;&gt;
+             &lt;h3&gt;Nature &amp;amp; The Catch of the Day&lt;/h3&gt;
+         &lt;/a&gt;
+         &lt;div class=&quot;line-divider line-danger&quot;&gt;&lt;/div&gt;
+         &lt;h6 class=&quot;card-category&quot;&gt;Nature&lt;/h6&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+
+                        </pre>
+
+                        <div class="tim-title">
+                            You can also create a more stylish card adding the date inside a black area using the div with class <code>circle-black</code> like in this example:
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card card-blog">
+                                    <a href="blog-posts.html" class="header">
+                                        <img src="../assets/img/header-7.jpeg" class="image-header">
+                                    </a>
+                                    <div class="content">
+                                        <div class="circle-black">
+                                            <div class="circle">
+                                                <div class="date-wrapper">
+                                                    <span class="month">Apr</span>
+                                                    <span class="date">12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="blog-posts.html" class="card-title"><h3>We Are Here to Make Life Better</h3></a>
+                                        <h6 class="card-category text-warning">Life Tips &amp; Tricks</h6>
+                                        <p class="text-description text-gray">Royère doesn't make a Polar bear bed but the Polar bear couch is my favorite piece of furniture we own The Pablo pop up was almost a pop up of influence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <pre class="prettyprint">
+
+&lt;div class=&quot;card card-blog&quot;&gt;
+    &lt;a href=&quot;blog-posts.html&quot; class=&quot;header&quot;&gt;
+        &lt;img src=&quot;../assets/img/header-7.jpeg&quot; class=&quot;image-header&quot;&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;div class=&quot;circle-black&quot;&gt;
+            &lt;div class=&quot;circle&quot;&gt;
+                &lt;div class=&quot;date-wrapper&quot;&gt;
+                    &lt;span class=&quot;month&quot;&gt;Apr&lt;/span&gt;
+                    &lt;span class=&quot;date&quot;&gt;12&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a href=&quot;blog-posts.html&quot; class=&quot;card-title&quot;&gt;&lt;h3&gt;We Are Here to Make Life Better&lt;/h3&gt;&lt;/a&gt;
+        &lt;h6 class=&quot;card-category text-warning&quot;&gt;Life Tips &amp;amp; Tricks&lt;/h6&gt;
+        &lt;p class=&quot;text-description text-gray&quot;&gt;Roy&#232;re doesn&#39;t make a Polar bear bed but the Polar bear couch is my favorite piece of furniture we own The Pablo pop up was almost a pop up of influence.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                        </pre>
+
+                        <div class="tim-title">
+                            <h3>Pricing Cards</h3>
+                            <p>
+                                We created a special set of classes designed to help you create your price options in your website. The price cards are defined using the class <code>card-price</code>. By default the pricing cards are gray, but you make them outstand using the classes: <code>card-black</code> or <code>card-white</code>.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card-price">
+                                <div class="content">
+                                    <h4 class="title-header">
+                                        free trial
+                                        <br>
+                                        <small class="subtitle-header">month</small>
+                                    </h4>
+                                    <div class="price">
+                                        <i class="fa fa-dollar"></i>
+                                        <div class="number text-danger">0</div>
+                                    </div>
+                                    <p class="text-description">
+                                        15 Messages<br>
+                                        5 Contacts<br>
+                                        <span>12/5 Support</span>
+                                    </p>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-danger btn-round btn-fill">
+                                            Get Started
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre class="prettyprint">
+
+&lt;div class=&quot;card card-price&quot;&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;h4 class=&quot;title-header&quot;&gt;
+            free trial
+            &lt;br&gt;
+            &lt;small class=&quot;subtitle-header&quot;&gt;month&lt;/small&gt;
+        &lt;/h4&gt;
+        &lt;div class=&quot;price&quot;&gt;
+            &lt;i class=&quot;fa fa-dollar&quot;&gt;&lt;/i&gt;
+            &lt;div class=&quot;number text-danger&quot;&gt;0&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;text-description&quot;&gt;
+            15 Messages&lt;br&gt;
+            5 Contacts&lt;br&gt;
+            &lt;span&gt;12/5 Support&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;div class=&quot;text-center&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-round btn-fill&quot;&gt;
+                Get Started
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                    </pre>
+
+                    <div class="tim-row" id="navbars">
+                        <div class="tim-title">
+                            <h2>Navbars</h2>
+                        </div>
+                        <p>
+                            Besides the default navbar, we added 5 new colors: blue, azure, green, orange, red. If you want to use one of them, you have to replace the <code>navbar-default</code> with the class for the chosen color <code>navbr-ct-[primary | blue | green | orange | red]</code>.
+                        </p>
+
+                        <nav class="navbar navbar-ct-primary" role="navigation">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-example">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#">Brand</a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-example">
+                              <ul class="nav navbar-nav">
+                                <li><a href="#">Link</a></li>
+                                <li class="active"><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
+
+                        <nav class="navbar navbar-ct-blue" role="navigation">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-example">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#">Brand</a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-example">
+                              <ul class="nav navbar-nav">
+                                <li><a href="#">Link</a></li>
+                                <li class="active"><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
+
+                        <nav class="navbar navbar-ct-green" role="navigation">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-example">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#">Brand</a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-example">
+                              <ul class="nav navbar-nav">
+                                <li><a href="#">Link</a></li>
+                                <li class="active"><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
+
+                        <nav class="navbar navbar-ct-orange" role="navigation">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-example">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#">Brand</a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-example">
+                              <ul class="nav navbar-nav">
+                                <li><a href="#">Link</a></li>
+                                <li class="active"><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
+
+                        <nav class="navbar navbar-ct-red" role="navigation">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-example">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#">Brand</a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-example">
+                              <ul class="nav navbar-nav">
+                                <li><a href="#">Link</a></li>
+                                <li class="active"><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
+
+                        <pre class="prettyprint">
+
+&lt;nav class=&quot;navbar navbar-ct-primary&quot; role=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar-example&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-example&quot;&gt;
+      &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+                        </pre>
+                    </div>
+
+                    <!-- info area row -->
+                    <div class="tim-row" id="info-row">
+                        <h2>Info Area</h2>
+                        <legend></legend>
+                        <p>
+                            Our information areas are created using icons,a title and a description. The default color for the icon is grey and you can use other colors by using the corresponding class <code>text-{ primary | info | success | warning | danger }</code>. <br />
+                        </p>
+                        <div class="row">
+                            <!-- example with regular info -->
+                            <div class="col-md-4">
+                                <div class="info-icon">
+                                    <div class="icon text-danger">
+                                        <i class="pe-7s-car"></i>
+                                    </div>
+                                    <h3>Delivery</h3>
+                                    <p class="description">We sketch your wardrobe down to the last detail and present it to you.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    <pre class="prettyprint">
+
+&lt;div class=&quot;info-icon&quot;&gt;
+    &lt;div class=&quot;icon text-danger&quot;&gt;
+        &lt;i class=&quot;pe-7s-car&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;Delivery&lt;/h3&gt;
+    &lt;p class=&quot;description&quot;&gt;We sketch your wardrobe down to the last detail and present it to you.&lt;/p&gt;
+&lt;/div&gt;
+
+                    </pre>
+
+                    </div>
+                    <!-- end row -->
+
+                    <div class="tim-row" id="sections-row">
+                        <div class="tim-title">
+                            <h2>Sections Colors</h2>
+                        </div>
+                        <p>Each page from the archive is composed of parts called sections. Each section has modular information. As you will be able to see, there are sections that contain description, pictures, quotes, etc. Each section has 2 background possibilities. The default one, for the 'section' class is the white background. To use a gray background, you will need to add the 'section-gray' class.</p>
+                        <span class="pick-class-label" style="background-color: #FFFFFF;"> </span>
+                        <span class="pick-class-label" style="background-color: #EEEEEE;"> </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer footer-color-black">
+        <div class="container">
+            <nav class="pull-left">
+                <ul>
+                    <li>
+                        <a href="https://www.creative-tim.com/product/gaia-bootstrap-template-pro">
+                            Gaia Bootstrap Template
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.creative-tim.com">
+                           Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-area pull-right">
+                <a class="btn btn-social btn-twitter btn-simple" href="https://twitter.com/CreativeTim">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-social btn-facebook btn-simple" href="https://www.facebook.com/CreativeTim">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a class="btn btn-social btn-google btn-simple" href="https://plus.google.com/+CreativetimPage">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; <script> document.write(new Date().getFullYear()) </script> Creative Tim, made with love
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<!--   core js files    -->
+<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/js/bootstrap.js" type="text/javascript"></script>
+
+<!--  js library for devices recognition -->
+<script type="text/javascript" src="../assets/js/modernizr.js"></script>
+<!--  script for google maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<!--   file where we handle all the script from the Rubik page   -->
+<script type="text/javascript" src="../assets/js/gaia.js"></script>
+
+</html>

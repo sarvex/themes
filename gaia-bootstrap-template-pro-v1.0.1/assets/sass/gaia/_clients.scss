@@ -1,0 +1,172 @@
+.section-clients-1{
+      .logo{
+      	  position: relative;
+          margin-bottom: 30px;
+      }
+}
+
+.section-clients-2{
+
+  .nav-text{
+    margin: 0 auto;
+    text-align: center;
+
+    li{
+      margin: 0 10px 10px 0;
+
+      a{
+         opacity: .9;
+        color: #343434;
+        padding: 3px 0;
+
+        img{
+          width: 120px;
+        }
+      }
+    }
+
+    >li.active{
+
+      a{
+        color: $gold-color !important;
+        border-bottom: 2px solid $gold-color;
+
+        img:first-child{
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .tab-content{
+    text-align: center;
+    max-width: 760px;
+    min-height: 130px;
+
+    p.large{
+        color: $dark-gray;
+    }
+  }
+}
+
+.section-clients-3{
+  .nbs-flexisel-inner{
+
+    &:before, &:after{
+      position: absolute;
+      top: 0;
+      width: 6%;
+      height: 50px;
+      display: block;
+      z-index: 1;
+      content: "";
+      z-index: 3;
+    }
+
+    &:before{
+      @include logo-gradient($white, $transparent);
+      left: 0;
+    }
+
+    &:after{
+      @include logo-gradient($transparent, $white);
+      right: 0;
+    }
+
+  }
+
+  #clients-carousel {
+
+    li{
+      position: relative;
+
+      img {
+        width: 50%;
+        cursor: pointer;
+        position: relative;
+        margin: 0;
+        max-height: 50px;
+        max-width: 200px;
+
+
+         &:first-child{
+          position: absolute;
+          @include transform-translate-center(-(50%));
+          opacity: 1;
+          z-index: 2;
+
+
+          &:hover{
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .nbs-flexisel-nav-left,
+  .nbs-flexisel-nav-right {
+
+    font-size: 30px;
+  }
+}
+
+.list-logos{
+    img{
+      max-width: 120px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .active{
+        .client-logo{
+            color: $primary-color;
+        }
+    }
+
+    a{
+        opacity: 0.9;
+        color: $black-color;
+    }
+}
+.list-logos-info{
+    .active{
+        .client-logo{
+            color: $info-color;
+        }
+    }
+}
+.list-logos-success{
+    .active{
+        .client-logo{
+            color: $success-color;
+        }
+    }
+}
+.list-logos-warning{
+    .active{
+        .client-logo{
+            color: $warning-color;
+        }
+    }
+}
+.list-logos-danger{
+    .active{
+        .client-logo{
+            color: $danger-color;
+        }
+    }
+}
+.client-logo{
+    text-align: center;
+    margin: 0 15px;
+
+    i{
+        font-size: 35px;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    h3{
+        font-family: $sans-serif-font;
+    }
+}

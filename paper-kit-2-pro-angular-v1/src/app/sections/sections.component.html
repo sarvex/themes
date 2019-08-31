@@ -1,0 +1,78 @@
+<app-headers></app-headers>
+<app-features></app-features>
+<app-blogs></app-blogs>
+<app-teams></app-teams>
+<app-projects></app-projects>
+<app-pricing></app-pricing>
+<app-testimonials></app-testimonials>
+<app-contacts></app-contacts>
+<nav id="cd-vertical-nav">
+    <ul>
+        <li>
+            <a data-number="1" (click)="smoothScroll('headers')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Headers</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="2" (click)="smoothScroll('features')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Features</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="3" (click)="smoothScroll('blogs')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Blogs</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="4" (click)="smoothScroll('teams')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Teams</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="5" (click)="smoothScroll('projects')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Projects</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="6" (click)="smoothScroll('pricing')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Pricing</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="7" (click)="smoothScroll('testimonials')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="8" (click)="smoothScroll('contact-us')" >
+                <span class="cd-dot"></span>
+                <span class="cd-label">Contact Us</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<footer class="footer footer-black">
+    <div class="container">
+        <div class="row">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://www.creative-tim.com">Creative Tim</a></li>
+                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
+                    <li><a href="https://www.creative-tim.com/license">Licenses</a></li>
+                </ul>
+            </nav>
+            <div class="credits ml-auto">
+                <span class="copyright">
+                    © {{data | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,35 @@
+.sidebar,
+.off-canvas-sidebar {
+  .logo-img {
+    width: 42px;
+    max-height: 42px;
+
+    img {
+      width: 42px;
+      top: 10px;
+      left: 18px;
+      position: absolute;
+    }
+  }
+  .nav span {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+  }
+}
+.main-panel {
+  .main-content {
+    padding: 0 30px 30px;
+    min-height: calc(100vh - 123px);
+    margin-top: -30px;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+  }
+}
+.panel-header {
+  @include panel-gradient($black-color);
+}

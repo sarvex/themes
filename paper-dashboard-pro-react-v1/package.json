@@ -1,0 +1,76 @@
+{
+  "name": "paper-dashboard-pro-react",
+  "version": "1.1.0",
+  "description": "Premium Bootstrap 4 Paper UI Design",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/scss/paper-dashboard.scss src/assets/css/paper-dashboard.css",
+    "minify-sass": "node-sass src/assets/scss/paper-dashboard.scss src/assets/css/paper-dashboard.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/paper-dashboard.scss src/assets/css/paper-dashboard.css --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/paper-dashboard-pro-react.git"
+  },
+  "keywords": [
+    "react",
+    "admin",
+    "reactjs",
+    "bootstrap",
+    "bootstrap4",
+    "reactstrap"
+  ],
+  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com)",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/paper-dashboard-pro-react/issues"
+  },
+  "homepage": "https://github.com/creativetimofficial/paper-dashboard-pro-react#readme",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "chart.js": "2.8.0",
+    "classnames": "2.2.6",
+    "history": "4.9.0",
+    "moment": "2.24.0",
+    "node-sass": "4.12.0",
+    "nouislider": "13.1.5",
+    "perfect-scrollbar": "1.4.0",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-big-calendar": "0.21.0",
+    "react-bootstrap-sweetalert": "4.4.1",
+    "react-bootstrap-switch": "15.5.3",
+    "react-bootstrap-wizard": "0.0.7",
+    "react-chartjs-2": "2.7.6",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.8.6",
+    "react-google-maps": "9.4.5",
+    "react-jvectormap": "0.0.12",
+    "react-notification-alert": "0.0.12",
+    "react-router-dom": "5.0.0",
+    "react-scripts": "3.0.1",
+    "react-select": "3.0.3",
+    "react-table": "6.10.0",
+    "react-tagsinput": "3.19.0",
+    "reactstrap": "8.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "optionalDependencies": {
+    "@types/googlemaps": "3.36.2",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.8.19",
+    "ajv": "6.10.0",
+    "jquery": "3.4.1",
+    "typescript": "3.5.1"
+  }
+}

@@ -1,0 +1,97 @@
+<nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+  <div class="container">
+    <div class="navbar-wrapper">
+      <div class="navbar-toggle" (click)="sidebarToggle()">
+        <button type="button" class="navbar-toggler">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <a class="navbar-brand" routerLinkActive="active" [routerLink]="['/dashboard']">Paper Dashboard PRO Angular</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLinkActive="active" [routerLink]="['/dashboard']" class="nav-link">
+            <i class="nc-icon nc-layout-11"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a routerLinkActive="active" [routerLink]="['/pages/register']" class="nav-link">
+            <i class="nc-icon nc-book-bookmark"></i> Register
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a routerLinkActive="active" [routerLink]="['/pages/login']"  class="nav-link">
+            <i class="nc-icon nc-tap-01"></i> Login
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a routerLinkActive="active" [routerLink]="['/pages/user']" class="nav-link">
+            <i class="nc-icon nc-satisfied"></i> User
+          </a>
+        </li>
+        <li class="nav-item  active ">
+          <a routerLinkActive="active" [routerLink]="['/pages/lock']" class="nav-link">
+            <i class="nc-icon nc-key-25"></i> Lock
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper wrapper-full-page ">
+  <div class="full-page lock-page section-image" filter-color="black" data-image="./assets/img/bg/bruno-abatti.jpg">
+    <!--   you can change the color of the filter page using: data-color="blue | green | orange | red | purple" -->
+    <div class="content">
+      <div class="container">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <div class="card card-lock text-center">
+            <div class="card-header ">
+              <img src="./assets/img/faces/joe-gardner-2.jpg" alt="...">
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title">Joe Gardner</h4>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Enter Password..">
+              </div>
+            </div>
+            <div class="card-footer ">
+              <a href="javascript:void(0)" class="btn btn-outline-default btn-round">Unlock</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer footer-black  footer-white ">
+      <div class="container">
+        <div class="row">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
+              </li>
+              <li>
+                <a href="http://blog.creative-tim.com/" target="_blank">Blog</a>
+              </li>
+              <li>
+                <a href="https://www.creative-tim.com/license" target="_blank">Licenses</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="credits ml-auto">
+            <span class="copyright">
+            &copy; {{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

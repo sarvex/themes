@@ -1,0 +1,227 @@
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card ">
+        <div class="card-header ">
+          <h5 class="card-title">Datetimepicker</h5>
+        </div>
+        <div class="card-body ">
+          <div class="form-group">
+            <input class="form-control" placeholder="{{model2}}"
+                   name="dp1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card ">
+        <div class="card-header ">
+          <h5 class="card-title">Date Picker</h5>
+        </div>
+        <div class="card-body ">
+          <div class="form-group">
+              <input class="form-control" placeholder="{{model}}"
+                     name="dp" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+            <!-- <input type="text" class="form-control datepicker" value="10/05/2018"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="card-title">Toggle Buttons</h4>
+              <div class="row">
+                <div class="col-md-4">
+                    <p class="category">Default</p>
+                    <bSwitch
+                        [switch-on-color]="'primary'"
+                        [switch-off-color]="'primary'">
+                    </bSwitch>
+                    <bSwitch
+                        [switch-on-color]="'primary'"
+                        [switch-off-color]="'primary'"
+                        [(ngModel)]="state_default">
+                    </bSwitch>
+                </div>
+
+                <div class="col-md-4">
+                    <p class="category">Plain</p>
+                    <bSwitch
+                        [switch-on-color]="'primary'"
+                        [switch-off-color]="'primary'"
+                        [switch-off-text]="' '"
+                        [switch-on-text]="' '">
+                    </bSwitch>
+                    <bSwitch
+                        [switch-on-color]="'primary'"
+                        [switch-off-color]="'primary'"
+                        [switch-off-text]="' '"
+                        [switch-on-text]="' '"
+                        [(ngModel)]="state_plain">
+                    </bSwitch>
+                </div>
+
+
+                <div class="col-md-4">
+                    <p class="category">With Icons</p>
+                    <bSwitch
+                        [switch-on-color]="'primary'"
+                        [switch-off-color]="'primary'"
+                        [switch-off-text]="'&#x2715;'"
+                        [switch-on-text]="'&#x2714;'">
+                    </bSwitch>
+                    <bSwitch
+                        [switch-on-color]="'primary'"
+                        [switch-off-color]="'primary'"
+                        [switch-off-text]="'&#x2715;'"
+                        [switch-on-text]="'&#x2714;'"
+                        [(ngModel)]="state_with_icons">
+                    </bSwitch>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class="card-title">Customisable Select</h4>
+              <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-3">
+                  <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Single Select">
+                    <option disabled selected>Single Option</option>
+                    <option value="2">Foobar</option>
+                    <option value="3">Is great</option>
+                  </select>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-3">
+                  <select class="selectpicker" data-style="btn btn-info btn-round" multiple title="Choose City" data-size="7">
+                    <option disabled> Multiple Options</option>
+                    <option value="2">Paris </option>
+                    <option value="3">Bucharest</option>
+                    <option value="4">Rome</option>
+                    <option value="5">New York</option>
+                    <option value="6">Miami </option>
+                    <option value="7">Piatra Neamt</option>
+                    <option value="8">Paris </option>
+                    <option value="9">Bucharest</option>
+                    <option value="10">Rome</option>
+                    <option value="11">New York</option>
+                    <option value="12">Miami </option>
+                    <option value="13">Piatra Neamt</option>
+                    <option value="14">Paris </option>
+                    <option value="15">Bucharest</option>
+                    <option value="16">Rome</option>
+                    <option value="17">New York</option>
+                    <option value="18">Miami </option>
+                    <option value="19">Piatra Neamt</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="card-title">Tags</h4>
+              <tag-input [(ngModel)]='tagItems' theme='regular-theme'></tag-input>
+            </div>
+            <div class="col-md-6">
+              <h4 class="card-title">Dropdown & Dropup</h4>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-3">
+                  <div class="dropdown">
+                    <button class="dropdown-toggle btn btn-primary btn-round btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <div class="dropdown-header">Dropdown header</div>
+                      <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0)">Something else</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-3">
+                  <div class="dropup">
+                    <button type="button" class="dropdown-toggle btn btn-primary btn-round btn-block" data-toggle="dropdown">
+                      Dropup
+                    </button>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-header">Dropdown header</div>
+                      <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                      <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                      <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="card-title">Progress Bars</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <br/>
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <br/>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class="card-title">Sliders</h4>
+              <div id="sliderRegular" class="slider slider-success"></div>
+              <br>
+              <div id="sliderDouble" class="slider slider-primary"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <h4 class="card-title">Regular Image</h4>
+              <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                <div class="fileinput-new thumbnail">
+                  <img src="./assets/img/image_placeholder.jpg" alt="...">
+                </div>
+                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                <div>
+                  <span class="btn btn-rose btn-round btn-file">
+                    <span class="fileinput-new">Select image</span>
+                    <span class="fileinput-exists">Change</span>
+                    <input type="file" name="..." />
+                  </span>
+                  <a href="javascript:void(0)" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <h4 class="card-title">Avatar</h4>
+              <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                <div class="fileinput-new thumbnail img-circle">
+                  <img src="./assets/img/placeholder.jpg" alt="...">
+                </div>
+                <div class="fileinput-preview fileinput-exists thumbnail img-circle"></div>
+                <div>
+                  <span class="btn btn-round btn-rose btn-file">
+                    <span class="fileinput-new">Add Photo</span>
+                    <span class="fileinput-exists">Change</span>
+                    <input type="file" name="..." />
+                  </span>
+                  <br />
+                  <a href="javascript:void(0)" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card -->
+    </div>
+  </div>
+</div>

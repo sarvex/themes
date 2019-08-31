@@ -1,0 +1,90 @@
+<div class="main-content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6">
+                <lbd-chart
+                  [title]="'24 Hours Performance'"
+                  [subtitle]="'Line Chart'"
+                  [chartType]="dataChartType"
+                  [chartData]="dataChartData"
+                  [chartOptions]="dataChartOptions"
+                  [withHr]="false">
+                </lbd-chart>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <lbd-chart
+                      [title]="'NASDAQ: AAPL'"
+                      [subtitle]="'Line Chart with Points'"
+                      [chartType]="data2ChartType"
+                      [chartData]="data2ChartData"
+                      [chartOptions]="data2ChartOptions"
+                      [withHr]="false">
+                    </lbd-chart>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <lbd-chart
+                      [title]="'Users Behavior'"
+                      [subtitle]="'Multiple Lines Charts'"
+                      [chartType]="hoursChartType"
+                      [chartData]="hoursChartData"
+                      [chartOptions]="hoursChartOptions"
+                      [chartResponsive]="hoursChartResponsive"
+                      [legendItems]="hoursChartLegendItems"
+                      [withHr]="false">
+                    </lbd-chart>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <lbd-chart
+                      [title]="'Public Preferences'"
+                      [subtitle]="'Pie Chart'"
+                      [chartType]="emailChartType"
+                      [chartData]="emailChartData"
+                      [legendItems]="emailChartLegendItems"
+                      [withHr]="false">
+                    </lbd-chart>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <lbd-chart
+                      [title]="'Views'"
+                      [subtitle]="'Bar Chart'"
+                      [chartType]="viewsChartType"
+                      [chartData]="viewsChartData"
+                      [chartOptions]="viewsChartOptions"
+                      [chartResponsive]="viewsChartResponsive"
+                      [withHr]="false">
+                    </lbd-chart>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <lbd-chart
+                      [title]="'Activity'"
+                      [subtitle]="'Multiple Bars Chart'"
+                      [chartType]="activityChartType"
+                      [chartData]="activityChartData"
+                      [chartOptions]="activityChartOptions"
+                      [chartResponsive]="activityChartResponsive"
+                      [withHr]="false">
+                    </lbd-chart>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

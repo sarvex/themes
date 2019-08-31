@@ -1,0 +1,28 @@
+<div class="form-group form-file-upload form-file-simple">
+  <input
+    type="text"
+    class="form-control inputFileVisible"
+    placeholder="Simple chooser..."
+    value="{{ state.fileNames }}"
+    *ngIf="!multiple"
+    (focus)="onFocus($event)"
+  />
+
+  <input
+    type="text"
+    class="form-control inputFileVisible"
+    placeholder="Multiple chooser..."
+    value="{{ state.fileNames }}"
+    *ngIf="multiple"
+    (focus)="onFocus($event)"
+  />
+
+  <input
+    type="file"
+    class="inputFileHidden"
+    (change)="addFile($event)"
+    multiple="{{ multiple }}"
+    style="z-index: -1;"
+    #input
+  />
+</div>

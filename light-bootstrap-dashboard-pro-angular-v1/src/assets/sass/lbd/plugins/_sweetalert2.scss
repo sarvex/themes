@@ -1,0 +1,27 @@
+.swal2-container {
+  .swal2-popup{
+    font-size: 16px;
+    .swal2-title{
+      padding: unset;
+      color: #575757;
+      font-weight: 300;
+      margin: 30px 0 15px;
+      font-size: 36px;
+    }
+    .swal2-content #swal2-content{
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    .swal2-header{
+      .swal2-icon{
+        margin: 20px auto;
+      }
+    }
+    .swal2-actions{
+      .btn-mr-5{
+        margin-right: 5px;
+      }
+    }
+  }
+}

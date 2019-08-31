@@ -1,0 +1,11 @@
+<div class="picture-container">
+  <div class="picture">
+    <img
+      src="{{ state.imagePreviewUrl }}"
+      class="picture-src"
+      alt="..."
+    />
+    <input type="file" (change)="this.handleImageChange($event)" id="wizard-picture"/>
+  </div>
+  <h6 class="description">Choose Picture</h6>
+</div>

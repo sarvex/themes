@@ -1,0 +1,92 @@
+.profile-page{
+  .page-header{
+    height: 380px;
+    background-position: center center;
+
+    &::before {
+      background: rgba(0,0,0, .2);
+    }
+  }
+  .profile{
+    position: relative;
+    text-align: center;
+
+    img{
+      max-width: 160px;
+      width: 100%;
+      margin: 0 auto;
+      @include transform-translate-y(-50%);
+    }
+    .name{
+      margin-top: -80px;
+    }
+  }
+  .follow{
+    position: absolute;
+    top: -28px;
+    right: -17px;
+  }
+  .description{
+    margin: $margin-base auto 0;
+    max-width: 600px;
+  }
+  .gallery{
+    margin-top: $margin-base * 3;
+    padding-bottom: 50px;
+
+    img{
+      width: 100%;
+      margin-bottom: $margin-base * 2;
+    }
+  }
+  .follow{
+    .btn-fab{
+      margin-top: -28px;
+    }
+  }
+  .card-background{
+    .content{
+      padding: 30% 0;
+      min-width: 160px;
+    }
+  }
+  .work{
+    padding: 40px 0px;
+    .collections{
+      margin-top: 20px;
+    }
+
+    .stats{
+      ul > li{
+        padding: 5px 0px;
+        font-size: 1rem;
+        color: $black-color;
+        b{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .connections{
+    padding: 40px 0px;
+    .card-profile{
+      text-align: left;
+    }
+  }
+
+  .tab-content{
+    .collections{
+      .md-card .md-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .badge{
+          display: inline-table;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

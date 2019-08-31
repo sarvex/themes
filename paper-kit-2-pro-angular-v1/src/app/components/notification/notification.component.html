@@ -1,0 +1,14 @@
+<div *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" [dismissible]="alert.dismissible" (close)="closeAlert(alert)">
+        <div class="container">
+            <div class="alert-wrapper">
+                <div class="message">
+                    <ng-container *ngIf="alert.icon">
+                        <i class="nc-icon {{alert.icon}}"></i>
+                    </ng-container>
+                    {{ alert.message }}
+                </div>
+            </div>
+        </div>
+    </ngb-alert>
+</div>

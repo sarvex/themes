@@ -1,0 +1,66 @@
+.multi-step {
+  .wizard-finish-button {
+    > button {
+      margin-top: 45px;
+      margin-right: 15px;
+    }
+  }
+  .wizard-step {
+    padding: 45px 0px;
+  }
+  .footer-buttons {
+    padding: 0 15px 10px;
+    padding-bottom: 45px;
+    background-color: transparent;
+    line-height: 30px;
+  }
+  .progtrckr {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 10px;
+    padding-left: 0;
+    list-style-type: none;
+
+    > li {
+      width: 33.3333%;
+      float: left;
+      position: relative;
+      display: block;
+      > span {
+        text-align: center;
+        border: none;
+        background-color: #9a9a9a;
+        color: #ffffff;
+        text-transform: uppercase;
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+      em {
+        display: none;
+      }
+    }
+    .progtrckr-doing {
+      span {
+        background-color: #23ccef;
+        color: #ffffff;
+      }
+    }
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .multi-step {
+    .progtrckr {
+      font-size: 10px;
+    }
+    .btn {
+      display: inline-block;
+      float: none !important;
+      margin: 10px 0px;
+    }
+    .footer-buttons {
+      padding: 0px;
+    }
+  }
+}

@@ -1,0 +1,297 @@
+.nav {
+    > li{
+        > a:hover,
+        > a:focus{
+            background-color: transparent;
+        }
+    }
+}
+.navbar{
+    border: @none;
+    font-size: @font-size-navbar;
+
+    .navbar-brand {
+        font-weight: @font-weight-bold;
+        margin: @navbar-margin-brand;
+        padding: @navbar-padding-brand;
+        font-size: @font-size-large-navbar;
+    }
+    .navbar-nav{
+         > li > a {
+             padding: @navbar-padding-a;
+             margin: @navbar-margin-a;
+         }
+         > li > a.btn{
+             margin: @navbar-margin-a-btn;
+             padding: @padding-base-vertical @padding-base-horizontal;
+         }
+         > li > a.btn-round{
+             margin: @navbar-margin-a-btn-round;
+         }
+         > li > a [class^="fa"]{
+             font-size: @font-size-large + 1;
+             position: relative;
+             top: 1px;
+        }
+    }
+    .btn{
+       margin: @navbar-margin-btn;
+       font-size: @font-size-base;
+    }
+    .btn-simple{
+        font-size: @font-size-medium;
+    }
+    .caret{
+       // .center-item();
+    }
+
+
+}
+
+.navbar-nav > li > .dropdown-menu{
+    border-radius: @border-radius-extreme;
+    margin-top: -5px;
+}
+
+.navbar-transparent, [class*="navbar-ct"]{
+    .navbar-brand{
+        color: @white-color;
+        .opacity(.9);
+
+        &:focus,
+        &:hover{
+            background-color: transparent;
+            .opacity(1);
+        }
+    }
+
+    .navbar-nav{
+        > li > a:not(.btn),
+        > li > a.btn-default{
+            color: @white-color;
+            border-color: @white-color;
+            .opacity(0.8);
+        }
+
+        > li > a.btn-default:hover,
+        > li > a.btn-default:focus{
+            border-color: @white-color;
+            .opacity(1);
+        }
+
+        > .active > a:not(.btn),
+        > .active > a:hover:not(.btn),
+        > .active > a:focus:not(.btn),
+        > li > a:hover:not(.btn),
+        > li > a:focus:not(.btn){
+            background-color: transparent;
+            border-radius: 3px;
+            color: @white-color;
+            .opacity(1);
+        }
+        .nav > li > a.btn:hover{
+            background-color: transparent;
+        }
+
+        > .dropdown > a .caret,
+        > .dropdown > a:hover .caret,
+        > .dropdown > a:focus .caret{
+            border-bottom-color: @white-color;
+            border-top-color: @white-color;
+        }
+
+        > .open > a,
+        > .open > a:hover,
+        > .open > a:focus {
+            background-color: transparent;
+            color: @white-color;
+            .opacity(1);
+        }
+    }
+
+    .btn-default{
+        color: @white-color;
+        border-color: @white-color;
+    }
+    .btn-default.btn-fill{
+        color: @dark-gray;
+        background-color: @white-color;
+        .opacity(.9);
+    }
+    .btn-default.btn-fill:hover,
+    .btn-default.btn-fill:focus,
+    .btn-default.btn-fill:active,
+    .btn-default.btn-fill.active,
+    .open .dropdown-toggle.btn-fill.btn-default{
+        border-color: @white-color;
+        .opacity(1);
+    }
+
+    .navbar-toggle .icon-bar{
+        background-color: @white-color !important;
+    }
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-transparent{
+    .dropdown-menu .divider{
+        background-color: fade(@white-color, 20%);
+    }
+}
+
+.navbar-inverse{
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+        background-color: transparent;
+    }
+    .navbar-nav > .open > a{
+        &,
+        &:focus,
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+
+.nav-open .nav .caret{
+    border-bottom-color: @white-color;
+    border-top-color: @white-color;
+}
+
+.navbar-default {
+    background-color: @white-navbar;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .navbar-nav{
+        > .active > a,
+        > .active > a:not(.btn):hover,
+        > .active > a:not(.btn):focus,
+        > li > a:not(.btn):hover,
+        > li > a:not(.btn):focus {
+            background-color: transparent;
+            border-radius: 3px;
+            color: @info-color;
+            .opacity(1);
+        }
+
+        > .dropdown > a:hover .caret,
+        > .dropdown > a:focus .caret {
+            border-bottom-color: @info-color;
+            border-top-color: @info-color;
+
+        }
+
+        > .open > a,
+        > .open > a:hover,
+        > .open > a:focus{
+            background-color: transparent;
+            color: @info-color;
+        }
+
+        .navbar-toggle:hover,.navbar-toggle:focus {
+            background-color: transparent;
+        }
+
+    }
+
+    &:not(.navbar-transparent) .btn-default:hover{
+        color: @info-color;
+        border-color: @info-color;
+    }
+    &:not(.navbar-transparent) .btn-neutral,
+    &:not(.navbar-transparent) .btn-neutral:hover,
+    &:not(.navbar-transparent) .btn-neutral:active{
+            color: @dark-gray;
+        }
+
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+        background-color: transparent;
+    }
+
+}
+
+/*      Navbar with icons            */
+
+.navbar-icons{
+    &.navbar .navbar-brand{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .navbar-nav{
+        > li > a{
+            text-align: center;
+            padding: @navbar-padding-a-icons;
+            margin: @navbar-margin-a-icons;
+        }
+
+        [class^="pe"] {
+            font-size: 30px;
+            position: relative;
+        }
+        p {
+            margin: 3px 0 0;
+        }
+    }
+}
+
+.navbar-form{
+   .box-shadow(none);
+   .form-control{
+        .light-form();
+        height: 22px;
+        font-size: @font-size-navbar;
+        line-height: @line-height-general;
+        color: @light-gray;
+    }
+    .navbar-transparent & .form-control,
+    [class*="navbar-ct"] & .form-control{
+        color: @white-color;
+        border: @none;
+        border-bottom: 1px solid fade(@white-color,60%);
+    }
+
+}
+
+.navbar-ct-blue{
+    .navbar-color(@blue-navbar);
+}
+.navbar-ct-azure{
+    .navbar-color(@azure-navbar);
+}
+.navbar-ct-green{
+    .navbar-color(@green-navbar);
+}
+.navbar-ct-orange{
+    .navbar-color(@orange-navbar);
+}
+.navbar-ct-red{
+    .navbar-color(@red-navbar);
+}
+
+.navbar-transparent{
+    padding-top: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-toggle{
+    margin-top: 19px;
+    margin-bottom: 19px;
+    border: @none;
+
+    .icon-bar,
+    .navbar-default & .icon-bar {
+        background-color: @white-color;
+    }
+
+     .navbar-collapse,
+     .navbar-form {
+        border-color: transparent;
+    }
+
+}

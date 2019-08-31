@@ -1,0 +1,50 @@
+.blog-post{
+    .section-text{
+        p{
+            font-size: 1.188rem;
+            line-height: 1.5em;
+            color: $gray;
+            margin-bottom: 30px;
+        }
+        .blockquote{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .section-blog-info{
+        padding-top: 30px;
+        padding-bottom: 0;
+
+        .btn{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .blog-tags{
+            padding-top: 8px;
+        }
+        .card-profile{
+            margin-top: 0;
+            text-align: left;
+
+            .description{
+                font-size: $font-size-base;
+            }
+            .btn{
+                margin-top: 25px;
+            }
+        }
+    }
+    .section-comments{
+        .title{
+            margin-bottom: 30px;
+        }
+    }
+
+    .comment{
+        p{
+            color: $gray;
+        }
+    }
+}

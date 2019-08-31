@@ -1,0 +1,252 @@
+
+.nav {
+    > li{
+        > a:hover,
+        > a:focus{
+            background-color: transparent;
+        }
+    }
+    > .social-links > a{
+        display: inline-block;
+    }
+}
+.navbar{
+    border: $none;
+    font-size: $font-size-navbar;
+
+    .navbar-brand {
+        margin: $navbar-margin-brand;
+        padding: $navbar-padding-brand;
+        font-size: $font-size-large + 2;
+        line-height: 22px;
+    }
+    .navbar-nav{
+         > li > a {
+             padding: $navbar-padding-a;
+             margin: $navbar-margin-a;
+             line-height: 18px;
+         }
+
+         > .social-links > a {
+             padding: 10px 5px;
+         }
+         &.navbar-uppercase > li > a{
+             text-transform: uppercase;
+             font-size: $font-size-base - 2;
+             letter-spacing: 0px;
+             font-weight: $font-weight-bold;
+             text-transform: uppercase;
+             font-weight: 600;
+         }
+         > li > a.btn{
+             margin: $navbar-margin-a-btn;
+             padding: $padding-base-vertical $padding-base-horizontal;
+         }
+         > li > a.btn-round{
+             margin: $navbar-margin-a-btn-round;
+         }
+         > li > a [class^="fa"]{
+            font-size: $font-size-large;
+            position: relative;
+            top: 1px;
+            margin-top: -3px;
+        }
+    }
+    .btn{
+       margin: $navbar-margin-btn;
+       font-size: $font-size-base;
+    }
+    .btn-simple{
+        font-size: $font-size-medium;
+    }
+
+
+}
+
+
+
+.navbar-default {
+    background-color: $white-navbar;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .navbar-nav{
+        > li > a:not(.btn){
+            color: $black-medium;
+        }
+
+        > .active > a,
+        > .active > a:not(.btn):hover,
+        > .active > a:not(.btn):focus,
+        > li > a:not(.btn):hover,
+        > li > a:not(.btn):focus {
+            background-color: transparent;
+            border-radius: 3px;
+            color: $black-medium;
+            @include opacity(.85);
+        }
+
+        > .dropdown > a:hover .caret,
+        > .dropdown > a:focus .caret {
+            border-bottom-color: $black-color;
+            border-top-color: $black-color;
+        }
+
+        > .open > a,
+        > .open > a:hover,
+        > .open > a:focus{
+            background-color: transparent;
+            color: $gold-color;
+        }
+
+        .navbar-toggle:hover,.navbar-toggle:focus {
+            background-color: transparent;
+        }
+
+    }
+
+    .navbar-brand{
+        color: $black-medium;
+    }
+
+    &:not(.navbar-transparent) .btn-default:hover{
+        color: $gold-color;
+        border-color: $gold-color;
+    }
+    &:not(.navbar-transparent) .btn-neutral,
+    &:not(.navbar-transparent) .btn-neutral:hover,
+    &:not(.navbar-transparent) .btn-neutral:active{
+            color: $dark-gray;
+        }
+    .navbar-toggle:hover,
+    .navbar-toggle:focus{
+        background-color: transparent;
+    }
+}
+
+.navbar-ct-primary{
+    @include navbar-color($primary-navbar);
+}
+.navbar-ct-blue{
+    @include navbar-color($blue-navbar);
+}
+.navbar-ct-green{
+    @include navbar-color($green-navbar);
+}
+.navbar-ct-orange{
+    @include navbar-color($orange-navbar);
+}
+.navbar-ct-red{
+    @include navbar-color($red-navbar);
+}
+
+.navbar-transparent{
+    padding-top: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-toggle{
+    margin-top: 19px;
+    margin-bottom: 19px;
+    border: $none;
+
+    .icon-bar {
+        background-color: $white-color;
+    }
+     .navbar-collapse,
+     .navbar-form {
+        border-color: transparent;
+    }
+
+    &.navbar-default .navbar-toggle:hover,
+    &.navbar-default .navbar-toggle:focus {
+        background-color: transparent;
+    }
+
+    .navbar-transparent & .icon-bar{
+        background-color: $white-color;
+    }
+}
+
+// RUBIK
+
+.navbar.navbar-fixed-top{
+    transition: all .5s .1s;
+}
+
+@media (min-width:768px){
+    .navbar-transparent,
+    [class*="navbar-ct"]{
+        .navbar-brand{
+            color: $white-color;
+            @include opacity(1);
+
+            &:focus,
+            &:hover{
+                background-color: transparent;
+                @include opacity(1);
+                color: $white-color;
+            }
+        }
+
+        .navbar-nav{
+            > li > a:not(.btn){
+                color: $white-color;
+                border-color: $white-color;
+                @include opacity(.85);
+            }
+            > .active > a:not(.btn),
+            > .active > a:hover:not(.btn),
+            > .active > a:focus:not(.btn),
+            > li > a:hover:not(.btn),
+            > li > a:focus:not(.btn){
+                background-color: transparent;
+                border-radius: 3px;
+                color: $white-color;
+                @include opacity(1);
+            }
+            .nav > li > a.btn:hover{
+                background-color: transparent;
+            }
+
+            > .dropdown > a .caret,
+            > .dropdown > a:hover .caret,
+            > .dropdown > a:focus .caret{
+                border-bottom-color: $white-color;
+                border-top-color: $white-color;
+            }
+
+            > .open > a,
+            > .open > a:hover,
+            > .open > a:focus {
+                background-color: transparent;
+                color: $white-color;
+                @include opacity(1);
+            }
+        }
+
+        .btn-default{
+            color: $white-color;
+            border-color: $white-color;
+        }
+        .btn-default.btn-fill{
+            color: $dark-gray;
+            background-color: $white-color;
+            @include opacity(1);
+        }
+        .btn-default.btn-fill:hover,
+        .btn-default.btn-fill:focus,
+        .btn-default.btn-fill:active,
+        .btn-default.btn-fill.active,
+        .open .dropdown-toggle.btn-fill.btn-default{
+            border-color: $white-color;
+            @include opacity(1);
+        }
+
+    }
+    .navbar-transparent{
+        .dropdown-menu .divider{
+            background-color: rgba($white-color,.2);
+        }
+    }
+}

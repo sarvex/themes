@@ -1,0 +1,56 @@
+{
+  "name": "light-bootstrap-dashboard-pro-react",
+  "version": "1.2.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "chartist": "0.10.1",
+    "history": "4.9.0",
+    "moment": "2.24.0",
+    "node-sass": "4.12.0",
+    "nouislider": "13.1.5",
+    "perfect-scrollbar": "1.4.0",
+    "react": "16.8.6",
+    "react-big-calendar": "0.20.4",
+    "react-bootstrap": "0.32.4",
+    "react-bootstrap-sweetalert": "4.4.1",
+    "react-bootstrap-switch": "15.5.3",
+    "react-chartist": "0.13.3",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.8.6",
+    "react-google-maps": "9.4.5",
+    "react-jvectormap": "0.0.9",
+    "react-notification-system": "0.2.17",
+    "react-router": "5.0.0",
+    "react-router-dom": "5.0.0",
+    "react-scripts": "3.0.0",
+    "react-select": "2.4.3",
+    "react-stepzilla": "6.0.0",
+    "react-syntax-highlighter": "10.2.1",
+    "react-table": "6.10.0",
+    "react-tagsinput": "3.19.0",
+    "wnumb": "1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/sass/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.css",
+    "minify-sass": "node-sass src/assets/sass/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/sass/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.css --source-map true"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "3.30.19",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.8.15",
+    "typescript": "3.4.5"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

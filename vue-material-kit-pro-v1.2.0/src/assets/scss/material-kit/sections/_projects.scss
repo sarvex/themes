@@ -1,0 +1,82 @@
+.section-projects-1 {
+  .title {
+    margin-top: 10px
+  }
+}
+
+.section-projects-2 {
+  .title {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .description {
+    margin-bottom: 130px;
+  }
+  .card-title{
+      margin-bottom: 5px;
+  }
+  .category{
+      color: $gray-color;
+      margin-top: 5px;
+  }
+  .card-description{
+      margin-top: 20px;
+  }
+  .md-card{
+    text-align: center;
+  }
+}
+
+.section-projects-3{
+  .title {
+    margin-bottom: 80px;
+    margin-top: 5px;
+  }
+
+  .md-card {
+    margin-bottom: 30px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .category{
+    margin-bottom: 5px;
+  }
+  .card-title{
+    margin-top: 5px;
+  }
+}
+
+.section-projects-4 {
+  .title{
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .title + .description {
+    margin-bottom: 130px;
+  }
+
+  .info{
+    padding: 0;
+
+    p{
+      margin: 0;
+    }
+  }
+
+  .md-card-background {
+    margin-bottom: 0;
+
+     .md-card-content{
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+  }
+  hr{
+      margin: 70px auto;
+      max-width: 970px;
+  }
+  .md-card {
+    margin-top: 0;
+  }
+}

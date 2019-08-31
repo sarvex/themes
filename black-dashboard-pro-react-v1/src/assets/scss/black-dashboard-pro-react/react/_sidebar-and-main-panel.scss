@@ -1,0 +1,27 @@
+.sidebar .logo .logo-mini .logo-img img {
+  border-radius: 50%;
+  width: 30px;
+}
+.perfect-scrollbar-on {
+  .sidebar {
+    height: 80%;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .sidebar {
+    height: 100%;
+  }
+}
+@include media-breakpoint-down(md) {
+  html.nav-open body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  html.nav-open .main-panel {
+    overflow: auto;
+    min-height: unset;
+  }
+  html.nav-open .wrapper {
+    overflow: hidden;
+  }
+}

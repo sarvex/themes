@@ -1,0 +1,143 @@
+.md-table-cell-container{
+  padding: 0;
+  .md-table-cell:last-child &{
+    padding-right: 0;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .md-button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.md-table-head-container{
+  height: auto;
+  padding: 0;
+}
+.md-tabs-content table thead{
+  display: none;
+}
+
+.md-tabs-container tbody .md-table-row:first-child td{
+  border: 0;
+}
+
+.md-table-cell{
+  padding: 12px 8px;
+  font-size: $font-size-base;
+}
+
+.md-table-head-label{
+  font-size: $font-size-h5;
+  padding-left: 0;
+  font-weight: 300;
+}
+
+.md-table .md-table-row:hover .md-table-cell{
+  background-color: transparent !important;
+}
+
+.md-card-plain .md-card-content > div .md-table .md-table-content,
+.md-card-plain .md-card-content > div .md-table {
+  background-color: transparent !important;
+}
+
+.md-table-head {
+  padding: 12px 8px;
+
+  &:last-child {
+    text-align: right;
+
+    .md-table-head-label {
+      padding-right: 0;
+    }
+  }
+}
+
+.md-table{
+  margin-top: 1rem;
+
+
+
+  &[table-header-color="orange"] .md-table-head{
+    color: $brand-warning !important;
+  }
+  &[table-header-color="purple"] .md-table-head{
+    color: $brand-primary !important;
+  }
+  &[table-header-color="blue"] .md-table-head{
+    color: $brand-info !important;
+  }
+  &[table-header-color="red"] .md-table-head{
+    color: $brand-danger !important;
+  }
+  &[table-header-color="green"] .md-table-head{
+    color: $brand-success !important;
+  }
+
+  .md-table-row td{
+    border-top-color: #ddd !important;
+    color: $black-color;
+  }
+}
+
+.md-table.table-striped .md-table-row:hover{
+  background: $table-bg-hover !important;
+}
+
+.table-striped tbody>tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-shopping{
+    table > thead > tr > th{
+        font-size: $font-size-h6;
+        text-transform: uppercase;
+    }
+    table > thead > tr > .md-table-head .md-table-head-label{
+        font-size: .75rem;
+
+        b{
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+    .td-name{
+        font-weight: $font-weight-default;
+        font-size: 1.5em !important;
+        line-height: 1.42857143;
+
+        small{
+            color: $gray-light;
+            font-size: 0.75em;
+            font-weight: $font-weight-light;
+        }
+    }
+    .td-number{
+       font-weight: $font-weight-light;
+       font-size: $font-size-h4;
+   }
+    .td-name{
+        min-width: 200px;
+    }
+    .td-number{
+        text-align: left;
+        min-width: 150px;
+
+        small{
+            margin-right: 3px;
+        }
+    }
+
+    .img-container{
+        width: 120px;
+        max-height: 160px;
+        overflow: hidden;
+        display: block;
+
+        img{
+            width: 100%;
+        }
+    }
+}

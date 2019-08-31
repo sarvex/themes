@@ -1,0 +1,6 @@
+.filter (@color) when (@color = #FFFFFF) {
+  background-color: fade(@color,91%);
+}
+.filter (@color) when not (@color = #FFFFFF) {
+  background-color: fade(@color,69%);
+}

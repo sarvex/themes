@@ -1,0 +1,727 @@
+<div class="wrapper">
+  <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="page-header header-filter">
+          <div class="page-header-image" style="background-image: url('assets/img/bg40.jpg');"></div>
+          <div class="content-center text-center">
+              <div class="row">
+                  <div class="col-md-8 ml-auto mr-auto2">
+                      <h1 class="title">Finding the Perfect.</h1>
+                      <h4 class="description text-white">The haute couture crowds make stylish statements between shows during couture season in Paris...</h4>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="page-header header-filter">
+            <div class="page-header-image" style="background-image: url('assets/img/bg41.jpg');"></div>
+            <div class="content-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h1 class="title">Street Style: Couture.</h1>
+                        <h4 class="description text-white">See what Karlie Kloss, Tracee Ellis Ross and others wore between the shows...</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="page-header header-filter">
+            <div class="page-header-image" style="background-image: url('assets/img/bg29.jpg');"></div>
+            <div class="content-center text-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h1 class="title">For Men With Style.</h1>
+                        <h4 class="description text-white">Shirts that actually fit? Check. Linen shorts? Yup. Those wider pants suddenly in style? Got them, too....</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </ng-template>
+  </ngb-carousel>
+    <div class="main">
+        <div class="section">
+            <div class="container">
+                <h2 class="section-title">Find what you need</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                      <h4 class="card-title card-refine">
+                          Refine
+                          <button class="btn btn-default btn-icon btn-neutral pull-right" placement="top" ngbTooltip="Reset Filter">
+                              <i class="arrows-1_refresh-69 now-ui-icons"></i>
+                          </button>
+                      </h4>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one" class="card-plain">
+                          <ngb-panel id="config-panel-one">
+                              <ng-template ngbPanelTitle>
+                                    <h6 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Price Range
+                                            <i class="now-ui-icons arrows-1_minimal-down"></i>
+                                        </a>
+                                    </h6>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <nouislider class="slider slider-default" [connect]="true" [min]="0" [max]="10000" [step]="1" [(ngModel)]="doubleSlider" [tooltips]="true"></nouislider>
+                              </ng-template>
+                          </ngb-panel>
+                          <ngb-panel>
+                              <ng-template ngbPanelTitle>
+                                <h6 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Clothing
+                                        <i class="now-ui-icons arrows-1_minimal-down"></i>
+                                    </a>
+                                </h6>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Blazers
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Casual Shirts
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Formal Shirts
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Jeans
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Polos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Pijamas
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Shorts
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Trousers
+                                    </label>
+                                </div>
+                              </ng-template>
+                          </ngb-panel>
+                          <ngb-panel>
+                              <ng-template ngbPanelTitle>
+                                <h6 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Designer
+                                        <i class="now-ui-icons arrows-1_minimal-down"></i>
+                                    </a>
+                                </h6>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        All
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Polo Ralph Lauren
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Wooyoungmi
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Alexander McQueen
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Tom Ford
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        AMI
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Berena
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Thom Sweeney
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Burberry Prorsum
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Calvin Klein
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Kingsman
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Club Monaco
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Dolce & Gabbana
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Gucci
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Biglioli
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Lanvin
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Loro Piana
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Massimo Alba
+                                    </label>
+                                </div>
+                              </ng-template>
+                          </ngb-panel>
+                          <ngb-panel>
+                              <ng-template ngbPanelTitle>
+                                <h6 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                        Colour
+                                        <i class="now-ui-icons arrows-1_minimal-down"></i>
+                                    </a>
+                                </h6>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        All
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Black
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Blue
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Brown
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Gray
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Green
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Neutrals
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Purple
+                                    </label>
+                                </div>
+                              </ng-template>
+                          </ngb-panel>
+                      </ngb-accordion>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product card-plain">
+                                    <div class="card-image">
+                                        <a href="#">
+                                            <img src="assets/img/polo.jpg" alt="..." />
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="card-title">Polo Ralph Lauren</h4>
+                                        </a>
+                                        <p class="card-description">
+                                            Impeccably tailored in Italy from lightweight navy wool.
+                                        </p>
+                                        <div class="card-footer">
+                                            <div class="price-container">
+                                                <span class="price"> &euro; 300</span>
+                                            </div>
+                                            <button class="btn btn-danger btn-neutral btn-icon btn-round pull-right" placement="top" ngbTooltip="Remove from wishlist">
+                                                <i class="now-ui-icons ui-2_favourite-28"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product card-plain">
+                                    <div class="card-image">
+                                        <a href="#">
+                                            <img src="assets/img/tom-ford.jpg" alt="..." />
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="card-title">Tom Ford</h4>
+                                        </a>
+                                        <p class="card-description">
+                                            Immaculate tailoring is TOM FORD's forte.
+                                        </p>
+                                        <div class="card-footer">
+                                            <div class="price-container">
+                                                <span class="price"> &euro; 879</span>
+                                            </div>
+                                            <button class="btn btn-neutral btn-icon btn-round pull-right"  placement="top" ngbTooltip="Add to wishlist">
+                                                <i class="now-ui-icons ui-2_favourite-28"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product card-plain">
+                                    <div class="card-image">
+                                        <a href="#">
+                                            <img src="assets/img/wooyoungmi.jpg" alt="..." />
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="card-title">Wooyoungmi</h4>
+                                        </a>
+                                        <p class="card-description">
+                                            Dark-grey slub wool, pintucked notch lapels.
+                                        </p>
+                                        <div class="card-footer">
+                                            <div class="price-container">
+                                                <span class="price">&euro; 555</span>
+                                            </div>
+                                            <button class="btn btn-neutral btn-icon btn-round pull-right"  placement="top" ngbTooltip="Add to wishlist">
+                                                <i class="now-ui-icons ui-2_favourite-28"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product card-plain">
+                                    <div class="card-image">
+                                        <a href="#">
+                                            <img src="assets/img/sweeney.jpg" alt="..." />
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="card-title">Thom Sweeney</h4>
+                                        </a>
+                                        <p class="card-description">
+                                            It's made from lightweight grey wool woven.
+                                        </p>
+                                        <div class="card-footer">
+                                            <div class="price-container">
+                                                <span class="price"> &euro; 680</span>
+                                            </div>
+                                            <button class="btn btn-neutral btn-icon btn-round pull-right" placement="top" ngbTooltip="Add to wishlist">
+                                                <i class="now-ui-icons ui-2_favourite-28"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product card-plain">
+                                    <div class="card-image">
+                                        <a href="#">
+                                            <img src="assets/img/kingsman.jpg" alt="..." />
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="card-title">Kingsman</h4>
+                                        </a>
+                                        <p class="card-description">
+                                            Crafted from khaki cotton and fully canvassed.
+                                        </p>
+                                        <div class="card-footer">
+                                            <div class="price-container">
+                                                <span class="price"> &euro; 725</span>
+                                            </div>
+                                            <button class="btn btn-neutral btn-icon btn-round pull-right" placement="top" ngbTooltip="Remove from wishlist">
+                                                <i class="now-ui-icons ui-2_favourite-28"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card card-product card-plain">
+                                    <div class="card-image">
+                                        <a href="#">
+                                            <img src="assets/img/boglioli.jpg" alt="..." />
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#">
+                                            <h4 class="card-title">Boglioli</h4>
+                                        </a>
+                                        <p class="card-description">
+                                            Masterfully crafted in Northern Italy.
+                                        </p>
+                                        <div class="card-footer">
+                                            <div class="price-container">
+                                                <span class="price">&euro; 699</span>
+                                            </div>
+                                            <button class="btn btn-neutral btn-icon btn-round pull-right" placement="top" ngbTooltip="Add to wishlist">
+                                                <i class="now-ui-icons ui-2_favourite-28"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <div class="col-md-3 ml-auto mr-auto">
+                                <button class="btn btn-primary btn-round">Load more...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section -->
+        <div class="container">
+            <h2 class="section-title">News in fashion</h2>
+        </div>
+        <div class="projects-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <div class="card card-fashion card-background" style="background-image: url('assets/img/bg35.jpg')">
+                            <div class="card-body">
+                                <div class="card-title text-left">
+                                    <h2>
+                                        <a href="#pablo">
+                                            The New York Times Todd Snyder and Raf Simons Party During Men’s Fashion Week
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="card-footer text-left">
+                                    <div class="stats">
+                                        <span>
+                                            <i class="now-ui-icons users_circle-08"></i>Emy Grace
+                                        </span>
+                                        <span>
+                                            <i class="now-ui-icons tech_watch-time"></i> June 6, 2017
+                                        </span>
+                                    </div>
+                                    <div class="stats-link pull-right">
+                                        <a href="#pablo" class="footer-link">Fashion Week</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <div class="card-container">
+                            <div class="card card-fashion">
+                                <div class="card-title">
+                                    <a href="#pablo">
+                                    </a>
+                                    <h4>
+                                        <a href="#pablo">
+                                        </a>
+                                        <a href="#pablo">
+                                            Valentina Garavani Holds a Summer Lunch in Honor of Sofia Coppola...
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-footer text-left">
+                                        <div class="stats">
+                                            <span>
+                                                <i class="now-ui-icons users_circle-08"></i>Jerry McGregor
+                                            </span>
+                                            <span>
+                                                <i class="now-ui-icons tech_watch-time"></i> June 10, 2017
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-fashion card-background" style="background-image: url('assets/img/bg40.jpg')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h2 class="section-title">Latest Offers</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-product card-plain">
+                            <div class="card-image">
+                                <img class="img rounded" src="assets/img/saint-laurent1.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#pablo">Saint Laurent</a>
+                                </h4>
+                                <p class="card-description">The structured shoulders and sleek detailing ensure a sharp silhouette. Team it with a silk pocket square and leather loafers.</p>
+                                <div class="card-footer">
+                                    <div class="price-container">
+                                        <span class="price price-old"> &euro;1,430</span>
+                                        <span class="price price-new"> &euro;743</span>
+                                    </div>
+                                    <div class="stats stats-right">
+                                        <button type="button" placement="top" ngbTooltip="" class="btn btn-icon btn-neutral" data-original-title="Saved to Wishlist">
+                                            <i class="now-ui-icons ui-2_favourite-28"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-product card-plain">
+                            <div class="card-image">
+                                <img class="img rounded" src="assets/img/saint-laurent.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <h4 class="card-title">Saint Laurent</h4>
+                                </h4>
+                                <p class="card-description">The structured shoulders and sleek detailing ensure a sharp silhouette. Team it with a silk pocket square and leather loafers.</p>
+                                <div class="card-footer">
+                                    <div class="price-container">
+                                        <span class="price price-old"> &euro;1,430</span>
+                                        <span class="price price-new">&euro;743</span>
+                                    </div>
+                                    <div class="stats stats-right">
+                                        <button type="button" placement="top" ngbTooltip="" class="btn btn-icon btn-neutral" data-original-title="Saved to Wishlist">
+                                            <i class="now-ui-icons ui-2_favourite-28"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-product card-plain">
+                            <div class="card-image">
+                                <img class="img rounded" src="assets/img/gucci.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <h4 class="card-title">Gucci</h4>
+                                </h4>
+                                <p class="card-description">The smooth woven-wool is water resistant to ensure you stay pristine after a long-haul flight. Cut in a trim yet comfortable regular fit.</p>
+                                <div class="card-footer">
+                                    <div class="price-container">
+                                        <span class="price price-old"> &euro;2,430</span>
+                                        <span class="price price-new">&euro;890</span>
+                                    </div>
+                                    <div class="stats stats-right">
+                                        <button type="button" placement="top" ngbTooltip="" class="btn btn-icon btn-neutral btn-default" data-original-title="Add to Wishlist">
+                                            <i class="now-ui-icons ui-2_favourite-28"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section -->
+        <div class="subscribe-line subscribe-line-image" style="background-image: url('assets/img/bg43.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <div class="text-center">
+                            <h4 class="title">Subscribe to our Newsletter</h4>
+                            <p class="description">
+                                Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+                            </p>
+                        </div>
+                        <div class="card card-raised card-form-horizontal">
+                            <div class="card-body">
+                                <form method="" action="">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                                              <div class="input-group-prepend">
+                                                  <span class="input-group-text">  <i class="now-ui-icons ui-1_email-85"></i></span>
+                                              </div>
+                                                <input type="email" class="form-control" placeholder="Your Email..." (focus)="focus=true" (blur)="focus=false">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button type="button" class="btn btn-primary btn-block">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-main-raised -->
+    <footer class="footer ">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.creative-tim.com">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/about-us">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/license">
+                            License
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy;
+                {{data | date: 'yyyy'}}, Designed by
+                <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+            </div>
+        </div>
+    </footer>
+</div>

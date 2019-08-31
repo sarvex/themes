@@ -1,0 +1,124 @@
+<button class="btn btn-primary text-margin" (click)="open(classic,'' , '')">
+    <i class="now-ui-icons files_single-copy-04"></i> Classic
+</button>
+<ng-template #classic let-c="close" let-d="dismiss">
+    <div class="modal-header justify-content-center">
+        <button type="button" class="close" (click)="d('Cross click')">
+            <i class="now-ui-icons ui-1_simple-remove"></i>
+        </button>
+        <h4 class="title title-up">Modal title</h4>
+    </div>
+    <div class="modal-body">
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default">Nice Button</button>
+        <button type="button" class="btn btn-danger" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+
+<button class="btn btn-primary text-margin" (click)="open(modal_mini, 'modal_mini', 'sm')">
+    <i class="now-ui-icons media-1_button-power"></i> Launch Modal Mini
+</button>
+<ng-template #modal_mini let-c="close" let-d="dismiss">
+  <div class="modal-header justify-content-center">
+      <div class="modal-profile">
+          <i class="now-ui-icons users_circle-08"></i>
+      </div>
+  </div>
+  <div class="modal-body">
+      <p>Always have an access to your profile</p>
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-link btn-neutral">Back</button>
+      <button type="button" class="btn btn-link btn-neutral" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+
+<button class="btn btn-primary text-margin" (click)="open(Notice, '', '')">
+    <i class="now-ui-icons travel_info"></i> Notice
+</button>
+<ng-template #Notice let-c="close" let-d="dismiss">
+  <div class="modal-header">
+      <button type="button" class="close" (click)="d('Cross click')">
+          <i class="now-ui-icons ui-1_simple-remove"></i>
+      </button>
+      <h5 class="modal-title" id="myModalLabel">How Do You Become an Affiliate?</h5>
+  </div>
+  <div class="modal-body">
+      <div class="instruction">
+          <div class="row">
+              <div class="col-md-8">
+                  <strong>1. Register</strong>
+                  <p class="description">The first step is to create an account at
+                      <a href="https://www.creative-tim.com/">Creative Tim</a>. You can choose a social network or go for the classic version, whatever works best for you.</p>
+              </div>
+              <div class="col-md-4">
+                  <div class="picture">
+                      <img src="assets/img/pricing1.jpg" alt="Thumbnail Image" class="rounded img-raised">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="instruction">
+          <div class="row">
+              <div class="col-md-8">
+                  <strong>2. Apply</strong>
+                  <p class="description">The first step is to create an account at
+                      <a href="https://www.creative-tim.com/">Creative Tim</a>. You can choose a social network or go for the classic version, whatever works best for you.</p>
+              </div>
+              <div class="col-md-4">
+                  <div class="picture">
+                      <img src="assets/img/project9.jpg" alt="Thumbnail Image" class="rounded img-raised">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <p>If you have more questions, don't hesitate to contact us or send us a tweet @creativetim. We're here to help!</p>
+  </div>
+  <div class="modal-footer justify-content-center">
+      <button type="button" class="btn btn-info btn-round"(click)="c('Close click')">Sounds good!</button>
+  </div>
+</ng-template>
+
+
+<button class="btn btn-primary text-margin" (click)="open(Login, 'Login', 'md')">
+    <i class="now-ui-icons users_single-02"></i> Login Modal
+</button>
+<ng-template #Login let-c="close" let-d="dismiss">
+  <div class="card card-login card-plain">
+      <div class="modal-header justify-content-center">
+          <button type="button" class="close" (click)="d('Cross click')">
+              <i class="now-ui-icons ui-1_simple-remove"></i>
+          </button>
+          <div class="header header-primary text-center">
+              <div class="logo-container">
+                  <img src="assets/img/now-logo.png" alt="">
+              </div>
+          </div>
+      </div>
+      <div class="modal-body">
+          <form class="form" method="" action="">
+              <div class="card-content">
+                  <div class="input-group form-group-no-border input-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                    </div>
+                      <input type="text" class="form-control" placeholder="First Name...">
+                  </div>
+                  <div class="input-group form-group-no-border input-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">  <i class="now-ui-icons ui-1_lock-circle-open"></i></span>
+                    </div>
+                      <input type="password" placeholder="Password..." class="form-control">
+                  </div>
+              </div>
+          </form>
+      </div>
+      <div class="modal-footer text-center">
+          <a href="#getstart" class="btn btn-neutral btn-round btn-lg btn-block">Get Started</a>
+      </div>
+  </div>
+</ng-template>

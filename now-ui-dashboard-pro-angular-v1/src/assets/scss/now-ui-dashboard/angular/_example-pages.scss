@@ -1,0 +1,11 @@
+.full-page {
+  & .main-content,
+  & .footer {
+    z-index: 4;
+  }
+
+  & .main-content {
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+}

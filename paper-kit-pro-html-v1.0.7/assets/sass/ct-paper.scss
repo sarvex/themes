@@ -1,0 +1,77 @@
+// =========================================================
+// * Paper Kit PRO - v1.0.7
+// =========================================================
+//
+// * Product Page: https://www.creative-tim.com/product/paper-kit-pro
+// * Copyright 2019 Creative Tim (https://www.creative-tim.com)
+//
+// * Coded by Creative Tim
+//
+// =========================================================
+//
+// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+@import "ct-paper/variables";
+@import "ct-paper/mixins";
+
+@import "ct-paper/typography";
+
+// Core CSS
+@import "ct-paper/misc";
+@import "ct-paper/buttons";
+@import "ct-paper/inputs";
+@import "ct-paper/progress-bars";
+@import "ct-paper/sliders";
+@import "ct-paper/alerts";
+@import "ct-paper/labels";
+@import "ct-paper/tooltips-and-popovers";
+@import "ct-paper/sections";
+@import "ct-paper/checkbox-radio";
+@import "ct-paper/navbars";
+@import "ct-paper/images";
+
+// Fancy Stuff
+@import "ct-paper/social";
+@import "ct-paper/animated-buttons";
+@import "ct-paper/switch";
+@import "ct-paper/dropdown";
+@import "ct-paper/tags";
+@import "ct-paper/preloaders";
+@import "ct-paper/sidebar";
+@import "ct-paper/bootstrap-select";
+
+// Predefined page areas
+@import "ct-paper/headers";
+@import "ct-paper/footers";
+
+// Predefined description areas
+@import "ct-paper/info-areas";
+
+// Tables
+@import "ct-paper/tables";
+
+//Comments
+@import "ct-paper/media";
+
+@import "ct-paper/tabs-navs-pagination";
+@import "ct-paper/collapse";
+@import "ct-paper/carousel";
+@import "ct-paper/modal";
+@import "ct-paper/datepicker";
+
+//For responsive features
+@import "ct-paper/responsive";
+
+//For gallery, using PhotoSwipe
+@import "ct-paper/plugins/photo-swipe/main.scss";
+@import "ct-paper/plugins/photo-swipe/default-skin.scss";
+@import "ct-paper/plugins/photo-swipe/gallery.scss";
+
+//Responsive stats
+@import "ct-paper/chartist.scss";
+
+//Cards
+@import "ct-paper/cards.scss";
+
+//FileUpload
+@import "ct-paper/fileupload.scss";

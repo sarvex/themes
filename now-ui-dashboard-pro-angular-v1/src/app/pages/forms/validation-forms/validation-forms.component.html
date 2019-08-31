@@ -1,0 +1,268 @@
+<div class="panel-header panel-header-sm"></div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-6">
+      <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+        <div class="card ">
+          <div class="card-header ">
+            <h4 class="card-title">Register Form</h4>
+          </div>
+          <div class="card-body ">
+            <div class="form-group has-label" [ngClass]="{ 'has-danger': ((focusTouched || register) && registerF.email.errors) || (registerF.email.value != '' && registerF.email.errors), 'has-success': !registerF.email.errors }" >
+              <label> Email Address * </label>
+                <input type="text" formControlName="email" (focus)="focusTouched = true" class="form-control" />
+            </div>
+            <div class="form-group has-label" [ngClass]="{ 'has-danger': ((focusTouched1 || register) && registerF.password.errors) || (registerF.password.value != '' && registerF.password.errors), 'has-success': !(registerF.password.errors) }">
+              <label> Password * </label>
+                <input type="password" formControlName="password" (focus)="focusTouched1 = true" class="form-control"  />
+            </div>
+            <div class="form-group has-label"  [ngClass]="{ 'has-danger': ((focusTouched2 || register) && registerF.confirmPassword.errors) || (registerF.confirmPassword.value != '' && registerF.confirmPassword.errors), 'has-success': !registerF.confirmPassword.errors }">
+                <label>Confirm Password *</label>
+                <input type="password" formControlName="confirmPassword" (focus)="focusTouched2 = true" class="form-control" />
+            </div>
+            <div class="category form-category">* Required fields</div>
+          </div>
+          <div class="card-footer text-right">
+            <div class="form-check pull-left">
+              <label class="form-check-label">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="optionCheckboxes"
+                  required
+                />
+                <span class="form-check-sign"></span> Subscribe to newsletter
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary">
+              Register
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <div class="card ">
+          <div class="card-header "><h4 class="card-title">Login Form</h4></div>
+          <div class="card-body ">
+            <div class="form-group has-label" [ngClass]="{ 'has-danger': ((focusTouched3 || login) && loginF.fullName.errors) || (loginF.fullName.value != '' && loginF.fullName.errors), 'has-success': !(loginF.fullName.errors) }">
+              <label>Full Name *</label>
+              <input type="text" formControlName="fullName" (focus)="focusTouched3 = true" class="form-control" />
+          </div>
+          <div class="form-group has-label" [ngClass]="{ 'has-danger': ((focusTouched4 || login) && loginF.email.errors) || (loginF.email.value != '' && loginF.email.errors), 'has-success': !loginF.email.errors }" >
+              <label> Email Address * </label>
+              <input type="text" formControlName="email" (focus)="focusTouched4 = true" class="form-control" />
+          </div>
+          <div class="form-group has-label" [ngClass]="{ 'has-danger': ((focusTouched5 || login) && loginF.password.errors) || (loginF.password.value != '' && loginF.password.errors), 'has-success': !(loginF.password.errors) }">
+              <label> Password * </label>
+              <input type="password" formControlName="password" (focus)="focusTouched5 = true" class="form-control"  />
+          </div>
+          <div class="category form-category">* Required fields</div>
+        </div>
+        <div class="card-footer text-center">
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+      </div>
+      </form>
+    </div>
+    <div class="col-md-12">
+      <form [formGroup]="typeForm" (ngSubmit)="onType()" class="form-horizontal" >
+        <div class="card ">
+          <div class="card-header ">
+            <h4 class="card-title">Type Validation</h4>
+          </div>
+          <div class="card-body ">
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Required Text</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched6 || type) && typeF.requiredText.errors) || (typeF.requiredText.value != '' && typeF.requiredText.errors), 'has-success': !(typeF.requiredText.errors) }">
+                  <input type="text" formControlName="requiredText" (focus)="focusTouched6 = true" class="form-control" />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>required</code>
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched7 || type) && typeF.email.errors) || (typeF.email.value != '' && typeF.email.errors), 'has-success': !typeF.email.errors }">
+                  <input type="text" formControlName="email" (focus)="focusTouched7 = true" class="form-control" />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>email="true"</code>
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Number</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched8 || type) && typeF.number.errors) || (typeF.number.value != '' && typeF.number.errors), 'has-success': !typeF.number.errors }">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="number"
+                     (focus)="focusTouched8 = true"
+                    formControlName="number"
+                    number="true"
+                  />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>number="true"</code>
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Url</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched9 || type) && typeF.url.errors) || (typeF.url.value != '' && typeF.url.errors), 'has-success': !typeF.url.errors }">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="url"
+                     (focus)="focusTouched9 = true"
+                    formControlName="url"
+                    url="true"
+                  />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>url="true"</code>
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Equal to</label>
+              <div class="col-sm-3">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched10 || type) && typeF.idSource.errors) || (typeF.idSource.value != '' && typeF.idSource.errors), 'has-success': !(typeF.idSource.errors) }">
+                  <input
+                    class="form-control"
+                    id="idSource"
+                     (focus)="focusTouched10 = true"
+                    formControlName="idSource"
+                    type="text"
+                    placeholder="#idSource"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched11 || type) && typeF.idDestination.errors) || (typeF.idDestination.value != '' && typeF.idDestination.errors), 'has-success': !typeF.idDestination.errors }">
+                  <input
+                    class="form-control"
+                    id="idDestination"
+                    formControlName="idDestination"
+                    type="text"
+                     (focus)="focusTouched11 = true"
+                    placeholder="#idDestination"
+                    equalTo="#idSource"
+                  />
+                </div>
+              </div>
+              <label class="col-sm-4 label-on-right">
+                <code>equalTo="#idSource"</code>
+              </label>
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button type="submit" class="btn btn-primary">
+              Validate Inputs
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-12">
+      <form [formGroup]="rangeForm" (ngSubmit)="onRange()" class="form-horizontal">
+        <div class="card ">
+          <div class="card-header ">
+            <h4 class="card-title">Range Validation</h4>
+          </div>
+          <div class="card-body ">
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Min Length</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched12 || range) && rangeF.minLength.errors) || (rangeF.minLength.value != '' && rangeF.minLength.errors), 'has-success': !rangeF.minLength.errors }">
+                  <input
+                    class="form-control"
+                    type="text"
+                     (focus)="focusTouched12 = true"
+                    formControlName="minLength"
+                    name="min_length"
+                    minLength="5"
+                  />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>minLength="5"</code>
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Max Length</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched13 || range) && rangeF.maxLength.errors) || (rangeF.maxLength.value != '' && rangeF.maxLength.errors), 'has-success': !rangeF.maxLength.errors }">
+                  <input
+                    class="form-control"
+                     (focus)="focusTouched13 = true"
+                    formControlName="maxLength"
+                    type="text"
+                    name="max_length"
+                  />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>maxLength="5"</code>
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Range</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched14 || range) && rangeF.rangeD.errors) || (rangeF.rangeD.value != '' && rangeF.rangeD.errors), 'has-success': !rangeF.rangeD.errors }">
+                  <input
+                    class="form-control"
+                    formControlName="rangeD"
+                    type="text"
+                     (focus)="focusTouched14 = true"
+                    name="rangeD"
+                    range="[6,10]"
+                  />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>range="[6,10]"</code>
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Min Value</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched15 || range) && rangeF.minValue.errors) || (rangeF.minValue.value != '' && rangeF.minValue.errors), 'has-success': !rangeF.minValue.errors }">
+                  <input class="form-control" type="text" (focus)="focusTouched15 = true" name="min" min="6" formControlName="minValue" />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>min="6"</code>
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-sm-2 col-form-label">Max Value</label>
+              <div class="col-sm-7">
+                <div class="form-group" [ngClass]="{ 'has-danger': ((focusTouched16 || range) && rangeF.maxValue.errors) || (rangeF.maxValue.value != '' && rangeF.maxValue.errors), 'has-success': !rangeF.maxValue.errors }">
+                  <input class="form-control" type="text" (focus)="focusTouched16 = true" name="max" max="6" formControlName="maxValue" />
+                </div>
+              </div>
+              <label class="col-sm-3 label-on-right">
+                <code>max="6"</code>
+              </label>
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button type="submit" class="btn btn-primary">
+              Validate Inputs
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

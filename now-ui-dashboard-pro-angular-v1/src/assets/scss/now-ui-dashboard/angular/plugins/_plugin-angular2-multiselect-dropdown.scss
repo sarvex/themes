@@ -1,0 +1,83 @@
+.cuppa-dropdown {
+  .selected-list {
+    .c-btn {
+      box-shadow: none !important;
+      border-radius: 30px !important;
+      padding: 7px 18px 8px 18px !important;
+      border: 1px solid #e3e3e3 !important;
+      // .c-angle-down{
+      //   height: 11px;
+      //   width: 11px;
+      //   top: 12px;
+      // }
+    }
+    .c-list .c-token {
+      background: none !important;
+      .c-label {
+        color: $black-color !important;
+      }
+      .c-remove svg {
+        fill: $black-color !important;
+      }
+    }
+  }
+  .dropdown-list {
+    z-index: 1000 !important;
+
+    .list-area {
+      border: none !important;
+      border-radius: 0.125rem !important;
+      box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2) !important;
+
+      .list-filter input {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+
+      .pure-checkbox {
+        label {
+          width: 100%;
+        }
+        input[type="checkbox"]:checked + label:before {
+          background: transparent !important;
+          animation: none !important;
+          right: 0 !important;
+        }
+        input[type="checkbox"] + label:before {
+          border: none !important;
+        }
+        input[type="checkbox"] + label:after {
+          left: auto !important;
+          width: 14px !important;
+          height: 7px !important;
+          border-width: 0 0 1px 1px !important;
+          right: 0 !important;
+          opacity: 0.5 !important;
+          border-color: $black-color !important;
+        }
+        &.selected-item {
+          background: transparent;
+        }
+      }
+      ul li:last-child {
+        border-bottom-right-radius: 0.125rem;
+        border-bottom-left-radius: 0.125rem;
+      }
+      ul li:first-child {
+        border-top-left-radius: 0.125rem;
+        border-top-right-radius: 0.125rem;
+      }
+    }
+
+    .arrow-up {
+      margin-left: 30px !important;
+      border-bottom: 15px solid #fff;
+    }
+  }
+}
+angular2-multiselect {
+  &,
+  & * {
+    outline: none;
+  }
+}

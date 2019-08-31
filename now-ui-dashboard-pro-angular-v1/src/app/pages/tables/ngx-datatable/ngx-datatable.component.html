@@ -1,0 +1,83 @@
+<div class="panel-header"></div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header"><h4 class="card-title">Ngx Datatable</h4></div>
+        <div class="card-body">
+          <div class="toolbar">
+            <!--        Here you can write extra buttons/actions for the toolbar              -->
+          </div>
+          <div class="dataTables_wrapper">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="dataTables_length" id="datatable_length">
+                  <label>
+                    Show
+                    <select
+                      name="datatable_length"
+                      aria-controls="datatable"
+                      class="form-control form-control-sm"
+                      (change)="entriesChange($event)"
+                    >
+                      <option value="10" [selected]="entries==10">10</option>
+                      <option value="25" [selected]="entries==25">25</option>
+                      <option value="50" [selected]="entries==50">50</option>
+                      <option value="-1" [selected]="entries==-1">All</option>
+                    </select>
+                    entries
+                    </label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div id="datatable_filter" class="dataTables_filter">
+                  <label>
+                    <input
+                      type="search"
+                      class="form-control form-control-sm"
+                      placeholder="Search records"
+                      aria-controls="datatable"
+                      (keyup)="filterTable($event)"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <ngx-datatable
+              class="bootstrap selection-cell"
+              [columnMode]="'force'"
+              [headerHeight]="50"
+              [footerHeight]="50"
+              [rowHeight]="'auto'"
+              [limit]="entries != -1 ? entries:undefined"
+              [rows]="temp"
+              (activate)="onActivate($event)"
+            >
+
+          <ngx-datatable-column name="Name"></ngx-datatable-column>
+          <ngx-datatable-column name="Position"></ngx-datatable-column>
+          <ngx-datatable-column name="Office"></ngx-datatable-column>
+          <ngx-datatable-column name="Age"></ngx-datatable-column>
+          <ngx-datatable-column [sortable]="false" [canAutoResize]="false" [draggable]="false" [resizeable]="false">
+            <ng-template ngx-datatable-header-template let-value="value" let-allRowsSelected="allRowsSelected" let-selectFn="selectFn">
+              Actions
+            </ng-template>
+            <ng-template ngx-datatable-cell-template let-value="value" let-isSelected="isSelected" let-onCheckboxChangeFn="onCheckboxChangeFn">
+              <a href="#" class="btn btn-round btn-info btn-icon btn-sm like" (click)="likeFunction($event)"><i class="fas fa-heart"></i></a>
+              <a href="#" class="btn btn-round btn-warning btn-icon btn-sm edit" (click)="editFunction($event)"><i class="far fa-calendar-alt"></i></a>
+              <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove" (click)="deleteFunction($event)"><i class="fas fa-times"></i></a>
+            </ng-template>
+        </ngx-datatable-column>
+            </ngx-datatable>
+          </div>
+
+        </div>
+        <!-- end content-->
+      </div>
+      <!--  end card  -->
+    </div>
+    <!-- end col-md-12 -->
+  </div>
+  <!-- end row -->
+</div>

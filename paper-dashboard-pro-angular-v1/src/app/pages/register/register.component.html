@@ -1,0 +1,175 @@
+<nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+  <div class="container">
+    <div class="navbar-wrapper">
+      <div class="navbar-toggle" (click)="sidebarToggle()">
+        <button type="button" class="navbar-toggler">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <a class="navbar-brand" routerLinkActive="active" [routerLink]="['/dashboard']">Paper Dashboard PRO Angular</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLinkActive="active" [routerLink]="['/dashboard']" class="nav-link">
+            <i class="nc-icon nc-layout-11"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a routerLinkActive="active" [routerLink]="['/pages/register']" class="nav-link">
+            <i class="nc-icon nc-book-bookmark"></i> Register
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a routerLinkActive="active" [routerLink]="['/pages/login']"  class="nav-link">
+            <i class="nc-icon nc-tap-01"></i> Login
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a routerLinkActive="active" [routerLink]="['/pages/user']" class="nav-link">
+            <i class="nc-icon nc-satisfied"></i> User
+          </a>
+        </li>
+        <li class="nav-item  active ">
+          <a routerLinkActive="active" [routerLink]="['/pages/lock']" class="nav-link">
+            <i class="nc-icon nc-key-25"></i> Lock
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper wrapper-full-page ">
+  <div class="full-page register-page section-image" filter-color="black" data-image="./assets/img/bg/jan-sendereks.jpg">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 ml-auto">
+            <div class="info-area info-horizontal mt-5">
+              <div class="icon icon-primary">
+                <i class="nc-icon nc-tv-2"></i>
+              </div>
+              <div class="description">
+                <h5 class="info-title">Marketing</h5>
+                <p class="description">
+                  We've created the marketing campaign of the website. It was a very interesting collaboration.
+                </p>
+              </div>
+            </div>
+            <div class="info-area info-horizontal">
+              <div class="icon icon-primary">
+                <i class="nc-icon nc-html5"></i>
+              </div>
+              <div class="description">
+                <h5 class="info-title">Fully Coded in HTML5</h5>
+                <p class="description">
+                  We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub.
+                </p>
+              </div>
+            </div>
+            <div class="info-area info-horizontal">
+              <div class="icon icon-info">
+                <i class="nc-icon nc-atom"></i>
+              </div>
+              <div class="description">
+                <h5 class="info-title">Built Audience</h5>
+                <p class="description">
+                  There is also a Fully Customizable CMS Admin Dashboard for this product.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mr-auto">
+            <div class="card card-signup text-center">
+              <div class="card-header ">
+                <h4 class="card-title">Register</h4>
+                <div class="social">
+                  <button class="btn btn-icon btn-round btn-twitter">
+                    <i class="fa fa-twitter"></i>
+                  </button>
+                  <button class="btn btn-icon btn-round btn-dribbble">
+                    <i class="fa fa-dribbble"></i>
+                  </button>
+                  <button class="btn btn-icon btn-round btn-facebook">
+                    <i class="fa fa-facebook-f"></i>
+                  </button>
+                  <p class="card-description"> or be classical </p>
+                </div>
+              </div>
+              <div class="card-body ">
+                <form class="form" method="" action="">
+                  <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="nc-icon nc-single-02"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="First Name..." (focus)="focus=true" (blur)="focus=false">
+                  </div>
+                  <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="nc-icon nc-circle-10"></i>
+                      </span>
+                    </div>
+                    <input type="text" placeholder="Last Name..." class="form-control" (focus)="focus1=true" (blur)="focus1=false">
+                  </div>
+                  <div class="input-group" [ngClass]="{'input-group-focus':focus2===true}">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="nc-icon nc-email-85"></i>
+                      </span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="Email..." (focus)="focus2=true" (blur)="focus2=false">
+                  </div>
+                  <div class="form-check text-left">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" checked>
+                      <span class="form-check-sign"></span>
+                      I agree to the
+                      <a href="#something">terms and conditions</a>.
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer ">
+                <a href="javascript:void(0)" class="btn btn-info btn-round">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer footer-black  footer-white ">
+      <div class="container">
+        <div class="row">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
+              </li>
+              <li>
+                <a href="http://blog.creative-tim.com/" target="_blank">Blog</a>
+              </li>
+              <li>
+                <a href="https://www.creative-tim.com/license" target="_blank">Licenses</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="credits ml-auto">
+            <span class="copyright">
+              &copy; {{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

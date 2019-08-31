@@ -1,0 +1,65 @@
+{
+  "name": "now-ui-dashboard-pro-react",
+  "version": "1.3.0",
+  "private": true,
+  "homepage": "https://creativetimofficial.github.io/now-ui-dashboard-pro-react/#/documentation/tutorial",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "chart.js": "2.8.0",
+    "classnames": "2.2.6",
+    "moment": "2.24.0",
+    "node-sass-chokidar": "1.3.5",
+    "nouislider": "13.1.5",
+    "npm-run-all": "4.1.5",
+    "perfect-scrollbar": "1.4.0",
+    "react": "16.8.6",
+    "react-big-calendar": "0.21.0",
+    "react-bootstrap-sweetalert": "4.4.1",
+    "react-bootstrap-switch": "15.5.3",
+    "react-bootstrap-wizard": "0.0.7",
+    "react-chartjs-2": "2.7.6",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.8.6",
+    "react-google-maps": "9.4.5",
+    "react-jvectormap": "0.0.12",
+    "react-notification-alert": "0.0.12",
+    "react-router-dom": "5.0.0",
+    "react-scripts": "3.0.1",
+    "react-select": "3.0.4",
+    "react-table": "6.10.0",
+    "react-tagsinput": "3.19.0",
+    "reactstrap": "8.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "compile-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.css",
+    "minify-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.css --source-map true",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "3.36.2",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.8.19",
+    "ajv": "6.10.0",
+    "typescript": "3.5.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

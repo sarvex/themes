@@ -1,0 +1,18 @@
+//Utilities
+@import "../core/mixins/transparency";
+
+//Components
+@import "../core/mixins/buttons";
+@import "../core/mixins/vendor-prefixes";
+@import "../core/mixins/inputs";
+@import "../core/mixins/cards";
+@import "../core/mixins/dropdown";
+@import "../core/mixins/badges";
+@import "../core/mixins/popovers";
+@import "../core/mixins/modals";
+@import "../core/mixins/pages";
+@import "../core/mixins/datepicker";
+@import "../core/mixins/navbar";
+
+@import "mixins/tags";
+@import "mixins/social-buttons";

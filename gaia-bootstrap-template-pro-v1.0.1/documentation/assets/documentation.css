@@ -1,0 +1,55 @@
+.tim-row{
+    margin-bottom: 40px;
+}
+
+.fixed-section{
+    top: 90px;
+    max-height: 80vh;
+    overflow: scroll;
+}
+.fixed-section ul{
+    padding: 0;
+}
+.fixed-section ul li{
+    list-style: none;
+}
+.fixed-section li a{
+    font-size: 14px;
+    padding: 2px;
+    display: block;
+    color: #666666;
+}
+.fixed-section li a.active{
+    color: #00bbff;
+}
+.fixed-section.float{
+    position: fixed;
+    top: 100px;
+    width: 200px;
+    margin-top: 0;
+}
+.name{
+    color: #888888;
+    display: block;
+    float: left;
+    font-size: 16px;
+    width: 50px;
+}
+#typography-row h1, #typography-row h2, #typography-row h3, #typography-row h4, #typography-row h5, #typography-row h6, #typography-row p {
+    margin: 20px 0px;
+}
+.pick-class-label{
+    border-radius: 8px;
+    border: 1px solid  #888888;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    margin-right: 10px;
+    padding: 23px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}

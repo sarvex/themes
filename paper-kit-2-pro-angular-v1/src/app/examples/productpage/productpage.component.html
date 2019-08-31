@@ -1,0 +1,298 @@
+<div class="wrapper">
+	<div class="page-header page-header-xs" style="background-image: url('./assets/img/sections/clark-street-mercantile.jpg');">
+		<div class="filter"></div>
+	</div>
+    <div class="main">
+        <div class="section">
+            <div class="container">
+                    <div class="row title-row">
+                        <div class="col-md-2">
+                            <h4 class="shop">Shop</h4>
+                        </div>
+                        <div class="col-md-4 ml-auto">
+                            <div class="pull-right">
+                                <span class="text-muted">Order Status</span> <button class="btn btn-link"> <i class="fa fa-shopping-cart"></i> 0 Items</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 col-sm-6">
+
+                            <div id="carousel" class="ml-auto mr-auto">
+								<div class="card page-carousel">
+									<ngb-carousel>
+			                            <ng-template ngbSlide>
+											<img class="d-block img-fluid" src="./assets/img/jacket-1.jpg" alt="Awesome Item">
+											<div class="carousel-caption d-none d-md-block">
+												<p>Somewhere</p>
+											</div>
+			                            </ng-template>
+			                            <ng-template ngbSlide>
+											<img class="d-block img-fluid" src="./assets/img/jacket-2.jpg" alt="Awesome Item">
+											<div class="carousel-caption d-none d-md-block">
+												<p>Somewhere else</p>
+											</div>
+			                            </ng-template>
+			                            <ng-template ngbSlide>
+											<img class="d-block img-fluid" src="./assets/img/jacket-3.jpg" alt="Awesome Item">
+											<div class="carousel-caption d-none d-md-block">
+												<p>Here it is</p>
+											</div>
+			                            </ng-template>
+										<ng-template ngbSlide>
+											<img class="d-block img-fluid" src="./assets/img/jacket-4.jpg" alt="Awesome Item">
+											<div class="carousel-caption d-none d-md-block">
+												<p>Here it is</p>
+											</div>
+										</ng-template>
+			                        </ngb-carousel>
+								</div>
+                            </div> <!-- end carousel -->
+
+                        </div>
+                        <div class="col-md-5 col-sm-6">
+							<h2>Suede Blazer</h2>
+							<h4 class="price"><strong>&euro; 2,900.00</strong></h4>
+							<hr />
+							<p>This blazer in suede is a must-have of your wardrobe. Team it with a angora blazer and a angora sweater.</p>
+							<span class="label label-default shipping">Free shipping to Europe </span>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Select color</label>
+									<div class="form-group">
+						                <angular2-multiselect [data]="dropdownList" [(ngModel)]="selectedItems"
+						                    [settings]="dropdownSettings"
+						                    (onSelect)="onItemSelect($event)"
+						                    (onDeSelect)="OnItemDeSelect($event)"
+						                    (onSelectAll)="onSelectAll($event)"
+						                    (onDeSelectAll)="onDeSelectAll($event)">
+						                </angular2-multiselect>
+						           </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <label>Select size</label>
+									<div class="form-group">
+						                <angular2-multiselect [data]="dropdownList1" [(ngModel)]="selectedItems1"
+						                    [settings]="dropdownSettings1"
+						                    (onSelect)="onItemSelect($event)"
+						                    (onDeSelect)="OnItemDeSelect($event)"
+						                    (onSelectAll)="onSelectAll($event)"
+						                    (onDeSelectAll)="onDeSelectAll($event)">
+						                </angular2-multiselect>
+						           </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-md-7 offset-md-5 col-sm-8">
+                                    <button class="btn btn-danger btn-block btn-round">Add to Cart &nbsp;<i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row card-body-row">
+                    <div class="col-md-4 col-sm-4">
+                       <div class="info">
+                            <div class="icon icon-warning">
+                                <i class="nc-icon nc-delivery-fast"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title"> 2 Days Delivery </h4>
+                                <p>Spend your time generating new ideas. You don't have to think of implementing anymore.</p>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                       <div class="info">
+                            <div class="icon icon-danger">
+                                <i class="nc-icon nc-credit-card"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title"> Refundable Policy </h4>
+                                <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient.</p>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                       <div class="info">
+                            <div class="icon icon-success">
+                                <i class="nc-icon nc-bulb-63"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title"> Popular Item </h4>
+                                <p>Choose from a veriety of colors resembling sugar paper pastels.</p>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <hr />
+                    <p>What to find out more about how we build our stuff? <a class="link-danger">Learn more.</a></p>
+                <hr />
+                <div class="faq">
+
+                    <h4>Frequently Asked Questions</h4> <br/>
+					<ngb-accordion #acc="ngbAccordion">
+						<ngb-panel>
+							<ng-template ngbPanelTitle>
+								<h5 class="mb-0 panel-title">
+									<a class="collapsed">
+										Default Collapsible Item 1
+										<i class="nc-icon nc-minimal-down"></i>
+									</a>
+								</h5>
+							</ng-template>
+							<ng-template ngbPanelContent>
+								  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+								  aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+								  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								  craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+								  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+								  labore sustainable VHS.
+							</ng-template>
+						</ngb-panel>
+						<ngb-panel>
+							<ng-template ngbPanelTitle>
+								<h5 class="mb-0 panel-title">
+									<a class="collapsed">
+										Default Collapsible Item 2
+										<i class="nc-icon nc-minimal-down"></i>
+									</a>
+								</h5>
+							</ng-template>
+							<ng-template ngbPanelContent>
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+								aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+								sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+								occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+								labore sustainable VHS.
+							</ng-template>
+						</ngb-panel>
+						<ngb-panel>
+							<ng-template ngbPanelTitle>
+								<h5 class="mb-0 panel-title">
+									<a class="collapsed">
+										Default Collapsible Item 3
+										<i class="nc-icon nc-minimal-down"></i>
+									</a>
+								</h5>
+							</ng-template>
+							<ng-template ngbPanelContent>
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+								aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+								sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+								occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+								labore sustainable VHS.
+							</ng-template>
+						</ngb-panel>
+					</ngb-accordion>
+                </div>
+                <div class="row add-row">
+                    <div class="col-md-4 col-sm-4">
+                        <h4>Complete the Look</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <h5>Full-Grain Leather Briefcase</h5>
+                        <p class="price"><strong>&euro; 975.00</strong></p>
+
+                        <p>Constructed from robust full-grain leather, it's finished with the label's 'city webbing' - a rich take on the brand's signature stripes.</p>
+						<br/>
+                        <button class="btn btn-danger btn-round"> Add to Cart</button>
+                    </div>
+                    <div class="col-md-3 ml-auto col-sm-4">
+                        <img src="./assets/img/gallery/paul-smith.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"><h4>Similar Products</h4><br/></div>
+                    <div class="col-md-4 col-sm-4">
+						<div class="card card-product card-plain">
+							<div class="card-image">
+								<a href="javascript:void(0)">
+									<img src="./assets/img/balmain-1.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+								</a>
+								<div class="card-body">
+									<div class="card-description">
+										<h5 class="card-title">Double Breasted Mini Dress</h5>
+										<p class="card-description">Dresses & Skirts</p>
+									</div>
+									<div class="actions">
+										<h5>1.300 &euro;</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+						<div class="card card-product card-plain">
+							<div class="card-image">
+								<a href="javascript:void(0)">
+									<img src="./assets/img/balmain-2.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+								</a>
+								<div class="card-body">
+									<div class="card-description">
+										<h5 class="card-title">Chrystal Dress</h5>
+										<p class="card-description">Dresses & Skirts</p>
+									</div>
+									<div class="actions">
+										<h5>1.500 &euro;</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+						<div class="card card-product card-plain">
+	                        <div class="card-image">
+	                            <a href="javascript:void(0)">
+	                                <img src="./assets/img/balmain-3.jpg" alt="Rounded Image" class="img-rounded img-responsive">
+	                            </a>
+	                            <div class="card-body">
+	                                <div class="card-description">
+	                                    <h5 class="card-title">Chrystal Skirt</h5>
+	                                    <p class="card-description">Only on demand</p>
+	                                </div>
+
+	                                <div class="actions">
+	                                    <h5>1.200 &euro;</h5>
+	                                </div>
+	                            </div>
+	                        </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer section-black">
+	<div class="container">
+		<div class="row">
+			<nav class="footer-nav">
+				<ul>
+					<li><a href="https://www.creative-tim.com">Creative Tim</a></li>
+					<li><a href="http://blog.creative-tim.com">Blog</a></li>
+					<li><a href="https://www.creative-tim.com/license">Licenses</a></li>
+				</ul>
+			</nav>
+			<div class="credits ml-auto">
+				<span class="copyright">
+					© {{data | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>

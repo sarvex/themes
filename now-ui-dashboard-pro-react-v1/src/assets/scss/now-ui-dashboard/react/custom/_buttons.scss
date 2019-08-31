@@ -1,0 +1,12 @@
+.btn.btn-outline-neutral {
+  &,
+  &:hover,
+  &:focus,
+  &:active,
+  &:not(:disabled):not(.disabled):active {
+    border-color: $white-color;
+  }
+}
+.btns-mr-5 .btn {
+  margin-right: 5px;
+}

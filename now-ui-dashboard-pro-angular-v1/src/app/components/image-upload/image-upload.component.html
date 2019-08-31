@@ -1,0 +1,29 @@
+<div class="fileinput text-center" #input>
+  <div [ngClass]="{ 'img-circle': isRound }" class="thumbnail img-raised">
+    <img src="{{ state.imagePreviewUrl }}" alt="..." />
+  </div>
+  <div>
+    <button
+      class="btn btn-raised btn-round btn-default btn-file"
+      (click)="handleClick()"
+      *ngIf="!this.state.file"
+    >
+      Select image
+    </button>
+    <button
+      class="btn btn-raised btn-round btn-default btn-file"
+      (click)="handleClick()"
+      *ngIf="this.state.file"
+    >
+      Change
+    </button>
+    <button
+      class="btn btn-danger btn-round fileinput-exists"
+      (click)="handleRemove()"
+      *ngIf="this.state.file"
+    >
+      <i class="now-ui-icons ui-1_simple-remove"></i> Remove
+    </button>
+  </div>
+  <input type="file" />
+</div>

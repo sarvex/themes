@@ -1,0 +1,66 @@
+<div class="main-content">
+  <div class="container">
+    <div class="col-md-4 ml-auto mr-auto">
+      <form class="form" method="" action="">
+        <div class="card card-login card-plain">
+          <div class="card-header ">
+            <div class="logo-container">
+              <img src="assets/img/now-logo.png" alt="" />
+            </div>
+          </div>
+          <div class="card-body ">
+            <div
+              class="input-group no-border form-control-lg"
+              [ngClass]="{ 'input-group-focus': focus === true }"
+            >
+              <span class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="now-ui-icons users_circle-08"></i>
+                </div>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name..."
+                (focus)="focus = true"
+                (blur)="focus = false"
+              />
+            </div>
+            <div
+              class="input-group no-border form-control-lg"
+              [ngClass]="{ 'input-group-focus': focus2 === true }"
+            >
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="now-ui-icons text_caps-small"></i>
+                </div>
+              </div>
+              <input
+                type="text"
+                placeholder="Last Name..."
+                class="form-control"
+                (focus)="focus2 = true"
+                (blur)="focus2 = false"
+              />
+            </div>
+          </div>
+          <div class="card-footer ">
+            <a
+              href="#pablo"
+              class="btn btn-primary btn-round btn-lg btn-block mb-3"
+              >Get Started</a
+            >
+            <div class="pull-left">
+              <h6>
+                <a href="#pablo" class="link footer-link">Create Account</a>
+              </h6>
+            </div>
+            <div class="pull-right">
+              <h6><a href="#pablo" class="link footer-link">Need Help?</a></h6>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

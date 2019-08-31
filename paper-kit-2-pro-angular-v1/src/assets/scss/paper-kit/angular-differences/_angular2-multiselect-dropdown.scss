@@ -1,0 +1,54 @@
+.selected-list .c-btn{
+    box-shadow: none !important;
+}
+.selected-list .c-list .c-token {
+    background: none !important;
+    .c-label{
+      color: $black-color !important;
+    }
+}
+.selected-list .c-list .c-token .c-remove svg{
+  fill: black !important;
+  margin-top: -2px;
+}
+.cuppa-dropdown{
+    .dropdown-list{
+        z-index: 1000 !important;
+
+        .list-area{
+            border-radius: 12px !important;
+
+            .list-filter{
+              height: 36px;
+              input{
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+              }
+              .c-search{
+                top: 0;
+              }
+            }
+
+            .pure-checkbox{
+                input[type="checkbox"]:checked +
+                label:before{
+                    background: transparent !important;
+                    animation: none !important;
+                }
+                input[type="checkbox"] +
+                label:before{
+                    border: none !important;
+                }
+                input[type="checkbox"] +
+                label:after{
+                    border-color: $black-color !important;
+                }
+            }
+        }
+
+        .arrow-up{
+            margin-left: 30px !important;
+        }
+    }
+
+}

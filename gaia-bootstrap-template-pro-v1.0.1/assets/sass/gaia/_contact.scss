@@ -1,0 +1,93 @@
+.address{
+    h4{
+        font-size: 1.6em;
+    }
+    p{
+        font-size: 1em;
+    }
+}
+.section-contact-1,
+.section-contact-2,
+.section-contact-3{
+    h4{
+        margin-bottom: 5px;
+    }
+}
+
+.section-contact-1{
+	.form-control, 
+	.form-control:focus{
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-radius: 0;
+		padding: 8px 0;
+		font-size: 16px;
+	}
+	.contact-form{
+    	margin-top: 90px;
+	}
+}
+
+.section-contact-2{
+    .contact-form{
+        margin-top: 20px;
+    }
+    label{
+        font-weight: 400;
+        font-size: 16px;
+/*         margin-left: 10px; */
+    }
+}
+
+.section-contact-3{
+	position: relative;
+	overflow: hidden;
+	margin-top: 30px;
+	padding-bottom: 0;
+
+	.contact-container{
+		position: relative;
+
+		.address-container{
+			position: absolute;
+			left: 0;
+			width: 40%;
+			height: 570px;
+			background-color: rgba(255,255,255,0.75);
+			z-index: 3;
+			padding: 20px 20px 20px 60px;
+
+			.address{
+				text-align: center;
+			}
+		}
+		
+		.map{
+			position: relative;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 570px;
+			overflow: hidden;
+			display: block;
+			
+			.big-map{
+				height: 100%;
+				width: 100%;
+				display: block;
+							
+			}
+		}
+	}
+}
+
+@media (min-width: 768px){
+	.section-contact-3{
+		min-height: 570px;
+
+		.address{
+		   margin-top: 100px;
+		}
+	}
+}

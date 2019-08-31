@@ -1,0 +1,47 @@
+/*!
+
+ =========================================================
+ * Gaia Bootstrap Template PRO - v1.0.1
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/gaia-bootstrap-template-pro
+ * Copyright 2019 Creative Tim (https://www.creative-tim.com)
+
+ * Coded by Creative Tim
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+@import "gaia/variables";
+@import "gaia/mixins";
+
+@import "gaia/typography";
+
+// Core CSS
+@import "gaia/misc";
+@import "gaia/buttons";
+@import "gaia/inputs";
+@import "gaia/sections";
+@import "gaia/navbars";
+@import "gaia/footers";
+@import "gaia/labels";
+@import "gaia/social-buttons";
+@import "gaia/dropdown";
+@import "gaia/carousel";
+
+// Template
+@import "gaia/cards";
+@import "gaia/headers";
+@import "gaia/projects";
+@import "gaia/clients";
+@import "gaia/team";
+@import "gaia/numbers";
+@import "gaia/contact";
+@import "gaia/closure";
+@import "gaia/example-pages";
+
+// Responsive Adjustments
+@import "gaia/responsive";

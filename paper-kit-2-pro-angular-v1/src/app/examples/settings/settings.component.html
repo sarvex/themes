@@ -1,0 +1,97 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs settings-background" style="background-image: url('./assets/img/sections/joshua-earles.jpg')">
+        <div class="filter"></div>
+    </div>
+    <div class="profile-content section">
+        <div class="container">
+            <div class="row">
+                <div class="profile-picture">
+                    <app-image-upload [image]="'./assets/img/faces/clem-onojeghuo-2.jpg'"></app-image-upload>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <form class="settings-form">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control border-input" placeholder="First Name">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label>Last Email</label>
+                                    <input type="text" class="form-control border-input" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                      <div class="form-group">
+                            <label>Job Title</label>
+                            <input type="text" class="form-control border-input" placeholder="Job Title">
+                      </div>
+                      <div class="form-group">
+                        <label>Description</label>
+                            <textarea class="form-control textarea-limited" placeholder="This is a textarea limited to 150 characters." rows="3" maxlength="150" ></textarea>
+                            <h5><small><span id="textarea-limited-message" class="pull-right">150 characters left</span></small></h5>
+                      </div>
+
+                    <label>Notifications</label>
+                    <ul class="notifications">
+                          <li class="notification-item">
+                            Updates regarding platform changes
+                            <bSwitch
+                                [switch-on-color]="'info'"
+                                [switch-off-color]="'info'"
+                                [(ngModel)]="state_info"
+                                name="first_switch">
+                            </bSwitch>
+                          </li>
+                          <li class="notification-item">
+                            Updates regarding product changes
+                            <bSwitch
+                                [switch-on-color]="'info'"
+                                [switch-off-color]="'info'"
+                                [(ngModel)]="state_info1"
+                                name="second_switch">
+                            </bSwitch>
+                          </li>
+                          <li class="notification-item">
+                            Weekly newsletter
+                            <bSwitch
+                                [switch-on-color]="'info'"
+                                [switch-off-color]="'info'"
+                                [(ngModel)]="state_info2"
+                                name="third_switch">
+                            </bSwitch>
+                          </li>
+                      </ul>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-wd btn-info btn-round">Save</button>
+                      </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer section-nude">
+    <div class="container">
+        <div class="row">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://www.creative-tim.com">Creative Tim</a></li>
+                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
+                    <li><a href="https://www.creative-tim.com/license">Licenses</a></li>
+                </ul>
+            </nav>
+            <div class="credits ml-auto">
+                <span class="copyright">
+                    © {{data | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>

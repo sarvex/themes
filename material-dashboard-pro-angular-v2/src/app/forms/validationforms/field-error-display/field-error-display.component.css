@@ -1,0 +1,13 @@
+.error-msg {
+  color: red;
+  display: inline-block;
+  position: absolute;
+  top: 34px;
+  /* font-size: 10px; */
+  font-size: 75%;
+  margin-top: 2.604167em;
+  top: calc(100% - 1.72916667em);
+}
+.fix-error-icon {
+  top: 27px;
+}

@@ -1,0 +1,31 @@
+@import "mixins/vendor-prefixes";
+
+// Core CSS
+@import "inputs";
+@import "misc";
+@import "tables";
+
+// components
+@import "pills";
+@import "sidebar-and-main-panel";
+@import "images";
+
+// cards
+@import "cards/card-plain";
+
+@import "cards/card-wizard";
+
+// Plugins CSS
+@import "plugins/plugin-nouislider";
+@import "plugins/plugin-ngx-toastr";
+@import "plugins/plugin-sweetalert2";
+@import "plugins/plugin-angular-archwizard";
+@import "plugins/plugin-ngbDatepicker";
+@import "plugins/plugin-angular2-multiselect-dropdown";
+@import "plugins/plugin-ngx-chips";
+@import "plugins/plugin-ngx-datatable";
+
+// example pages and sections
+@import "example-pages";
+
+@import "responsive";
