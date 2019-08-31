@@ -1,0 +1,7 @@
+.landing-page {
+  .page-header {
+    &::before {
+      background: rgba(0,0,0, .2);
+    }
+  }
+}

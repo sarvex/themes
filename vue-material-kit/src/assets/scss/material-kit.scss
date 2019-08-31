@@ -1,0 +1,86 @@
+/*!
+
+ =========================================================
+ * Vue Material Kit PRO - v1.2.0
+ =========================================================
+
+ * Product Page: http://www.creative-tim.com/product/vue-material-kit-pro
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+
+//variables and mixins
+@import "material-kit/variables";
+@import "material-kit/mixins";
+@import "material-kit/shadows";
+
+//plugin css
+@import "material-kit/plugins/_perfect-scrollbar";
+@import "material-kit/plugins/_plugin-nouislider";
+
+// Core CSS
+@import "material-kit/typography";
+@import "material-kit/buttons";
+@import "material-kit/carousel";
+@import "material-kit/autocomplete";
+@import "material-kit/collapse";
+@import "material-kit/misc";
+@import "material-kit/select";
+@import "material-kit/tags";
+@import "material-kit/vertical-nav";
+@import "material-kit/images";
+@import "material-kit/info-areas";
+@import "material-kit/datepicker";
+@import "material-kit/inputs";
+@import "material-kit/fileinput";
+@import "material-kit/badges";
+@import "material-kit/comments";
+@import "material-kit/progress";
+@import "material-kit/social-subscribe-line";
+@import "material-kit/alerts";
+@import "material-kit/tables";
+@import "material-kit/layout";
+@import "material-kit/headers";
+@import "material-kit/pages";
+@import "material-kit/checkboxes";
+@import "material-kit/togglebutton";
+@import "material-kit/pagination";
+@import "material-kit/radios";
+@import "material-kit/pills";
+@import "material-kit/dialogs";
+@import "material-kit/navbars";
+@import "material-kit/popups";
+@import "material-kit/footers";
+
+// Sections
+@import "material-kit/sections/features";
+@import "material-kit/sections/blogs";
+@import "material-kit/sections/team";
+@import "material-kit/sections/projects";
+@import "material-kit/sections/sections";
+@import "material-kit/sections/pricing";
+@import "material-kit/sections/testimonials";
+@import "material-kit/sections/contactus";
+
+// Example Pages
+@import "material-kit/example-pages/blog-post";
+@import "material-kit/example-pages/about-us";
+@import "material-kit/example-pages/landing-page";
+@import "material-kit/example-pages/login-page";
+@import "material-kit/example-pages/profile-page";
+@import "material-kit/example-pages/contact-us";
+@import "material-kit/example-pages/product-page";
+@import "material-kit/example-pages/signup-page";
+@import "material-kit/example-pages/error-page";
+@import "material-kit/example-pages/presentation-page";
+
+// Fancy Stuff
+@import "material-kit/dropdown";
+@import "material-kit/cards";
+@import "material-kit/tabs";
+@import "material-kit/responsive";

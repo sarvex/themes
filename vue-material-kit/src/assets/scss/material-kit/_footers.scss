@@ -1,0 +1,154 @@
+footer{
+    padding: .9375rem 0;
+    text-align: center;
+    display: -webkit-flex; /* Safari */ /* Safari 6.1+ */
+    display: flex;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li{
+            display: inline-block;
+
+            a{
+                color: inherit !important;
+                padding: .9375rem;
+                font-weight: $font-weight-bold;
+                font-size: $mdb-btn-font-size-base;
+                text-transform: uppercase;
+                border-radius: $border-radius-base;
+                text-decoration: none;
+                position: relative;
+                display: block;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            .btn{
+                margin: 0;
+            }
+        }
+
+        &.links-horizontal{
+            &:first-child a{
+                padding-left: 0;
+            }
+
+            &:last-child a{
+                padding-right: 0;
+            }
+        }
+
+        &.links-vertical{
+            li{
+                display: block;
+                margin-left: -5px;
+                margin-right: -5px;
+
+                a{
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .social-buttons{
+        a,
+        .btn{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 0;
+        }
+    }
+
+    .footer-brand{
+        padding: 15px;
+        font-size: 18px;
+        margin-left: -15px;
+
+        &,
+        &:hover,
+        &:focus{
+            color: $black-color !important;
+        }
+    }
+    .copyright{
+        padding: 15px 0;
+        .md-icon {
+          font-size: 18px !important;
+          color: inherit !important;
+        }
+    }
+
+    nav ul li a {
+      margin-left: -15px;
+    }
+}
+
+
+
+.footer-white {
+  background-color: $white-color;
+}
+
+.footer-black {
+  background-color: #232323;
+  background: radial-gradient(ellipse at center,#585858 0,#232323 100%);
+  background-size: 550% 450%;
+
+  hr {
+    border-color: rgba(255, 255, 255, .2);
+  }
+
+  a {
+    opacity: .86;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .footer-brand,
+  .footer-brand:focus,
+  .footer-brand:hover,
+  .copyright,
+  h5,
+  h4,
+  i,
+  a {
+    color: $white-color !important;
+  }
+}
+
+.footer-big {
+  padding: 1.875rem 0;
+
+  .gallery-feed img {
+    width: 20%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    float: left;
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  .social-feed i {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+
+  .feed-line{
+    display: flex;
+
+    p {
+      padding: 0 20px 0 5px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.section-image {
+  &::after {
+    background-color: rgba($black, .7);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+  }
+}
+
+.section-image,
+.section-dark {
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+
+
+  .title,
+  .icon:not([class*="icon-"]) i,
+  .md-card-plain .card-title {
+    color: $white-color !important;
+  }
+
+  h5.description,
+  .md-card-plain .card-description{
+    color: rgba($white-color, .7) !important;
+  }
+}
+
+.section-dark {
+  background-color: #343434;
+  background-size: 200% 240%;
+  @include radial-gradient(#232323,#585858);
+}

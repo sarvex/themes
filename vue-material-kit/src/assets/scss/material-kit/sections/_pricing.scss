@@ -1,0 +1,35 @@
+.section-pricing-1 {
+  .title{
+    margin-bottom: 10px;
+  }
+
+  .description {
+    margin-bottom: 130px;
+  }
+
+  &.section-image:after{
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.pricing-2{
+    .nav-pills{
+        display: inline-flex;
+        margin-bottom: 50px;
+    }
+
+}
+
+.pricing-5{
+    .nav-pills{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.pricing-3,
+.pricing-4{
+    .title{
+        margin-bottom: 10px;
+    }
+}

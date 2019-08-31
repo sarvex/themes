@@ -1,0 +1,186 @@
+.md-button {
+    border: none;
+    border-radius: $border-radius-base;
+    position: relative;
+    margin: .3125rem 3px;
+    height: auto;
+    line-height: 1.42857;
+
+    font-size: $mdb-btn-font-size-base;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0;
+
+    @include social-buttons();
+
+    will-change: box-shadow, transform;
+    transition: box-shadow 0.2s $mdb-animation-curve-fast-out-linear-in,
+    background-color 0.2s $mdb-animation-curve-default;
+
+    &:not(.md-just-icon):not(.md-btn-fab):not(.md-icon-button):not(.md-toolbar-toggle) .md-ripple{
+      padding: 12px 30px;
+    }
+
+    &:not(.md-just-icon) .md-button-content i:not(.md-tab-icon){
+      font-size: 1.1rem !important;
+      height: 17px;
+    }
+
+    &.md-wd{
+      min-width: 140px;
+    }
+
+    &.md-block{
+      width: 100%;
+    }
+
+    &:before{
+      display: none;
+    }
+
+    i{
+      width: 24px;
+      min-width: 24px;
+      height: auto;
+      text-align: center;
+    }
+
+    &.md-white {
+      @include btn-styles($white-color);
+      box-shadow: none;
+    }
+
+    &,
+    &.md-default{
+        @include btn-styles($gray-light);
+    }
+
+    &.md-primary{
+      @include btn-styles($brand-primary);
+    }
+    &.md-info{
+      @include btn-styles($brand-info);
+    }
+    &.md-success{
+      @include btn-styles($brand-success);
+    }
+    &.md-warning{
+      @include btn-styles($brand-warning);
+    }
+    &.md-danger{
+      @include btn-styles($brand-danger);
+    }
+    &.md-rose{
+      @include btn-styles($brand-rose);
+    }
+
+    &:focus,
+    &:active,
+    &:active:focus{
+      outline: 0;
+    }
+
+    &.md-round,
+    &.md-round.md-fab,
+    &.md-round.md-just-icon{
+      border-radius: $border-radius-extreme;
+    }
+
+    &:not(.btn-just-icon):not(.btn-fab){
+      .fa{
+          font-size: 18px;
+          margin-top: -2px;
+          position: relative;
+          top: 0;
+      }
+    }
+
+    // Size variations
+    &.md-lg:not(.md-just-icon) .md-ripple{
+      font-size: $mdb-btn-font-size-lg;
+      padding: 1.125rem 2.25rem !important;
+    }
+    &.md-sm:not(.md-just-icon) .md-ripple{
+      font-size: $mdb-btn-font-size-sm;
+      padding: .40625rem 1.25rem !important;
+    }
+
+    &.md-just-icon {
+      height: 41px;
+      min-width: 41px;
+      width: 41px;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+      line-height: 41px;
+
+      &.md-lg {
+        height: 57px;
+        min-width: 57px;
+        width: 57px;
+        line-height: 57px;
+
+        i {
+          width: auto;
+          font-size: 32px !important;
+        }
+      }
+
+      &.md-sm {
+        height: 30px;
+        min-width: 30px;
+        width: 30px;
+        line-height: 30px;
+
+        i {
+          font-size: 17px !important;
+          line-height: 29px;
+        }
+      }
+
+      i,
+      & {
+        font-size: 20px !important;
+        position: relative;
+        top: 0;
+      }
+    }
+
+    .md-button-content{
+      display: flex;
+      align-items: center;
+
+      i + span{
+        margin-left: 5px;
+      }
+    }
+}
+
+
+.button-container{
+  display: flex;
+  align-items: center;
+}
+
+.md-group>.md-group:not(:last-child)>.md-button, .md-group>.md-button:not(:last-child):not(.dropdown-toggle){
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.md-group>.md-group:not(:first-child)>.md-button,
+.md-group>.md-button:not(:first-child){
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.md-group{
+  display: inline-flex;
+  vertical-align: middle;
+
+  .md-button{
+    min-width: auto !important;
+    width: auto !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

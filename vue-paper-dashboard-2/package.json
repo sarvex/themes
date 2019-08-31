@@ -1,0 +1,50 @@
+{
+  "name": "vue-paper-dashboard-pro",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A premium Vue.js admin dashboard for bootstrap. Coded by BinarCode, designed by Creative Tim.",
+  "author": "cristi.jora <joracristi@gmail.com>",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve --open"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "d3": "^5.7.0",
+    "datamaps": "^0.5.9",
+    "element-ui": "^2.5.4",
+    "fullcalendar": "^4.0.0-alpha.3",
+    "google-maps": "^3.2.1",
+    "nprogress": "^0.2.0",
+    "perfect-scrollbar": "0.7.1",
+    "register-service-worker": "^1.5.2",
+    "sweetalert2": "^6.11.4",
+    "topojson": "^3.0.2",
+    "vee-validate": "^2.1.7",
+    "vue": "^2.6.6",
+    "vue-chartjs": "^3.3.2",
+    "vue-clickaway": "^2.2.2",
+    "vue-notifyjs": "^0.4.3",
+    "vue-router": "^3.0.2",
+    "vue-router-prefetch": "^1.4.0",
+    "vue2-transitions": "^0.2.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-pwa": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "babel-plugin-component": "^1.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.6"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.0.0"
+  }
+}

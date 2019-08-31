@@ -1,0 +1,19 @@
+.error-page {
+  .page-header .container {
+    width: 100%;
+    max-width: 880px;
+  }
+
+  .title {
+    font-size: 12em;
+    color: #fff;
+    letter-spacing: 14px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 991px) {
+  .error-page .title {
+    font-size: 11rem;
+  }
+}

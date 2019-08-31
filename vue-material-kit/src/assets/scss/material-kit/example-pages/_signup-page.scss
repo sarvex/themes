@@ -1,0 +1,44 @@
+.signup-page {
+  .page-header {
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    display: inherit;
+
+    > .container{
+      padding-top: 20vh;
+    }
+  }
+
+  .footer {
+    width: 100%;
+
+    .copyright,
+    a:hover {
+      color: $white-color !important;
+    }
+
+    a {
+      color: rgba($white-color, .8) !important;
+    }
+  }
+
+  .md-card-signup{
+    border-radius: $border-radius-base * 2;
+    @include shadow-16dp();
+    margin-bottom: 100px;
+    padding: 40px 0px;
+
+    .md-checkbox {
+      margin-right: 50px;
+    }
+
+    .md-card-content {
+      padding-top: 0;
+    }
+  }
+
+  .info-horizontal{
+    padding: 0px 0px 20px;
+  }
+}

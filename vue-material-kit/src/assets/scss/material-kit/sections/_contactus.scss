@@ -1,0 +1,72 @@
+.section-contactus-1 {
+  .info {
+    padding: 0;
+    margin: 0;
+
+    &:first-child{
+      margin-top: 30px;
+    }
+
+    .info-title{
+      margin-top: 20px;
+      color: $white-color !important;
+    }
+
+    .icon{
+      margin-top: 14px;
+
+      i {
+        color: $white-color !important;
+      }
+    }
+  }
+
+  .md-card-contact{
+    margin-top: 30px;
+  }
+}
+
+.section-contactus-2 {
+    padding: 0;
+
+    .md-card-contact {
+      max-width: 560px;
+      float: left;
+
+      .info{
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .map{
+      width: 100%;
+      height: 800px;
+      position: absolute;
+    }
+
+  .info-horizontal .icon{
+    margin-top: 24px;
+
+    > i{
+      font-size: 2.2em;
+      max-width: 45px;
+    }
+  }
+}
+
+.section-contactus-1 .md-card-contact,
+.section-contactus-2 .md-card-contact {
+  .md-card-header .card-title {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .md-textarea {
+    min-height: 110px !important;
+  }
+}
+
+@media all and (min-width: 991px) {
+  .section-contactus-2 .md-card-contact {
+    margin: 80px 0 80px 150px;
+  }
+}
