@@ -41,7 +41,7 @@
     "chartjs-plugin-zoom": "0.7.0",
     "core-js": "3.1.4",
     "datatables": "1.10.18",
-    "datatables.net": "1.10.19",
+    "datatables.net": "1.13.4",
     "datatables.net-bs": "1.10.19",
     "datatables.net-bs4": "1.10.19",
     "datatables.net-colreorder": "1.5.1",
