@@ -17,7 +17,7 @@
     "easy-pie-chart": "^2.1.7",
     "element-ui": "^2.0.3",
     "fullcalendar": "^3.6.2",
-    "google-maps": "^3.2.1",
+    "google-maps": "^4.0.0",
     "jquery": "^3.2.1",
     "jvectormap-next": "^3.0.0",
     "perfect-scrollbar": "0.7.1",
