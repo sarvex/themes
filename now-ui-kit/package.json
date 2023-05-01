@@ -11,7 +11,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-install": "^1.1.0",
     "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-open": "^3.0.1"
   }
 }
