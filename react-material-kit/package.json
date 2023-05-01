@@ -3,7 +3,7 @@
   "version": "1.8.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "4.3.2",
+    "@mui/material": "5.0.0",
     "@material-ui/icons": "4.2.1",
     "animate.css": "3.7.2",
     "classnames": "2.2.6",
