@@ -66,7 +66,7 @@
     "sweetalert2": "7.22.2",
     "twitter-bootstrap-wizard": "1.2.0",
     "uglify-js": "3.6.0",
-    "validate": "3.0.1",
+    "validate": "3.1.0",
     "web-animations-js": "2.3.1",
     "zone.js": "0.9.1"
   },
