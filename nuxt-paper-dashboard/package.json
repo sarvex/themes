@@ -20,7 +20,7 @@
     "google-maps": "^4.0.0",
     "jquery": "^3.2.1",
     "jvectormap-next": "^3.0.0",
-    "perfect-scrollbar": "0.7.1",
+    "perfect-scrollbar": "0.8.1",
     "sweetalert2": "^6.11.4",
     "vee-validate": "^2.0.0-rc.21",
     "vue": "^2.5.21",
