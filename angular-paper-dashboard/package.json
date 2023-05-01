@@ -38,7 +38,7 @@
     "chart.js": "2.8.0",
     "chartist": "0.11.2",
     "chartist-plugin-zoom": "0.5.0",
-    "chartjs-plugin-zoom": "0.7.0",
+    "chartjs-plugin-zoom": "0.7.7",
     "core-js": "3.1.4",
     "datatables": "1.10.18",
     "datatables.net": "1.10.19",
