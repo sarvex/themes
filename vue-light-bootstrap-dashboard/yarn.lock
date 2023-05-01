@@ -675,6 +675,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.13.10":
+  version "7.21.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.5.tgz#8492dddda9644ae3bda3b45eabe87382caee7200"
+  integrity sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.0.0-beta.44.tgz#f8832f4fdcee5d59bf515e595fc5106c529b394f"
@@ -4915,10 +4922,6 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
-lodash.merge@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
-
 lodash.tail@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.tail/-/lodash.tail-4.1.1.tgz#d2333a36d9e7717c8ad2f7cacafec7c32b444664"
@@ -4935,7 +4938,7 @@ lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.5:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
-lodash@^4.17.15:
+lodash@^4.17.15, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -6127,9 +6130,10 @@ pkg-dir@^3.0.0:
   dependencies:
     find-up "^3.0.0"
 
-popper.js@^1.12.9:
-  version "1.14.4"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.4.tgz#8eec1d8ff02a5a3a152dd43414a15c7b79fd69b6"
+popper.js@^1.16.1:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
 
 portfinder@^1.0.20:
   version "1.0.20"
@@ -6772,6 +6776,11 @@ regenerator-runtime@^0.12.0:
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
   integrity sha512-odxIc1/vDlo4iZcfXqRYFj0vpXFNoGdKMAUieAlFYO6m/nl5e9KR/beGf41z4a1FI+aQgtjhuaSlDxQ0hmkrHg==
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 regenerator-transform@^0.13.3:
   version "0.13.3"
@@ -8159,12 +8168,14 @@ uuid@^3.0.1, uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
 v-tooltip@^2.0.0-rc.33:
-  version "2.0.0-rc.33"
-  resolved "https://registry.yarnpkg.com/v-tooltip/-/v-tooltip-2.0.0-rc.33.tgz#78f7d8e9c34265622be65ba9dc78c67f1dc02b73"
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/v-tooltip/-/v-tooltip-2.1.3.tgz#281c2015d1e73787f13c8956aa295b8c3a73f261"
+  integrity sha512-xXngyxLQTOx/yUEy50thb8te7Qo4XU6h4LZB6cvEfVd9mnysUxLEoYwGWDdqR+l69liKsy3IPkdYff3J1gAJ5w==
   dependencies:
-    lodash.merge "^4.6.0"
-    popper.js "^1.12.9"
-    vue-resize "^0.4.3"
+    "@babel/runtime" "^7.13.10"
+    lodash "^4.17.21"
+    popper.js "^1.16.1"
+    vue-resize "^1.0.1"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.1"
@@ -8234,9 +8245,12 @@ vue-nav-tabs@^0.5.6:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/vue-nav-tabs/-/vue-nav-tabs-0.5.6.tgz#cdda25f6aa4091010345b8a5ac93c01c004330ed"
 
-vue-resize@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/vue-resize/-/vue-resize-0.4.3.tgz#5bdfd1cd60eb2bf1ebc08dff1517754af69e4886"
+vue-resize@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-resize/-/vue-resize-1.0.1.tgz#c120bed4e09938771d622614f57dbcf58a5147ee"
+  integrity sha512-z5M7lJs0QluJnaoMFTIeGx6dIkYxOwHThlZDeQnWZBizKblb99GSejPnK37ZbNE/rVwDcYcHY+Io+AxdpY952w==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
 
 vue-router@^3.0.2:
   version "3.0.2"
