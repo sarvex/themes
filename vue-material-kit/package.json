@@ -33,7 +33,7 @@
     "babel-eslint": "10.0.2",
     "babel-plugin-component": "1.1.1",
     "eslint": "6.1.0",
-    "eslint-plugin-vue": "5.2.3",
+    "eslint-plugin-vue": "9.11.0",
     "node-sass": "7.0.0",
     "sass-loader": "7.2.0",
     "vue-template-compiler": "2.6.10"
