@@ -43,7 +43,7 @@
   "optionalDependencies": {
     "@types/googlemaps": "3.37.3",
     "@types/markerclustererplus": "2.1.33",
-    "eslint-config-prettier": "6.0.0",
+    "eslint-config-prettier": "6.15.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.14.3",
     "prettier": "1.18.2",

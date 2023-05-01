@@ -45,7 +45,7 @@
     "typescript": "3.5.3"
   },
   "devDependencies": {
-    "eslint-config-prettier": "6.0.0",
+    "eslint-config-prettier": "6.15.0",
     "eslint-plugin-prettier": "3.1.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
