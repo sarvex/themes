@@ -18,7 +18,7 @@
     "@tweenjs/tween.js": "17.4.0",
     "chartist": "0.11.2",
     "es6-promise": "4.2.6",
-    "fuse.js": "3.4.5",
+    "fuse.js": "3.6.1",
     "google-maps": "4.3.3",
     "jquery": "3.5.0",
     "jvectormap-next": "3.0.0",
