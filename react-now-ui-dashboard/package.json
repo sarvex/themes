@@ -28,7 +28,7 @@
     "react-select": "3.0.4",
     "react-table": "6.10.0",
     "react-tagsinput": "3.19.0",
-    "reactstrap": "8.0.0"
+    "reactstrap": "8.10.1"
   },
   "scripts": {
     "start": "react-scripts start",
