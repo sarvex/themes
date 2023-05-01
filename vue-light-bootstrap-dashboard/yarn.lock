@@ -7613,8 +7613,9 @@ vue-loader@^15.4.2:
     vue-style-loader "^4.1.0"
 
 vue-nav-tabs@^0.5.6:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/vue-nav-tabs/-/vue-nav-tabs-0.5.6.tgz#cdda25f6aa4091010345b8a5ac93c01c004330ed"
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/vue-nav-tabs/-/vue-nav-tabs-0.5.7.tgz#f9b8c410b43d9af1d92be6454f295af10c884e4a"
+  integrity sha512-Oqq7qnb0/JPAVSqM0haQ9TdEZaTbQq20TVn5ZCmBOu8m9qju9bI8cDdtWGHXSiMkpmhzsT83ybRb7S/+UYXRsw==
 
 vue-resize@^0.4.3:
   version "0.4.3"
