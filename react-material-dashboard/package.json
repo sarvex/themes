@@ -15,7 +15,7 @@
     "react-big-calendar": "0.22.0",
     "react-bootstrap-sweetalert": "4.4.1",
     "react-chartist": "0.13.3",
-    "react-datetime": "2.16.3",
+    "react-datetime": "3.2.0",
     "react-dom": "16.9.0",
     "react-google-maps": "9.4.5",
     "react-jvectormap": "0.0.12",
