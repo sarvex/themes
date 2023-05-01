@@ -31,7 +31,7 @@
     "chart.js": "2.8.0",
     "chartist": "0.11.3",
     "core-js": "3.2.1",
-    "d3-scale": "3.0.1",
+    "d3-scale": "4.0.2",
     "date-fns": "2.0.1",
     "devextreme": "19.1.5",
     "devextreme-angular": "19.1.5",
