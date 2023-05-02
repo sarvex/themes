@@ -71,6 +71,6 @@
     "@types/react": "16.8.19",
     "ajv": "6.10.0",
     "jquery": "3.6.4",
-    "typescript": "3.5.1"
+    "typescript": "5.0.4"
   }
 }
