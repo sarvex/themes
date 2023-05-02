@@ -20,7 +20,7 @@
     "react-dom": "16.8.6",
     "react-google-maps": "9.4.5",
     "react-jvectormap": "0.0.15",
-    "react-notification-system": "0.2.17",
+    "react-notification-system": "0.4.0",
     "react-router": "6.11.0",
     "react-router-dom": "6.11.0",
     "react-scripts": "5.0.1",
