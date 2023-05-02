@@ -47,7 +47,7 @@
     "jquery": "3.6.4",
     "jquery-validation": "^1.19.1",
     "jw-bootstrap-switch-ng2": "2.0.5",
-    "ng2-nouislider": "1.8.2",
+    "ng2-nouislider": "1.8.3",
     "ngx-chips": "2.0.2",
     "nouislider": "14.7.0",
     "rxjs": "6.5.2",
