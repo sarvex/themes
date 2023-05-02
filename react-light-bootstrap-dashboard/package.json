@@ -42,7 +42,7 @@
     "map-sass": "node-sass src/assets/sass/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.css --source-map true"
   },
   "devDependencies": {
-    "@types/googlemaps": "3.30.19",
+    "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
     "@types/react": "16.8.15",
     "typescript": "5.0.4"

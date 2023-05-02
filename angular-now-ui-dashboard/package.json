@@ -24,7 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "14.1.0",
     "@ngui/map": "0.30.3",
     "@swimlane/ngx-datatable": "20.1.0",
-    "@types/googlemaps": "3.37.5",
+    "@types/googlemaps": "3.43.3",
     "angular-archwizard": "7.0.0",
     "angular2-multiselect-dropdown": "4.6.2",
     "bootstrap": "4.6.2",
