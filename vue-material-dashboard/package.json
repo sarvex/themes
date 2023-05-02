@@ -34,9 +34,9 @@
     "vue2-transitions": "0.3.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "3.8.0",
-    "@vue/cli-plugin-eslint": "3.8.0",
-    "@vue/cli-service": "3.8.0",
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-service": "5.0.8",
     "@vue/eslint-config-prettier": "7.1.0",
     "eslint-plugin-vue": "9.11.0",
     "node-sass": "7.0.0",
