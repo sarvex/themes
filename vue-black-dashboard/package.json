@@ -11,11 +11,11 @@
     "dev": "npm run serve"
   },
   "dependencies": {
-    "@fullcalendar/core": "^4.3.1",
-    "@fullcalendar/daygrid": "^4.3.0",
-    "@fullcalendar/interaction": "^4.3.0",
-    "@fullcalendar/timegrid": "^4.3.0",
-    "@fullcalendar/vue": "^4.3.1",
+    "@fullcalendar/core": "^6.0.0",
+    "@fullcalendar/daygrid": "^6.0.0",
+    "@fullcalendar/interaction": "^6.0.0",
+    "@fullcalendar/timegrid": "^6.0.0",
+    "@fullcalendar/vue": "^6.0.0",
     "bootstrap": "^4.3.0",
     "chart.js": "^2.7.1",
     "d3": "^5.7.0",
