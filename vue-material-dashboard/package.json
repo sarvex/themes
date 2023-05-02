@@ -15,7 +15,7 @@
     "@fullcalendar/interaction": "6.1.6",
     "@fullcalendar/timegrid": "^6.0.0",
     "@fullcalendar/vue": "6.1.6",
-    "@tweenjs/tween.js": "17.6.0",
+    "@tweenjs/tween.js": "20.0.3",
     "chartist": "1.3.0",
     "es6-promise": "4.2.8",
     "fuse.js": "3.6.1",
