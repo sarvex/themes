@@ -69,7 +69,7 @@
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
     "@types/react": "16.8.19",
-    "ajv": "6.10.0",
+    "ajv": "6.12.6",
     "jquery": "3.6.4",
     "typescript": "5.0.4"
   }
