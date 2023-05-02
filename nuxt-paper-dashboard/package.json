@@ -53,7 +53,7 @@
     "eslint": "^8.0.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-friendly-formatter": "^4.0.0",
-    "eslint-loader": "^1.7.1",
+    "eslint-loader": "^4.0.0",
     "eslint-plugin-html": "^7.0.0",
     "eslint-plugin-import": "^2.6.1",
     "eslint-plugin-node": "^11.0.0",
