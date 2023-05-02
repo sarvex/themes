@@ -40,7 +40,7 @@
     "node-sass": "7.0.0",
     "nouislider": "13.1.5",
     "perfect-scrollbar": "1.4.0",
-    "prop-types": "15.7.2",
+    "prop-types": "15.8.1",
     "react": "16.8.6",
     "react-big-calendar": "0.21.0",
     "react-bootstrap-sweetalert": "5.2.0",
