@@ -50,7 +50,7 @@
     "ng2-nouislider": "1.8.3",
     "ngx-chips": "2.2.2",
     "nouislider": "14.7.0",
-    "rxjs": "6.5.2",
+    "rxjs": "7.8.1",
     "rxjs-compat": "6.6.7",
     "sweetalert2": "11.7.3",
     "twitter-bootstrap-wizard": "1.2.0",
