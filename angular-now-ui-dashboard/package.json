@@ -21,7 +21,7 @@
     "@angular/platform-browser": "15.2.8",
     "@angular/platform-browser-dynamic": "15.2.8",
     "@angular/router": "15.2.8",
-    "@ng-bootstrap/ng-bootstrap": "14.1.0",
+    "@ng-bootstrap/ng-bootstrap": "14.1.1",
     "@ngui/map": "0.30.3",
     "@swimlane/ngx-datatable": "20.1.0",
     "@types/googlemaps": "3.43.3",
