@@ -42,7 +42,7 @@
     "@vue/cli-service": "^5.0.0",
     "babel-plugin-component": "^1.1.0",
     "node-sass": "^8.0.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^13.0.0",
     "vue-template-compiler": "^2.6.4"
   },
   "postcss": {

@@ -87,7 +87,7 @@
     "ora": "^6.0.0",
     "phantomjs-prebuilt": "^2.1.14",
     "raw-loader": "^4.0.0",
-    "sass-loader": "^5.0.1",
+    "sass-loader": "^13.0.0",
     "selenium-server": "^3.0.1",
     "semver": "^7.0.0",
     "shelljs": "^0.8.0",
