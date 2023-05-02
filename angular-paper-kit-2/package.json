@@ -39,7 +39,7 @@
     "popper.js": "1.16.1",
     "rellax": "1.12.1",
     "rxjs": "6.5.2",
-    "rxjs-compat": "6.5.2",
+    "rxjs-compat": "6.6.7",
     "zone.js": "0.13.0"
   },
   "devDependencies": {
