@@ -49,7 +49,7 @@
     "eslint-plugin-prettier": "3.4.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
-    "prettier": "1.18.2"
+    "prettier": "1.19.1"
   },
   "browserslist": {
     "production": [
