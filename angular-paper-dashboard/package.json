@@ -42,7 +42,7 @@
     "core-js": "3.30.1",
     "datatables": "1.10.18",
     "datatables.net": "1.13.4",
-    "datatables.net-bs": "1.10.19",
+    "datatables.net-bs": "1.13.4",
     "datatables.net-bs4": "1.13.4",
     "datatables.net-colreorder": "1.6.2",
     "datatables.net-colreorder-bs4": "1.6.2",
