@@ -35,7 +35,7 @@
     "date-fns": "2.30.0",
     "devextreme": "22.2.6",
     "devextreme-angular": "22.2.6",
-    "fullcalendar": "4.0.0-alpha.4",
+    "fullcalendar": "6.1.6",
     "fullcalendar-scheduler": "6.1.6",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ng2-charts": "4.1.1",
