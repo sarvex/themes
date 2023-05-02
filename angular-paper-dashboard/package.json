@@ -66,7 +66,7 @@
     "perfect-scrollbar": "1.4.0",
     "popper.js": "1.15.0",
     "rxjs": "6.5.2",
-    "rxjs-compat": "6.5.2",
+    "rxjs-compat": "6.6.7",
     "sweetalert2": "8.19.1",
     "twitter-bootstrap-wizard": "1.2.0",
     "web-animations-js": "2.3.1",
