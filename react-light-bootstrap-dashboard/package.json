@@ -13,7 +13,7 @@
     "react": "16.8.6",
     "react-big-calendar": "0.20.4",
     "react-bootstrap": "0.32.4",
-    "react-bootstrap-sweetalert": "4.4.1",
+    "react-bootstrap-sweetalert": "5.2.0",
     "react-bootstrap-switch": "15.5.3",
     "react-chartist": "0.13.3",
     "react-datetime": "2.16.3",

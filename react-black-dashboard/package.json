@@ -14,7 +14,7 @@
     "prop-types": "15.6.2",
     "react": "16.7.0",
     "react-big-calendar": "0.20.2",
-    "react-bootstrap-sweetalert": "4.4.1",
+    "react-bootstrap-sweetalert": "5.2.0",
     "react-bootstrap-switch": "15.5.3",
     "react-bootstrap-wizard": "0.0.7",
     "react-chartjs-2": "2.7.4",
