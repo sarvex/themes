@@ -32,10 +32,10 @@
   },
   "homepage": "https://github.com/creativetimofficial/paper-dashboard-pro-react#readme",
   "dependencies": {
-    "bootstrap": "4.3.1",
+    "bootstrap": "4.6.2",
     "chart.js": "2.8.0",
-    "classnames": "2.2.6",
-    "history": "4.9.0",
+    "classnames": "2.3.2",
+    "history": "5.3.0",
     "moment": "2.29.4",
     "node-sass": "4.12.0",
     "nouislider": "13.1.5",
@@ -70,7 +70,7 @@
     "@types/markerclustererplus": "2.1.33",
     "@types/react": "16.8.19",
     "ajv": "6.10.0",
-    "jquery": "3.4.1",
+    "jquery": "3.6.4",
     "typescript": "5.0.4"
   }
 }

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "chartist": "^0.11.3",
+    "chartist": "^1.0.0",
     "d3": "^5.11.0",
     "datamaps": "^0.5.9",
     "easy-pie-chart": "^2.1.7",
@@ -18,7 +18,7 @@
     "es6-promise": "^4.2.5",
     "fullcalendar": "^4.0.0-alpha.3",
     "fuse.js": "^3.4.5",
-    "google-maps": "^3.3.0",
+    "google-maps": "^4.0.0",
     "perfect-scrollbar": "1.4.0",
     "sweetalert2": "^8.17.1",
     "topojson": "^3.0.2",

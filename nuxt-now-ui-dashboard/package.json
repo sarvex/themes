@@ -11,7 +11,7 @@
     "dev": "npm run serve"
   },
   "dependencies": {
-    "bootstrap": "4.3.1",
+    "bootstrap": "4.6.2",
     "chart.js": "^2.8.0",
     "d3": "^5.11.0",
     "datamaps": "^0.5.9",
@@ -20,7 +20,7 @@
     "es6-promise": "^4.2.8",
     "fullcalendar": "^4.0.0-alpha.4",
     "fuse.js": "^3.4.5",
-    "google-maps": "^3.3.0",
+    "google-maps": "^4.0.0",
     "nouislider": "^14.0.2",
     "perfect-scrollbar": "^1.4.0",
     "register-service-worker": "^1.6.2",

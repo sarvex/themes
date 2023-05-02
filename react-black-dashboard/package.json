@@ -5,8 +5,8 @@
   "homepage": "https://creativetimofficial.github.io/black-dashboard-pro-react/admin/dashboard",
   "dependencies": {
     "chart.js": "2.7.3",
-    "classnames": "2.2.6",
-    "history": "4.7.2",
+    "classnames": "2.3.2",
+    "history": "5.3.0",
     "moment": "2.29.4",
     "node-sass": "4.14.1",
     "nouislider": "12.1.0",
