@@ -17,7 +17,7 @@
     "element-ui": "^2.4.11",
     "es6-promise": "^4.2.5",
     "fullcalendar": "^4.0.0-alpha.3",
-    "fuse.js": "^3.2.0",
+    "fuse.js": "^6.0.0",
     "google-maps": "^4.0.0",
     "perfect-scrollbar": "0.8.1",
     "sweetalert2": "^11.0.0",

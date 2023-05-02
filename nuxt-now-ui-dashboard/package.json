@@ -19,7 +19,7 @@
     "element-ui": "^2.12.0",
     "es6-promise": "^4.2.8",
     "fullcalendar": "^4.0.0-alpha.4",
-    "fuse.js": "^3.4.5",
+    "fuse.js": "^6.0.0",
     "google-maps": "^4.0.0",
     "nouislider": "^14.0.2",
     "perfect-scrollbar": "^1.4.0",
