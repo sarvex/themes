@@ -61,7 +61,7 @@
     "jquery": "3.6.4",
     "jvectormap": "2.0.4",
     "jw-bootstrap-switch-ng2": "2.0.5",
-    "ngx-chips": "2.2.2",
+    "ngx-chips": "3.0.0",
     "nouislider": "9.2.0",
     "perfect-scrollbar": "1.4.0",
     "popper.js": "1.16.1",
