@@ -8401,8 +8401,9 @@ vue-clickaway@^2.2.2:
     loose-envify "^1.2.0"
 
 vue-form-wizard@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/vue-form-wizard/-/vue-form-wizard-0.8.1.tgz#292ef80e477135ebe1c6ff8f0720ab20bcf8294b"
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/vue-form-wizard/-/vue-form-wizard-0.8.4.tgz#ddf864c9709b7ba2a6323f59e5d6d17536b7800e"
+  integrity sha512-/Zk1+B7bz7qHFJ16mwu021lpPXWf/9Tlr2mTNG3J7M0Hdy3rgA802lWsbKYySns0B0qtsD8BYGjQ2Wyxgg+4uw==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"
