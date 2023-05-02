@@ -41,7 +41,7 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
   },
   "devDependencies": {
-    "@types/googlemaps": "3.36.2",
+    "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
     "@types/react": "16.8.19",
     "ajv": "6.10.0",

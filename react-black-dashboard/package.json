@@ -31,7 +31,7 @@
     "reactstrap": "9.1.9"
   },
   "optionalDependencies": {
-    "@types/googlemaps": "3.30.16",
+    "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
     "@types/react": "16.7.18"
   },
