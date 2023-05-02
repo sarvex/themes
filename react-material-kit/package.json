@@ -20,7 +20,7 @@
     "react-image-gallery": "1.2.11",
     "react-router-dom": "5.0.1",
     "react-scripts": "5.0.1",
-    "react-slick": "0.25.2",
+    "react-slick": "0.29.0",
     "react-swipeable-views": "0.13.3",
     "react-tagsinput": "3.19.0"
   },
