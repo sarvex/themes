@@ -19,7 +19,7 @@
     "fullcalendar": "^4.0.0-alpha.3",
     "fuse.js": "^3.4.5",
     "google-maps": "^4.0.0",
-    "perfect-scrollbar": "1.4.0",
+    "perfect-scrollbar": "1.5.5",
     "sweetalert2": "^11.0.0",
     "topojson": "^3.0.2",
     "v-tooltip": "^2.0.2",

@@ -10,7 +10,7 @@
     "moment": "2.29.4",
     "node-sass": "7.0.0",
     "nouislider": "12.1.0",
-    "perfect-scrollbar": "1.4.0",
+    "perfect-scrollbar": "1.5.5",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-big-calendar": "0.40.8",
