@@ -51,7 +51,7 @@
     "hammerjs": "2.0.8",
     "jasny-bootstrap": "4.0.0",
     "jquery": "3.6.4",
-    "jquery-validation": "1.17.0",
+    "jquery-validation": "1.19.5",
     "jqvmap": "1.5.1",
     "moment": "2.29.4",
     "moment-timezone": "0.5.35",
