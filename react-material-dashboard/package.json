@@ -23,7 +23,7 @@
     "react-scripts": "5.0.1",
     "react-swipeable-views": "0.13.3",
     "react-table": "7.8.0",
-    "react-tagsinput": "3.19.0"
+    "react-tagsinput": "3.20.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -28,7 +28,7 @@
     "react-stepzilla": "7.0.0",
     "react-syntax-highlighter": "10.2.1",
     "react-table": "7.8.0",
-    "react-tagsinput": "3.19.0",
+    "react-tagsinput": "3.20.1",
     "wnumb": "1.2.0"
   },
   "scripts": {
