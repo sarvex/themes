@@ -27,7 +27,7 @@
     "vue-notifyjs": "^0.4.3",
     "vue-router": "^3.0.2",
     "vue-router-prefetch": "^1.4.0",
-    "vue2-transitions": "^0.2.3"
+    "vue2-transitions": "^0.3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
