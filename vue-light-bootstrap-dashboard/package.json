@@ -20,7 +20,7 @@
     "fuse.js": "^3.2.0",
     "google-maps": "^4.0.0",
     "perfect-scrollbar": "0.8.1",
-    "sweetalert2": "^7.33.1",
+    "sweetalert2": "^11.0.0",
     "topojson": "^3.0.2",
     "v-tooltip": "^2.0.0-rc.33",
     "vee-validate": "^2.1.5",
