@@ -67,7 +67,7 @@
     "twitter-bootstrap-wizard": "1.2.0",
     "uglify-js": "3.6.0",
     "validate": "5.2.0",
-    "web-animations-js": "2.3.1",
+    "web-animations-js": "2.3.2",
     "zone.js": "0.13.0"
   },
   "devDependencies": {
