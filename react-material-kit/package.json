@@ -44,7 +44,7 @@
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
     "eslint-config-prettier": "8.8.0",
-    "eslint-plugin-prettier": "3.4.1",
+    "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "prettier": "2.8.8",
     "typescript": "5.0.4"
