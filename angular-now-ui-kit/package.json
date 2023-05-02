@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "15.2.8",
     "@angular/platform-server": "15.2.8",
     "@angular/router": "15.2.8",
-    "@ng-bootstrap/ng-bootstrap": "14.1.0",
+    "@ng-bootstrap/ng-bootstrap": "14.1.1",
     "angular2-multiselect-dropdown": "5.0.4",
     "bootstrap": "4.6.2",
     "copy-webpack-plugin": "11.0.0",
