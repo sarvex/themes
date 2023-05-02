@@ -32,7 +32,7 @@
     "jquery": "3.6.4",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ng2-nouislider": "1.8.3",
-    "ngx-chips": "2.0.2",
+    "ngx-chips": "2.2.2",
     "ngx-gallery": "5.10.0",
     "nouislider": "14.7.0",
     "popper.js": "1.15.0",
