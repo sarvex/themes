@@ -24,7 +24,7 @@
     "@angular/platform-server": "8.2.14",
     "@angular/router": "8.2.14",
     "@ng-bootstrap/ng-bootstrap": "14.1.0",
-    "angular2-multiselect-dropdown": "4.6.2",
+    "angular2-multiselect-dropdown": "4.6.10",
     "bootstrap": "4.6.2",
     "copy-webpack-plugin": "11.0.0",
     "core-js": "3.30.1",
