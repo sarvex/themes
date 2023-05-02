@@ -28,7 +28,7 @@
     "vue-form-wizard": "^0.7.0",
     "vue-nav-tabs": "^0.5.4",
     "vue-notifyjs": "^0.4.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.0",
