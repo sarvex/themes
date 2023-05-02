@@ -23,7 +23,7 @@
     "@angular/router": "8.2.4",
     "@ng-bootstrap/ng-bootstrap": "14.1.0",
     "@ngui/map": "0.30.3",
-    "@swimlane/ngx-datatable": "15.0.2",
+    "@swimlane/ngx-datatable": "20.1.0",
     "@types/googlemaps": "3.37.5",
     "angular-archwizard": "7.0.0",
     "angular2-multiselect-dropdown": "4.6.2",
