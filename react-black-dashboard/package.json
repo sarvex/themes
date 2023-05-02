@@ -28,7 +28,7 @@
     "react-select": "2.2.0",
     "react-table": "6.8.6",
     "react-tagsinput": "3.19.0",
-    "reactstrap": "7.0.2"
+    "reactstrap": "9.1.9"
   },
   "optionalDependencies": {
     "@types/googlemaps": "3.30.16",
