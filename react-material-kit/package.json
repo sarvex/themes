@@ -21,7 +21,7 @@
     "react-router-dom": "6.11.0",
     "react-scripts": "5.0.1",
     "react-slick": "0.29.0",
-    "react-swipeable-views": "0.13.3",
+    "react-swipeable-views": "0.14.0",
     "react-tagsinput": "3.20.1"
   },
   "scripts": {
