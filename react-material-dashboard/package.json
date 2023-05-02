@@ -18,7 +18,7 @@
     "react-datetime": "3.2.0",
     "react-dom": "16.9.0",
     "react-google-maps": "9.4.5",
-    "react-jvectormap": "0.0.12",
+    "react-jvectormap": "0.0.15",
     "react-router-dom": "5.0.1",
     "react-scripts": "5.0.1",
     "react-swipeable-views": "0.13.3",
