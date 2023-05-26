@@ -81,7 +81,7 @@
     "marked": "5.0.2",
     "mocha": "10.2.0",
     "nightwatch": "2.6.21",
-    "node-sass": "8.0.0",
+    "node-sass": "9.0.0",
     "opn": "5.5.0",
     "optimize-css-assets-webpack-plugin": "6.0.1",
     "ora": "6.3.1",
