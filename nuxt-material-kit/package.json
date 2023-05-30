@@ -22,7 +22,7 @@
     "vue-lazyload": "3.0.0",
     "vue-material": "1.0.0-beta-16",
     "vue-product-zoomer": "3.0.1",
-    "vue-router": "4.2.1",
+    "vue-router": "4.2.2",
     "vue2-transitions": "0.3.0"
   },
   "devDependencies": {

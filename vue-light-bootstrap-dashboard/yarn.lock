@@ -6591,10 +6591,10 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-sweetalert2@11.7.5:
-  version "11.7.5"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.7.5.tgz#d905b792cfcb69d5db479f839151ce12d8804a8e"
-  integrity sha512-RBPKdK8Uf9/bz9r4vy7x6sGqf0MioSXt1po1lAwwcl3AwbjHVTc5S0yud4ZJKU1EhvJFVDrFoqIpHwWERwZJEA==
+sweetalert2@11.7.8:
+  version "11.7.8"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.7.8.tgz#f686a996b0f506795ad8d22328284a65e73013d6"
+  integrity sha512-s6WMsK0DogOZ2fj21tM5LjeBcQm7sPf+Z0sksxhZFs9HeIKAnLz8NMeIIOgcB/wS7/ZzP95d3jxzE6FbSau6eA==
 
 tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
@@ -6979,10 +6979,10 @@ vue-resize@^1.0.1:
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-vue-router@4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.2.1.tgz#f8ab85c89e74682cad71519480fdf2b855e8c9e0"
-  integrity sha512-nW28EeifEp8Abc5AfmAShy5ZKGsGzjcnZ3L1yc2DYUo+MqbBClrRP9yda3dIekM4I50/KnEwo1wkBLf7kHH5Cw==
+vue-router@4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.2.2.tgz#b0097b66d89ca81c0986be03da244c7b32a4fd81"
+  integrity sha512-cChBPPmAflgBGmy3tBsjeoe3f3VOSG6naKyY5pjtrqLGbNEXdzCigFUHgBvp9e3ysAtFtEx7OLqcSDh/1Cq2TQ==
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
