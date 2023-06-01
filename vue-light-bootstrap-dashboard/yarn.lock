@@ -6591,10 +6591,10 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-sweetalert2@11.7.9:
-  version "11.7.9"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.7.9.tgz#0d47a3acd6327ae9a4f13e2a4e27b5bd23658ade"
-  integrity sha512-0WR65e1zsiD5pjecsROHHadBvwOqo3jdQ1RyO9IzFcYdAijpsSct/qOr9mdBJdJ4Fbomw6a2s6W6haq9cBIPKA==
+sweetalert2@11.7.10:
+  version "11.7.10"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.7.10.tgz#514a9cb89e0d9916fc30608c76432db0cfc3f82c"
+  integrity sha512-SgnO8VF7omM78doFxIAiEyhNBEudVTpYpYXJB9/yftvKD+UlWRaAkLMGD4kvAsgiwwph4SUFlNjiAbB5cUS8/g==
 
 tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
@@ -6928,10 +6928,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vee-validate@4.9.5:
-  version "4.9.5"
-  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.9.5.tgz#ee72492a9c491e5eeb91f84c3d623e81dafc7cbe"
-  integrity sha512-BVhGHjD6lWdEltDg08+wN/oTtSEDJcpwpgb5IJVvTmzEU0Dunn3j/JwVfbM+WSLCj4SMxnfar59qLnDLyZpQWg==
+vee-validate@4.9.6:
+  version "4.9.6"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.9.6.tgz#9618b210d4d04ac8f4e3cf989a9e1166ad123ad7"
+  integrity sha512-2WYuetx76nH1UXUNM/OBvh9W0kGrr37xo9PgroHcDEbfpxum4MMMb4TjIkYdmrosE2YU54SoUnJrchYegmV2Kg==
   dependencies:
     "@vue/devtools-api" "^6.5.0"
     type-fest "^3.10.0"
