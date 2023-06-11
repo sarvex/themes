@@ -24,7 +24,7 @@
     "nouislider": "15.7.0",
     "perfect-scrollbar": "1.5.5",
     "register-service-worker": "1.7.2",
-    "sweetalert2": "11.7.10",
+    "sweetalert2": "11.7.12",
     "topojson": "3.0.2",
     "tween.js": "16.6.0",
     "ui": "0.2.4",
@@ -42,7 +42,7 @@
     "@vue/cli-service": "5.0.8",
     "babel-plugin-component": "1.1.1",
     "node-sass": "9.0.0",
-    "sass-loader": "13.3.1",
+    "sass-loader": "13.3.2",
     "vue-template-compiler": "2.7.14"
   },
   "postcss": {

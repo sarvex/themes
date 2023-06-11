@@ -4484,7 +4484,7 @@ kind-of@^6.0.2, kind-of@^6.0.3:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-klona@^2.0.5, klona@^2.0.6:
+klona@^2.0.5:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
   integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
@@ -6077,12 +6077,11 @@ sass-graph@^4.0.1:
     scss-tokenizer "^0.4.3"
     yargs "^17.2.1"
 
-sass-loader@13.3.1:
-  version "13.3.1"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-13.3.1.tgz#32ee5791434b9b4dbd1adcce76fcb4cea49cc12c"
-  integrity sha512-cBTxmgyVA1nXPvIK4brjJMXOMJ2v2YrQEuHqLw3LylGb3gsR6jAvdjHMcy/+JGTmmIF9SauTrLLR7bsWDMWqgg==
+sass-loader@13.3.2:
+  version "13.3.2"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-13.3.2.tgz#460022de27aec772480f03de17f5ba88fa7e18c6"
+  integrity sha512-CQbKl57kdEv+KDLquhC+gE3pXt74LEAzm+tzywcA0/aHZuub8wTErbjAoNI57rPUWRYRNC5WUnNl8eGJNbDdwg==
   dependencies:
-    klona "^2.0.6"
     neo-async "^2.6.2"
 
 schema-utils@^2.6.5:
@@ -6591,10 +6590,10 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-sweetalert2@11.7.10:
-  version "11.7.10"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.7.10.tgz#514a9cb89e0d9916fc30608c76432db0cfc3f82c"
-  integrity sha512-SgnO8VF7omM78doFxIAiEyhNBEudVTpYpYXJB9/yftvKD+UlWRaAkLMGD4kvAsgiwwph4SUFlNjiAbB5cUS8/g==
+sweetalert2@11.7.12:
+  version "11.7.12"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.7.12.tgz#3ac15a3138159ccdcd2ec55ea7abe749cd528a80"
+  integrity sha512-TQJy8mQymJLzqWPQOMQErd81Zd/rSYr0UL4pEc7bqEihtjS+zt7LWJXLhfPp93e+Hf3Z2FHMB6QGNskAMCsdTg==
 
 tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
