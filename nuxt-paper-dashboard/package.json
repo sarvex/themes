@@ -89,7 +89,7 @@
     "raw-loader": "4.0.2",
     "sass-loader": "13.3.2",
     "selenium-server": "3.141.59",
-    "semver": "7.5.1",
+    "semver": "7.5.2",
     "shelljs": "0.8.5",
     "sinon": "15.1.2",
     "sinon-chai": "3.7.0",
