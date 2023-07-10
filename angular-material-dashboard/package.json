@@ -45,7 +45,7 @@
     "core-js": "3.31.0",
     "datatables": "1.10.18",
     "datatables.net-bs4": "1.13.4",
-    "datatables.net-responsive": "2.4.1",
+    "datatables.net-responsive": "2.5.0",
     "fullcalendar": "6.1.8",
     "googleapis": "120.0.0",
     "hammerjs": "2.0.8",
