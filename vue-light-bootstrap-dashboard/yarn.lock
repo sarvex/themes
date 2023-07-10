@@ -6927,10 +6927,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vee-validate@4.10.3:
-  version "4.10.3"
-  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.10.3.tgz#552bbaa4cb418fa2cf460956db9c75f09cf6ad41"
-  integrity sha512-JDEpP765Hg5bLJBBbaYutnmiKXh4YX4Jz1FKIBp2Fw5PiuL8ULdZSuJZNbfvbA3ClMV+aJYWIlzA8iLyWGq+fQ==
+vee-validate@4.10.6:
+  version "4.10.6"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.10.6.tgz#7c934938c0cde8b9461ce17ff310c7224cff45de"
+  integrity sha512-XpZ135NrgEMF/6vyRI5nMSmVXJoirT9m3mHYBB+9DfF64yTQTKO/lKLsVWyjbb00sHHjZ4TLy3IS3az8YVh95w==
   dependencies:
     "@vue/devtools-api" "^6.5.0"
     type-fest "^3.12.0"
@@ -6978,10 +6978,10 @@ vue-resize@^1.0.1:
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-vue-router@4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.2.2.tgz#b0097b66d89ca81c0986be03da244c7b32a4fd81"
-  integrity sha512-cChBPPmAflgBGmy3tBsjeoe3f3VOSG6naKyY5pjtrqLGbNEXdzCigFUHgBvp9e3ysAtFtEx7OLqcSDh/1Cq2TQ==
+vue-router@4.2.4:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.2.4.tgz#382467a7e2923e6a85f015d081e1508052c191b9"
+  integrity sha512-9PISkmaCO02OzPVOMq2w82ilty6+xJmQrarYZDkjZBfl4RvYAlt4PKnEX21oW4KTtWfa9OuO/b3qk1Od3AEdCQ==
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
