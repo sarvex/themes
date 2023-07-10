@@ -22,7 +22,7 @@
     "vue-lazyload": "3.0.0",
     "vue-material": "1.0.0-beta-16",
     "vue-product-zoomer": "3.0.1",
-    "vue-router": "4.2.2",
+    "vue-router": "4.2.4",
     "vue2-transitions": "0.3.0"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "@vue/cli-plugin-eslint": "5.0.8",
     "@vue/cli-service": "5.0.8",
     "@vue/eslint-config-prettier": "7.1.0",
-    "@babel/eslint-parser": "7.22.5",
+    "@babel/eslint-parser": "7.22.7",
     "babel-plugin-component": "1.1.1",
     "eslint": "8.44.0",
     "eslint-plugin-vue": "9.15.1",
