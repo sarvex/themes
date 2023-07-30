@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/creativetimofficial/paper-dashboard-pro-react#readme",
   "dependencies": {
-    "bootstrap": "5.3.0",
-    "chart.js": "4.3.0",
+    "bootstrap": "5.3.1",
+    "chart.js": "4.3.2",
     "classnames": "2.3.2",
     "history": "5.3.0",
     "moment": "2.29.4",
