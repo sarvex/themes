@@ -20,7 +20,7 @@
     "register-service-worker": "1.7.2",
     "sweetalert2": "11.7.20",
     "topojson": "3.0.2",
-    "vee-validate": "4.10.9",
+    "vee-validate": "4.11.1",
     "vue": "3.3.4",
     "vue-chartjs": "5.2.0",
     "vue-clickaway": "2.2.2",
