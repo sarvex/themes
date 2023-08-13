@@ -52,7 +52,7 @@
     "nouislider": "15.7.1",
     "rxjs": "7.8.1",
     "rxjs-compat": "6.6.7",
-    "sweetalert2": "11.7.20",
+    "sweetalert2": "11.7.22",
     "twitter-bootstrap-wizard": "1.2.0",
     "web-animations-js": "2.3.2",
     "zone.js": "0.13.1"
@@ -65,7 +65,7 @@
     "@types/chartist": "0.11.1",
     "@types/jasmine": "4.3.5",
     "@types/jquery": "3.5.16",
-    "@types/node": "18.17.1",
+    "@types/node": "18.17.5",
     "codelyzer": "6.0.2",
     "jasmine-core": "5.1.0",
     "jasmine-spec-reporter": "7.0.0",
