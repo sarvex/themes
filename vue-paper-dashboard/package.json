@@ -21,7 +21,7 @@
     "jquery": "3.7.0",
     "jvectormap-next": "3.1.1",
     "perfect-scrollbar": "1.5.5",
-    "sweetalert2": "11.7.20",
+    "sweetalert2": "11.7.22",
     "vee-validate": "4.11.1",
     "vue": "3.3.4",
     "vue-clickaway": "2.2.2",
@@ -31,9 +31,9 @@
     "vue-router": "4.2.4"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.14",
+    "autoprefixer": "10.4.15",
     "babel-core": "6.26.3",
-    "@babel/eslint-parser": "7.22.9",
+    "@babel/eslint-parser": "7.22.10",
     "babel-loader": "9.1.3",
     "babel-plugin-component": "1.1.1",
     "babel-plugin-istanbul": "6.1.1",
