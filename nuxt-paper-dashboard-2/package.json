@@ -9,7 +9,7 @@
     "dev": "vue-cli-service serve --open"
   },
   "dependencies": {
-    "chart.js": "4.3.3",
+    "chart.js": "4.4.0",
     "d3": "7.8.5",
     "datamaps": "0.5.9",
     "element-ui": "2.15.14",
