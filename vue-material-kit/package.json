@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "aos": "3.0.0-beta.6",
-    "element-ui": "2.15.13",
+    "element-ui": "2.15.14",
     "google-maps": "4.3.3",
     "nouislider": "15.7.1",
     "v-tooltip": "2.1.3",
@@ -30,7 +30,7 @@
     "@vue/cli-plugin-eslint": "5.0.8",
     "@vue/cli-service": "5.0.8",
     "@vue/eslint-config-prettier": "8.0.0",
-    "@babel/eslint-parser": "7.22.10",
+    "@babel/eslint-parser": "7.22.11",
     "babel-plugin-component": "1.1.1",
     "eslint": "8.47.0",
     "eslint-plugin-vue": "9.17.0",
