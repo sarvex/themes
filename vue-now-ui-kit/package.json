@@ -27,7 +27,7 @@
     "@vue/cli-service": "5.0.8",
     "@babel/eslint-parser": "7.22.11",
     "babel-plugin-component": "1.1.1",
-    "eslint": "8.47.0",
+    "eslint": "8.48.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-prettier": "5.0.0",
