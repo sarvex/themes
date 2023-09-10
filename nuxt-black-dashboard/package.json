@@ -32,7 +32,7 @@
     "vee-validate": "4.11.3",
     "vue": "3.3.4",
     "vue-chartjs": "5.2.0",
-    "vue-i18n": "9.2.2",
+    "vue-i18n": "9.3.0",
     "vue-router": "4.2.4",
     "vue-router-prefetch": "1.6.3",
     "vue2-google-maps": "0.10.7",
