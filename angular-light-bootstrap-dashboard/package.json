@@ -55,7 +55,7 @@
     "sweetalert2": "11.7.27",
     "twitter-bootstrap-wizard": "1.2.0",
     "web-animations-js": "2.3.2",
-    "zone.js": "0.13.1"
+    "zone.js": "0.13.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "16.2.1",
