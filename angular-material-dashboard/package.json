@@ -78,7 +78,7 @@
     "@types/chartist": "0.11.1",
     "@types/jasmine": "4.3.6",
     "@types/jquery": "3.5.19",
-    "@types/node": "18.17.19",
+    "@types/node": "18.18.0",
     "codelyzer": "6.0.2",
     "jasmine-core": "5.1.1",
     "jasmine-spec-reporter": "7.0.0",
