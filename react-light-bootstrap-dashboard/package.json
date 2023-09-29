@@ -12,7 +12,7 @@
     "perfect-scrollbar": "1.5.5",
     "react": "18.2.0",
     "react-big-calendar": "1.8.4",
-    "react-bootstrap": "2.8.0",
+    "react-bootstrap": "2.9.0",
     "react-bootstrap-sweetalert": "5.2.0",
     "react-bootstrap-switch": "15.5.3",
     "react-chartist": "0.14.4",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
-    "@types/react": "18.2.22",
+    "@types/react": "18.2.23",
     "typescript": "5.2.2"
   },
   "browserslist": [
