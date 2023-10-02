@@ -24,7 +24,7 @@
     "react-router": "6.16.0",
     "react-router-dom": "6.16.0",
     "react-scripts": "5.0.1",
-    "react-select": "5.7.5",
+    "react-select": "5.7.7",
     "react-stepzilla": "7.0.0",
     "react-syntax-highlighter": "15.5.0",
     "react-table": "7.8.0",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
-    "@types/react": "18.2.23",
+    "@types/react": "18.2.24",
     "typescript": "5.2.2"
   },
   "browserslist": [
