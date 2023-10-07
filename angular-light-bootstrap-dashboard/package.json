@@ -63,7 +63,7 @@
     "@angular/compiler-cli": "16.2.8",
     "@types/bootstrap": "5.2.7",
     "@types/chartist": "0.11.1",
-    "@types/jasmine": "4.3.6",
+    "@types/jasmine": "4.6.0",
     "@types/jquery": "3.5.22",
     "@types/node": "18.18.4",
     "codelyzer": "6.0.2",
