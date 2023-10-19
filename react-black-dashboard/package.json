@@ -33,7 +33,7 @@
   "optionalDependencies": {
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
-    "@types/react": "18.2.28"
+    "@types/react": "18.2.29"
   },
   "scripts": {
     "start": "react-scripts start",
