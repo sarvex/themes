@@ -27,7 +27,7 @@
     "angular2-multiselect-dropdown": "5.0.4",
     "bootstrap": "5.3.2",
     "copy-webpack-plugin": "11.0.0",
-    "core-js": "3.33.0",
+    "core-js": "3.33.1",
     "font-awesome": "4.7.0",
     "jquery": "3.7.1",
     "jw-bootstrap-switch-ng2": "2.0.5",
@@ -42,8 +42,8 @@
     "zone.js": "0.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "16.2.6",
-    "@angular/cli": "16.2.6",
+    "@angular-devkit/build-angular": "16.2.7",
+    "@angular/cli": "16.2.7",
     "@angular/compiler-cli": "16.2.10",
     "@angular/language-service": "16.2.10",
     "@types/jasmine": "5.1.1",
