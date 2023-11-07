@@ -14,7 +14,7 @@
     "element-ui": "2.15.14",
     "nouislider": "15.7.1",
     "register-service-worker": "1.7.2",
-    "vue": "3.3.7",
+    "vue": "3.3.8",
     "vue-lazyload": "3.0.0",
     "vue-router": "4.2.5",
     "vue2-google-maps": "0.10.7",
