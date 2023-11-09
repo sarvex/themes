@@ -57,7 +57,7 @@
     "react-select": "5.8.0",
     "react-table": "7.8.0",
     "react-tagsinput": "3.20.3",
-    "reactstrap": "9.2.0"
+    "reactstrap": "9.2.1"
   },
   "browserslist": [
     ">0.2%",

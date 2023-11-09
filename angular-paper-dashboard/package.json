@@ -73,13 +73,13 @@
     "zone.js": "0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "16.2.9",
-    "@angular/cli": "16.2.9",
+    "@angular-devkit/build-angular": "16.2.10",
+    "@angular/cli": "16.2.10",
     "@angular/compiler-cli": "16.2.12",
-    "@types/bootstrap": "5.2.8",
+    "@types/bootstrap": "5.2.9",
     "@types/chartist": "0.11.1",
-    "@types/jasmine": "5.1.1",
-    "@types/jquery": "3.5.26",
+    "@types/jasmine": "5.1.2",
+    "@types/jquery": "3.5.27",
     "@types/node": "20.9.0",
     "codelyzer": "6.0.2",
     "jasmine-core": "5.1.1",
