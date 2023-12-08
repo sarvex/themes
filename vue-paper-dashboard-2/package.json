@@ -9,7 +9,7 @@
     "dev": "vue-cli-service serve --open"
   },
   "dependencies": {
-    "chart.js": "4.4.0",
+    "chart.js": "4.4.1",
     "d3": "7.8.5",
     "datamaps": "0.5.9",
     "element-ui": "2.15.14",
@@ -21,7 +21,7 @@
     "sweetalert2": "11.10.1",
     "topojson": "3.0.2",
     "vee-validate": "4.12.2",
-    "vue": "3.3.9",
+    "vue": "3.3.11",
     "vue-chartjs": "5.2.0",
     "vue-clickaway": "2.2.2",
     "vue-notifyjs": "0.4.3",
