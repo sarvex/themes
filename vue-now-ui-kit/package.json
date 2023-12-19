@@ -14,7 +14,7 @@
     "element-ui": "2.15.14",
     "nouislider": "15.7.1",
     "register-service-worker": "1.7.2",
-    "vue": "3.3.11",
+    "vue": "3.3.12",
     "vue-lazyload": "3.0.0",
     "vue-router": "4.2.5",
     "vue2-google-maps": "0.10.7",
@@ -33,7 +33,7 @@
     "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-vue": "9.19.2",
     "node-sass": "9.0.0",
-    "prettier": "3.1.0",
+    "prettier": "3.1.1",
     "sass-loader": "13.3.2",
     "vue-template-compiler": "2.7.15"
   },
