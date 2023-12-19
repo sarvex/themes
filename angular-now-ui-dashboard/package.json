@@ -33,7 +33,7 @@
     "core-js": "3.34.0",
     "d3-scale": "4.0.2",
     "date-fns": "2.30.0",
-    "devextreme": "23.1.6",
+    "devextreme": "23.2.3",
     "devextreme-angular": "23.2.3",
     "fullcalendar": "6.1.10",
     "fullcalendar-scheduler": "6.1.10",
