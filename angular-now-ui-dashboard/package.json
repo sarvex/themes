@@ -34,7 +34,7 @@
     "d3-scale": "4.0.2",
     "date-fns": "2.30.0",
     "devextreme": "23.1.6",
-    "devextreme-angular": "23.1.6",
+    "devextreme-angular": "23.2.3",
     "fullcalendar": "6.1.10",
     "fullcalendar-scheduler": "6.1.10",
     "jw-bootstrap-switch-ng2": "2.0.5",
