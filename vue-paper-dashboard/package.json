@@ -84,7 +84,7 @@
     "node-sass": "9.0.0",
     "opn": "5.5.0",
     "optimize-css-assets-webpack-plugin": "6.0.1",
-    "ora": "8.0.0",
+    "ora": "8.0.1",
     "phantomjs-prebuilt": "2.1.16",
     "raw-loader": "4.0.2",
     "sass-loader": "13.3.2",
