@@ -47,7 +47,7 @@
     "node-sass": "9.0.0",
     "sass-loader": "13.3.2",
     "vue-cli-plugin-i18n": "2.3.2",
-    "vue-template-compiler": "2.7.15"
+    "vue-template-compiler": "2.7.16"
   },
   "postcss": {
     "plugins": {
