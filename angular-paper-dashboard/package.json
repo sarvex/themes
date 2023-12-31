@@ -67,7 +67,7 @@
     "popper.js": "1.16.1",
     "rxjs": "7.8.1",
     "rxjs-compat": "6.6.7",
-    "sweetalert2": "11.10.1",
+    "sweetalert2": "11.10.2",
     "twitter-bootstrap-wizard": "1.2.0",
     "web-animations-js": "2.3.2",
     "zone.js": "0.14.2"
@@ -80,7 +80,7 @@
     "@types/chartist": "0.11.1",
     "@types/jasmine": "5.1.4",
     "@types/jquery": "3.5.29",
-    "@types/node": "20.10.5",
+    "@types/node": "20.10.6",
     "codelyzer": "6.0.2",
     "jasmine-core": "5.1.1",
     "jasmine-spec-reporter": "7.0.0",
