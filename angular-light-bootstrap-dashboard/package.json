@@ -55,7 +55,7 @@
     "sweetalert2": "11.10.2",
     "twitter-bootstrap-wizard": "1.2.0",
     "web-animations-js": "2.3.2",
-    "zone.js": "0.14.2"
+    "zone.js": "0.14.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "17.0.9",
@@ -65,7 +65,7 @@
     "@types/chartist": "0.11.1",
     "@types/jasmine": "5.1.4",
     "@types/jquery": "3.5.29",
-    "@types/node": "20.10.7",
+    "@types/node": "20.10.8",
     "codelyzer": "6.0.2",
     "jasmine-core": "5.1.1",
     "jasmine-spec-reporter": "7.0.0",
