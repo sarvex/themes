@@ -80,7 +80,7 @@
     "lolex": "5.1.2",
     "marked": "11.2.0",
     "mocha": "10.2.0",
-    "nightwatch": "3.3.8",
+    "nightwatch": "3.4.0",
     "node-sass": "9.0.0",
     "opn": "5.5.0",
     "optimize-css-assets-webpack-plugin": "6.0.1",
