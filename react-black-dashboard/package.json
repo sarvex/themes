@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://creativetimofficial.github.io/black-dashboard-pro-react/admin/dashboard",
   "dependencies": {
-    "chart.js": "4.4.1",
+    "chart.js": "4.4.2",
     "classnames": "2.5.1",
     "history": "5.3.0",
     "moment": "2.30.1",
