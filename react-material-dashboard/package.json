@@ -42,7 +42,7 @@
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
     "ajv": "8.14.0",
-    "typescript": "5.3.3"
+    "typescript": "5.4.5"
   },
   "devDependencies": {
     "eslint-config-prettier": "9.1.0",

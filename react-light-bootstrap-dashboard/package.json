@@ -45,7 +45,7 @@
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
     "@types/react": "18.3.3",
-    "typescript": "5.3.3"
+    "typescript": "5.4.5"
   },
   "browserslist": [
     ">0.2%",

@@ -45,7 +45,7 @@
     "@types/markerclustererplus": "2.1.33",
     "@types/react": "18.3.3",
     "ajv": "8.14.0",
-    "typescript": "5.3.3"
+    "typescript": "5.4.5"
   },
   "eslintConfig": {
     "extends": "react-app"
