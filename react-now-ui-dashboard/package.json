@@ -5,11 +5,11 @@
   "homepage": "https://creativetimofficial.github.io/now-ui-dashboard-pro-react/#/documentation/tutorial",
   "dependencies": {
     "bootstrap": "5.3.3",
-    "chart.js": "4.4.2",
+    "chart.js": "4.4.3",
     "classnames": "2.5.1",
     "moment": "2.30.1",
     "node-sass-chokidar": "2.0.0",
-    "nouislider": "15.7.1",
+    "nouislider": "15.7.2",
     "npm-run-all2": "6.1.2",
     "perfect-scrollbar": "1.5.5",
     "react": "18.3.1",

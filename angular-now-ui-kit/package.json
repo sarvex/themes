@@ -34,15 +34,15 @@
     "ng2-nouislider": "2.0.0",
     "ngx-chips": "3.0.0",
     "ngx-gallery": "5.10.0",
-    "nouislider": "15.7.1",
+    "nouislider": "15.7.2",
     "popper.js": "1.16.1",
     "rellax": "1.12.1",
     "rxjs": "7.8.1",
     "rxjs-compat": "6.6.7",
-    "zone.js": "0.14.5"
+    "zone.js": "0.14.6"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "17.3.6",
+    "@angular-devkit/build-angular": "17.3.8",
     "@angular/cli": "17.3.8",
     "@angular/compiler-cli": "17.3.10",
     "@angular/language-service": "17.3.10",
