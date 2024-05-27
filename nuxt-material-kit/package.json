@@ -30,7 +30,7 @@
     "@vue/cli-plugin-eslint": "5.0.8",
     "@vue/cli-service": "5.0.8",
     "@vue/eslint-config-prettier": "9.0.0",
-    "@babel/eslint-parser": "7.23.10",
+    "@babel/eslint-parser": "7.24.6",
     "babel-plugin-component": "1.1.1",
     "eslint": "9.3.0",
     "eslint-plugin-vue": "9.26.0",
