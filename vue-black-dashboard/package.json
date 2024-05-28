@@ -33,7 +33,7 @@
     "vue": "3.4.27",
     "vue-chartjs": "5.3.1",
     "vue-i18n": "9.9.1",
-    "vue-router": "4.2.5",
+    "vue-router": "4.3.2",
     "vue-router-prefetch": "1.6.3",
     "vue2-google-maps": "0.10.7",
     "vue2-transitions": "0.3.0"

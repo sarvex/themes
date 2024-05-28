@@ -25,7 +25,7 @@
     "vue-chartjs": "5.3.1",
     "vue-clickaway": "2.2.2",
     "vue-notifyjs": "0.4.3",
-    "vue-router": "4.2.5",
+    "vue-router": "4.3.2",
     "vue-router-prefetch": "1.6.3",
     "vue2-transitions": "0.3.0"
   },

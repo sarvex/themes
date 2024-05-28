@@ -31,7 +31,7 @@
     "vee-validate": "4.12.8",
     "vue": "3.4.27",
     "vue-chartjs": "5.3.1",
-    "vue-router": "4.2.5",
+    "vue-router": "4.3.2",
     "vue2-google-maps": "0.10.7",
     "vue2-transitions": "0.3.0"
   },
