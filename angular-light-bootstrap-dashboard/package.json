@@ -40,7 +40,7 @@
     "core-js": "3.37.1",
     "datatables": "1.10.18",
     "datatables.net-bs": "2.0.8",
-    "datatables.net-responsive": "2.5.1",
+    "datatables.net-responsive": "3.0.2",
     "eonasdan-bootstrap-datetimepicker": "4.17.49",
     "fullcalendar": "6.1.13",
     "jasny-bootstrap": "4.0.0",
