@@ -37,7 +37,7 @@
     "map-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css --source-map true"
   },
   "devDependencies": {
-    "gulp": "4.0.2",
+    "gulp": "5.0.0",
     "gulp-append-prepend": "1.0.9"
   },
   "optionalDependencies": {
