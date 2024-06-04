@@ -7027,10 +7027,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vee-validate@4.12.8:
-  version "4.12.8"
-  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.12.8.tgz#e12c8e8239f75305dee2fc539660e9079803c8ec"
-  integrity sha512-A07rm3+y7SRk0CMD/O4nBT0nxtwjyfzGZwjEUDk18SxK0ZMzd4AFCzzdHlIiCE1QgHetxd0I3kVkZdN0GG0Oww==
+vee-validate@4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.13.0.tgz#7c75668e1c6e87a39f41e884da4e04cdd784b022"
+  integrity sha512-8v4C36sdEZfQm77E3A+Fg5M/sV7knqXoVNUjoI/aUHoDlFcATIUFvWLT7lqsOvvhAw6i4qzw+Q/Xs9zm9ndjsQ==
   dependencies:
     "@vue/devtools-api" "^6.6.1"
     type-fest "^4.8.3"
