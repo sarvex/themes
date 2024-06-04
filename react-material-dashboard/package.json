@@ -41,7 +41,7 @@
   "optionalDependencies": {
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
-    "ajv": "8.14.0",
+    "ajv": "8.15.0",
     "typescript": "5.4.5"
   },
   "devDependencies": {
