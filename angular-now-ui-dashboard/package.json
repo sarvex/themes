@@ -35,8 +35,8 @@
     "date-fns": "3.6.0",
     "devextreme": "23.2.6",
     "devextreme-angular": "23.2.6",
-    "fullcalendar": "6.1.13",
-    "fullcalendar-scheduler": "6.1.13",
+    "fullcalendar": "6.1.14",
+    "fullcalendar-scheduler": "6.1.14",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ng2-charts": "6.0.1",
     "ngx-chips": "3.0.0",
@@ -47,7 +47,7 @@
     "rxjs": "7.8.1",
     "rxjs-compat": "6.6.7",
     "stream": "0.0.2",
-    "sweetalert2": "11.11.0",
+    "sweetalert2": "11.11.1",
     "zone.js": "0.14.6"
   },
   "devDependencies": {
@@ -57,7 +57,7 @@
     "@angular/language-service": "18.0.1",
     "@types/jasmine": "5.1.4",
     "@types/jasminewd2": "2.0.13",
-    "@types/node": "20.14.1",
+    "@types/node": "20.14.2",
     "codelyzer": "6.0.2",
     "jasmine-core": "5.1.2",
     "jasmine-spec-reporter": "7.0.0",
