@@ -30,7 +30,7 @@
     "@angular/platform-browser-dynamic": "18.0.2",
     "@angular/platform-server": "18.0.2",
     "@angular/router": "18.0.2",
-    "ajv": "8.15.0",
+    "ajv": "8.16.0",
     "angular-calendar": "0.31.1",
     "animate.css": "4.1.1",
     "arrive": "2.4.1",
