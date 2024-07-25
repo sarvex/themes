@@ -40,7 +40,7 @@
     "rellax": "1.12.1",
     "rxjs": "7.8.1",
     "rxjs-compat": "6.6.7",
-    "zone.js": "0.14.7"
+    "zone.js": "0.14.8"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "18.0.3",
@@ -48,7 +48,7 @@
     "@angular/compiler-cli": "18.0.2",
     "@angular/language-service": "18.0.2",
     "@types/jasmine": "5.1.4",
-    "@types/node": "20.14.2",
+    "@types/node": "20.14.12",
     "codelyzer": "6.0.2",
     "jasmine-core": "5.1.2",
     "jasmine-spec-reporter": "7.0.0",
