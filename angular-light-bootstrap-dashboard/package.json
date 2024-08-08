@@ -55,7 +55,7 @@
     "sweetalert2": "11.11.1",
     "twitter-bootstrap-wizard": "1.2.0",
     "web-animations-js": "2.3.2",
-    "zone.js": "0.14.8"
+    "zone.js": "0.14.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "18.0.3",
@@ -65,11 +65,11 @@
     "@types/chartist": "1.0.0",
     "@types/jasmine": "5.1.4",
     "@types/jquery": "3.5.30",
-    "@types/node": "20.14.12",
+    "@types/node": "20.14.14",
     "codelyzer": "6.0.2",
     "jasmine-core": "5.1.2",
     "jasmine-spec-reporter": "7.0.0",
-    "karma": "6.4.3",
+    "karma": "6.4.4",
     "karma-chrome-launcher": "3.2.0",
     "karma-cli": "2.0.0",
     "karma-coverage-istanbul-reporter": "3.0.3",
