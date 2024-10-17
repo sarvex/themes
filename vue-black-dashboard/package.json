@@ -17,7 +17,7 @@
     "@fullcalendar/timegrid": "6.1.15",
     "@fullcalendar/vue": "6.1.15",
     "bootstrap": "5.3.3",
-    "chart.js": "4.4.3",
+    "chart.js": "4.4.5",
     "d3": "7.9.0",
     "datamaps": "0.5.9",
     "element-ui": "2.15.14",
