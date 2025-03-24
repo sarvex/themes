@@ -13,19 +13,19 @@
     "perfect-scrollbar": "1.5.5",
     "prop-types": "15.8.1",
     "react": "18.3.1",
-    "react-big-calendar": "1.12.2",
+    "react-big-calendar": "1.18.0",
     "react-bootstrap-sweetalert": "5.2.0",
     "react-bootstrap-switch": "15.5.3",
     "react-bootstrap-wizard": "0.0.9",
-    "react-chartjs-2": "5.2.0",
-    "react-datetime": "3.2.0",
+    "react-chartjs-2": "5.3.0",
+    "react-datetime": "3.3.1",
     "react-dom": "18.3.1",
     "react-google-maps": "9.4.5",
     "react-jvectormap": "0.0.16",
     "react-notification-alert": "0.0.13",
-    "react-router-dom": "6.23.1",
+    "react-router-dom": "6.30.0",
     "react-scripts": "5.0.1",
-    "react-select": "5.8.0",
+    "react-select": "5.10.1",
     "react-table": "7.8.0",
     "react-tagsinput": "3.20.3",
     "reactstrap": "9.2.2"
@@ -33,7 +33,7 @@
   "optionalDependencies": {
     "@types/googlemaps": "3.43.3",
     "@types/markerclustererplus": "2.1.33",
-    "@types/react": "18.3.3"
+    "@types/react": "18.3.20"
   },
   "scripts": {
     "start": "react-scripts start",
