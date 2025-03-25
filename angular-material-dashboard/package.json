@@ -44,7 +44,7 @@
     "chartist-plugin-zoom": "0.6.0",
     "core-js": "3.37.1",
     "datatables": "1.10.18",
-    "datatables.net-bs4": "2.0.8",
+    "datatables.net-bs4": "2.2.2",
     "datatables.net-responsive": "3.0.4",
     "fullcalendar": "6.1.15",
     "googleapis": "140.0.1",

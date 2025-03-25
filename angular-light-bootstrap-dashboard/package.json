@@ -39,7 +39,7 @@
     "chosen-js": "1.8.7",
     "core-js": "3.37.1",
     "datatables": "1.10.18",
-    "datatables.net-bs": "2.0.8",
+    "datatables.net-bs": "2.2.2",
     "datatables.net-responsive": "3.0.4",
     "eonasdan-bootstrap-datetimepicker": "4.17.49",
     "fullcalendar": "6.1.15",
