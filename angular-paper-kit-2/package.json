@@ -24,7 +24,7 @@
     "@angular/platform-server": "19.2.3",
     "@angular/router": "19.2.3",
     "@ng-bootstrap/ng-bootstrap": "16.0.0",
-    "ajv": "8.16.0",
+    "ajv": "8.17.1",
     "ajv-keywords": "5.1.0",
     "angular2-multiselect-dropdown": "5.0.4",
     "bootstrap": "5.3.3",
