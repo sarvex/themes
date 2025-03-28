@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-prettier": "5.2.4",
+    "eslint-plugin-prettier": "5.2.5",
     "gulp": "5.0.0",
     "gulp-append-prepend": "1.0.9",
     "prettier": "3.3.3"
