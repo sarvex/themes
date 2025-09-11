@@ -25,7 +25,7 @@
     "@angular/http": "7.2.16",
     "@angular/platform-browser": "19.2.4",
     "@angular/platform-browser-dynamic": "19.2.4",
-    "@angular/platform-server": "19.2.4",
+    "@angular/platform-server": "19.2.15",
     "@angular/router": "19.2.4",
     "@ngui/map": "0.30.3",
     "@types/googlemaps": "3.43.3",
