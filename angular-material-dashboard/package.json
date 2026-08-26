@@ -28,7 +28,7 @@
     "@angular/material": "18.2.14",
     "@angular/platform-browser": "19.2.4",
     "@angular/platform-browser-dynamic": "19.2.4",
-    "@angular/platform-server": "19.2.4",
+    "@angular/platform-server": "19.2.25",
     "@angular/router": "19.2.4",
     "ajv": "8.17.1",
     "angular-calendar": "0.31.1",
