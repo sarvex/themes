@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://creativetimofficial.github.io/now-ui-dashboard-pro-react/#/documentation/tutorial",
   "dependencies": {
-    "bootstrap": "5.3.3",
+    "bootstrap": "5.3.8",
     "chart.js": "4.4.8",
     "classnames": "2.5.1",
     "moment": "2.30.1",
